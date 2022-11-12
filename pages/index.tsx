@@ -1,5 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
+import About from "./sections/_about";
+import Community from "./sections/_community";
+import Contact from "./sections/_contact";
+import Hero from "./sections/_hero";
+import Ken from "./sections/_ken";
+import Mission from "./sections/_mission";
+import Service from "./sections/_service";
 
 export default function Home() {
   return (
@@ -8,14 +15,21 @@ export default function Home() {
         <title>TLCAK</title>
       </Head>
       {/* main container wrapper */}
-      <main>
-        <section>
-          <p className="text-4xl">heros</p>
-        </section>
-        {/* footer section */}
-        <footer>
-          {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
-        </footer>
+      <main className="p-10 flex flex-col gap-5">
+        {/* home page */}
+        <Hero />
+        {/* about church */}
+        <About />
+        {/* mission statement */}
+        <Mission />
+        {/* about ken */}
+        <Ken />
+        {/* service order */}
+        <Service />
+        {/* our community */}
+        <Community />
+        {/* contact info */}
+        <Contact />
       </main>
     </div>
   );
