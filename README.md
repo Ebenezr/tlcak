@@ -1,1 +1,1 @@
-# True Light Christian Assemply Kenya
+# True Light Christian Assembly Kenya
