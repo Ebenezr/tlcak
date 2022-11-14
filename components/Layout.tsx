@@ -14,7 +14,7 @@ const Layout: React.FC<Layoutprops> = ({ children }) => {
     });
   };
   return (
-    <div className="relative">
+    <div className="relative w-screen mx-auto">
       <Nav />
       <main className="flex flex-col">{children}</main>
       <Footer />

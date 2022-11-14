@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
-    <nav className="fixed h-20  w-screen text-white flex gap-4 lg:px-10">
+    <nav className="fixed h-20  w-screen text-white  flex gap-4 lg:px-10">
       {/* mobile nav wrapper */}
       <div className="flex items-center justify-between px-4 w-full bg-neutral-600">
         <p className="text-2xl font-bold">TLCAK</p>

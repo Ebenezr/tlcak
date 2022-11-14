@@ -15,7 +15,7 @@ export default function Home() {
         <title>TLCAK</title>
       </Head>
       {/* main container wrapper */}
-      <main className="px-4 flex flex-col gap-5">
+      <main className="flex flex-col gap-5 px-4">
         {/* home page */}
         <Hero />
         {/* about church */}
