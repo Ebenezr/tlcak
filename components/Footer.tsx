@@ -19,7 +19,7 @@ const Footer = () => {
       {/* logo */}
       <div className="lg:flex">
         <div className="flex flex-col lg:w-1/3">
-          <div className="px-8 my-2 bg-netutral-50">
+          <div className="px-8 my-2">
             <Image
               src={logo}
               alt="TLCAK"
@@ -144,7 +144,7 @@ const Footer = () => {
       </div>
       {/* cp */}
       <div className="mt-6 ">
-        <p className="font-regular">2023 TLCAK | All Rights Reserved</p>
+        <p className="font-light">2023 TLCAK | All Rights Reserved</p>
       </div>
     </footer>
   );

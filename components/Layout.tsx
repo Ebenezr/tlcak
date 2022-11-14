@@ -16,8 +16,8 @@ const Layout: React.FC<Layoutprops> = ({ children }) => {
   return (
     <div className="relative">
       <Nav />
-      <main>{children}</main>
-      <Footer />{" "}
+      <main className="flex flex-col">{children}</main>
+      <Footer />
       <button
         onClick={scrollToTop}
         className="fixed bg-transparent bottom-3 right-2"
