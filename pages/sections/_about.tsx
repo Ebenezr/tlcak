@@ -1,4 +1,5 @@
 import React from "react";
+import { ReadMore } from "../../components/Readmore";
 
 const About = () => {
   return (
@@ -18,19 +19,11 @@ const About = () => {
       {/* image wrapper */}
       <div className="bg-neutral-700 w-full h-28 rounded-md my-4"></div>
       {/* text content */}
-      <p className="text-sm text-center">
-        True Light Christian Assembly Kenya was founded on January 3rd, 2016.
-        The church started in a two-roomed house which happened to be a
-        residential place of one of the founding members. By March 20th same
-        year the church moved out of the house to a rental classroom where the
-        1st formal service was conducted. God gave Rev. Lukiri Kennedy the
-        vision of Restoring Lives with the true Word of God, giving hope to many
-        hurting souls who are inwardly dying even though they are in a church
-        group. Along with the assignment to reach out to the uttermost parts of
-        the world with the gospel of truth in missions and church planting.
-      </p>
+      <ReadMore>{aboutChurch}</ReadMore>
     </section>
   );
 };
 
 export default About;
+const aboutChurch =
+  "True Light Christian Assembly Kenya was founded on January 3rd, 2016. The church started in a two-roomed house which happened to be a        residential place of one of the founding members. By March 20th same year the church moved out of the house to a rental classroom where the 1st formal service was conducted. God gave Rev. Lukiri Kennedy the vision of Restoring Lives with the true Word of God, giving hope to many hurting souls who are inwardly dying even though they are in a church group. Along with the assignment to reach out to the uttermost parts of the world with the gospel of truth in missions and church planting.";
