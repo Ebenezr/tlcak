@@ -1,16 +1,29 @@
 import React from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
-
+import { FaArrowAltCircleUp } from "react-icons/fa";
 interface Layoutprops {
-  children: React.ReactElement;
+  children?: React.ReactElement;
 }
 const Layout: React.FC<Layoutprops> = ({ children }) => {
+  // this is function that will scroll to the top of the page when the button is clicked
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
-    <div className="w-[100vw]">
+    <div className="relative">
       <Nav />
       <main>{children}</main>
-      <Footer />
+      <Footer />{" "}
+      <button
+        onClick={scrollToTop}
+        className="fixed bg-transparent bottom-3 right-2"
+      >
+        <FaArrowAltCircleUp className="text-4xl text-neutral-400 mr-2" />
+      </button>
     </div>
   );
 };
