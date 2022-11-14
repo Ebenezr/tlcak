@@ -2,8 +2,19 @@ import React from "react";
 
 const Service = () => {
   return (
-    <section className="h-[100vh] bg-yellow-200" id="service">
-      <p className="text-4xl">service</p>
+    <section className="h-auto py-6 border-1 border-green-200" id="service">
+      {/* section title */}
+      <h3 className="font-regular text-center text-lg text-gray-400">
+        ORDER OF SERVICE
+      </h3>
+      {/* header */}
+      <div className="text-center">
+        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
+          Join and worship with us.
+        </p>
+      </div>
+      {/* image wrapper */}
+      <div className="bg-neutral-700 w-full h-56 rounded-md my-4"></div>
     </section>
   );
 };

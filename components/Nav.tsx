@@ -1,26 +1,18 @@
 import React from "react";
-//import Link from "next/link";
-import * as Scroll from "react-scroll";
 import { MdOutlineMenu } from "react-icons/md";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
     <nav className="fixed h-20  w-screen text-white flex gap-4 lg:px-10">
-      <div className="flex items-center justify-between px-4 w-full">
+      {/* mobile nav wrapper */}
+      <div className="flex items-center justify-between px-4 w-full bg-neutral-600">
         <p className="text-2xl font-bold">TLCAK</p>
         <button>
           <MdOutlineMenu className="text-3xl" />
         </button>
       </div>
+      {/* desktop nav */}
       <div className="hidden">
         <button>
           <Link
