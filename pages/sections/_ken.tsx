@@ -16,7 +16,9 @@ const Ken = () => {
         </p>
       </div>
       {/* image wrapper */}
-      <div className="bg-neutral-700 w-full h-28 rounded-md my-4"></div>
+      <div className="bg-primary mx-auto w-36 h-36 grid place-items-center rounded-full my-4">
+        <div className="bg-white mx-auto w-28 h-28 rounded-full my-4"></div>
+      </div>
       {/* text content */}
       <ReadMore>{aboutKen}</ReadMore>
     </section>
