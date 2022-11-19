@@ -7,16 +7,13 @@ export const ReadMore = ({ children }) => {
   };
   return (
     <p className="text-sm">
-            {isReadMore ? text.slice(0, 220) : text}
-            
+      {isReadMore ? text.slice(0, 220) : text}
       <span
         onClick={toggleReadMore}
         className="text-neutral-700 cursor-pointer font-bold"
       >
-                {isReadMore ? "...read more" : " show less"}
-              
+        {isReadMore ? "  ...read more" : "  show less"}
       </span>
-          
     </p>
   );
 };
