@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4"
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg"
       id="contact"
     >
       {/* section title */}

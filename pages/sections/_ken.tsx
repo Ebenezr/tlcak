@@ -1,7 +1,10 @@
 import { ReadMore } from "../../components/Readmore";
 const Ken = () => {
   return (
-    <section className="h-auto py-6 border-1 border-green-200 px-4" id="ken">
+    <section
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg"
+      id="ken"
+    >
       {/* section title */}
       <h3 className="font-regular text-center text-lg text-gray-400">
         ABOUT KEN

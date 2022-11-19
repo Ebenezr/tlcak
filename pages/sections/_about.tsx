@@ -3,7 +3,10 @@ import { ReadMore } from "../../components/Readmore";
 
 const About = () => {
   return (
-    <section className="h-auto py-6 border-1 border-green-200 px-4" id="about">
+    <section
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg"
+      id="about"
+    >
       {/* section title */}
       <h3 className="font-regular text-center text-lg text-gray-400">
         ABOUT CHURCH
