@@ -22,7 +22,7 @@ const Community = () => {
       {/* cards wrapper */}
       <div className="carousel-wrapper w-full mt-6">
         <Carousel
-          autoPlay={true}
+          //autoPlay={true}
           centerMode={true}
           emulateTouch={true}
           infiniteLoop={true}
@@ -36,7 +36,7 @@ const Community = () => {
           className=" flex flex-col w-full mx-auto h-[30rem] "
         >
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-2 rounded-md">
+          <div className="flex flex-col h-5/6 gap-4  mx-auto  py-4 bg-white px-6 rounded-md">
             {/* image wrapper */}
             <div className="w-full h-56 bg-gray-600 rounded-md"></div>
             <h2 className="text-left font-bold tracking-wide">
@@ -45,7 +45,7 @@ const Community = () => {
             <p className="text-left">
               Children’s worship, or previously called Sunday school, is a
               religious education service every sunday for children’s Worship,
-              children are implanted with knowledge and strong character{" "}
+              children are implanted with knowledge and strong character
             </p>
             <div className="flex flex-start">
               <button className="border-2 border-primary px-6 py-[1px] rounded-md text-primary">
@@ -54,7 +54,7 @@ const Community = () => {
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-2 rounded-md">
+          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
             {/* image wrapper */}
             <div className="w-full h-56 bg-gray-600 rounded-md"></div>
             <h2 className="text-left font-bold tracking-wide">
@@ -72,7 +72,7 @@ const Community = () => {
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-2 rounded-md">
+          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
             {/* image wrapper */}
             <div className="w-full h-56 bg-gray-600 rounded-md"></div>
             <h2 className="text-left font-bold tracking-wide">
@@ -90,7 +90,7 @@ const Community = () => {
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-2 rounded-md">
+          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
             {/* image wrapper */}
             <div className="w-full h-56 bg-gray-600 rounded-md"></div>
             <h2 className="text-left font-bold tracking-wide">
@@ -108,7 +108,7 @@ const Community = () => {
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-2 rounded-md">
+          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
             {/* image wrapper */}
             <div className="w-full h-56 bg-gray-600 rounded-md"></div>
             <h2 className="text-left font-bold tracking-wide">
