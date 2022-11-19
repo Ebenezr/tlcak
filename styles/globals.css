@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.carousel .control-dots .dot {
+    background-color: blue;
+}

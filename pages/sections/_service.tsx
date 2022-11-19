@@ -22,19 +22,22 @@ const Service = () => {
         </p>
       </div>
       {/* cards wrapper */}
-      <div className="w-screen relative ">
+      <div className="carousel-wrapper w-full">
         <Carousel
-          autoPlay
+          autoPlay={true}
           centerMode={true}
           emulateTouch={true}
           infiniteLoop={true}
           stopOnHover={true}
-          centerSlidePercentage={90}
+          centerSlidePercentage={100}
           interval={5000}
+          transitionTime={1000}
           showStatus={false}
-          className="py-3 flex gap-4 flex-col"
+          showArrows={false}
+          useKeyboardArrows={true}
+          className=" flex flex-col w-full mx-auto h-[20rem] "
         >
-          <div className="bg-white w-4/5 h-64 flex-start mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 p-3 shadow-lg">
+          <div className="bg-white w-5/6 h-5/6 mx-auto flex-start rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
             <FaChurch className="text-4xl text-primary" />
             <p className="font-bold text-[15px]">MID-WEEK SERVICES</p>
             <p className="text-[11px] font-base text-neutral-500">
@@ -48,7 +51,7 @@ const Service = () => {
             </button>
           </div>
 
-          <div className="bg-white w-4/5  h-64  mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 p-3 shadow-lg">
+          <div className="bg-white w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
             <SocialIcon network="facebook" bgColor="#680217" />
             <p className="font-bold text-[15px]">SUNDAY ONLINE SERVICES</p>
             <p className="text-[11px] font-base text-neutral-500 flex-1">
@@ -58,7 +61,7 @@ const Service = () => {
               FOLLOW US
             </button>
           </div>
-          <div className="bg-white w-4/5 h-64  mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 p-3 shadow-lg">
+          <div className="bg-white w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
             <FaChurch className="text-4xl text-primary" />
             <p className="font-bold text-[15px]">SUNDAY ONLINE SERVICES</p>
             <p className="text-[11px] font-base text-neutral-500">
