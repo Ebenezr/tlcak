@@ -22,7 +22,7 @@ const Community = () => {
       {/* cards wrapper */}
       <div className="carousel-wrapper w-full mt-6">
         <Carousel
-          //autoPlay={true}
+          autoPlay={true}
           centerMode={true}
           emulateTouch={true}
           infiniteLoop={true}
@@ -33,96 +33,77 @@ const Community = () => {
           showStatus={false}
           showArrows={false}
           useKeyboardArrows={true}
-          className=" flex flex-col w-full mx-auto h-[30rem] "
+          className=" flex flex-col w-full mx-auto h-[32rem] "
         >
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4  mx-auto  py-4 bg-white px-6 rounded-md">
+          <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className="w-full h-56 bg-gray-600 rounded-md"></div>
-            <h2 className="text-left font-bold tracking-wide">
-              Children&apos;s Worship
-            </h2>
-            <p className="text-left">
+            <div className={imageWrapper}></div>
+            <h2 className={cardTitle}>Children&apos;s Worship</h2>
+            <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
               religious education service every sunday for children’s Worship,
               children are implanted with knowledge and strong character
             </p>
-            <div className="flex flex-start">
-              <button className="border-2 border-primary px-6 py-[1px] rounded-md text-primary">
-                Join
-              </button>
+            {/* button wrapper */}
+            <div className={buttonWrapper}>
+              <button className={button}>See More</button>
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
+          <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className="w-full h-56 bg-gray-600 rounded-md"></div>
-            <h2 className="text-left font-bold tracking-wide">
-              Youth&apos;s Worship
-            </h2>
-            <p className="text-left">
+            <div className={imageWrapper}></div>
+            <h2 className={cardTitle}>Youth&apos;s Worship</h2>
+            <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
               religious education service every sunday for children’s Worship,
               children are implanted with knowledge and strong character{" "}
             </p>
-            <div className="flex flex-start">
-              <button className="border-2 border-primary px-6 py-[1px] rounded-md text-primary">
-                Join
-              </button>
+            <div className={buttonWrapper}>
+              <button className={button}>See More</button>
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
+          <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className="w-full h-56 bg-gray-600 rounded-md"></div>
-            <h2 className="text-left font-bold tracking-wide">
-              Women&apos;s Worship
-            </h2>
-            <p className="text-left">
+            <div className={imageWrapper}></div>
+            <h2 className={cardTitle}>Women&apos;s Worship</h2>
+            <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
               religious education service every sunday for children’s Worship,
               children are implanted with knowledge and strong character{" "}
             </p>
-            <div className="flex flex-start">
-              <button className="border-2 border-primary px-6 py-[1px] rounded-md text-primary">
-                Join
-              </button>
+            <div className={buttonWrapper}>
+              <button className={button}>See More</button>
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
+          <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className="w-full h-56 bg-gray-600 rounded-md"></div>
-            <h2 className="text-left font-bold tracking-wide">
-              Men&apos;s Worship
-            </h2>
-            <p className="text-left">
+            <div className={imageWrapper}></div>
+            <h2 className={cardTitle}>Men&apos;s Worship</h2>
+            <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
               religious education service every sunday for children’s Worship,
               children are implanted with knowledge and strong character{" "}
             </p>
-            <div className="flex flex-start">
-              <button className="border-2 border-primary px-6 py-[1px] rounded-md text-primary">
-                Join
-              </button>
+            <div className={buttonWrapper}>
+              <button className={button}>See More</button>
             </div>
           </div>
           {/* card */}
-          <div className="flex flex-col h-5/6 gap-4 py-4 bg-white px-6 rounded-md">
+          <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className="w-full h-56 bg-gray-600 rounded-md"></div>
-            <h2 className="text-left font-bold tracking-wide">
-              Praise and Worship
-            </h2>
-            <p className="text-left">
+            <div className={imageWrapper}></div>
+            <h2 className={cardTitle}>Praise and Worship</h2>
+            <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
               religious education service every sunday for children’s Worship,
               children are implanted with knowledge and strong character{" "}
             </p>
-            <div className="flex flex-start">
-              <button className="border-2 border-primary px-6 py-[1px] rounded-md text-primary">
-                Join
-              </button>
+            <div className={buttonWrapper}>
+              <button className={button}>See More</button>
             </div>
           </div>
         </Carousel>
@@ -132,3 +113,12 @@ const Community = () => {
 };
 
 export default Community;
+
+// card
+const cardWrapper = "flex flex-col h-5/6 mx-auto py-4 bg-white px-4 rounded-md";
+const imageWrapper = "w-full  h-56 bg-gray-600 rounded-md";
+const cardTitle = "mt-[32px] text-left text-xl font-bold tracking-wide";
+const cardParagraph = "mt-[12px] text-left";
+const buttonWrapper = "mt-[32px] flex flex-start";
+const button =
+  "border-2 border-primary px-8 py-[1px] text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary focus:bg-primary focus:text-white hover:text-white";
