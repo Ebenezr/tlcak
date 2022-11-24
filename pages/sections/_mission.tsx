@@ -20,7 +20,7 @@ const Mission = () => {
       <div className="flex flex-col mt-4">
         <p className="font-semibold tracking-wide text-lg">Vision</p>
         {/* image wrapper */}
-        <div className="bg-neutral-700 w-full h-28 rounded-md my-4"></div>
+        <div className="bg-neutral-700 w-full h-28 rounded-md mt-3 mb-2"></div>
         {/* context */}
         <p className="text-neutral-600 text-sm">
           To reach out and Inspire Believers, Influence the Community, and
@@ -32,7 +32,7 @@ const Mission = () => {
       <div className="flex flex-col mt-4">
         <p className="font-semibold tracking-wide text-lg">Mission</p>
         {/* image wrapper */}
-        <div className="bg-neutral-700 w-full h-28 rounded-md my-4"></div>
+        <div className="bg-neutral-700 w-full h-28 rounded-md mt-3 mb-2"></div>
         {/* context */}
         <p className="text-neutral-600 text-sm">
           To Seek, Love and Worship God in the Beauty of His Holiness, Preach
@@ -44,22 +44,22 @@ const Mission = () => {
       <div className="flex flex-col mt-4">
         <p className="font-semibold tracking-wide text-lg">Core Values</p>
         {/* image wrapper */}
-        <div className="bg-neutral-700 w-full h-28 rounded-md my-4"></div>
+        <div className="bg-neutral-700 w-full h-28 rounded-md mt-3 "></div>
         {/* context */}
-        <p className="font-semibold text-md text-neutral-700">FAMILY</p>
-        <p className="text-neutral-600 text-sm">
+        <p className="font-semibold text-md text-neutral-700 mt-3">FAMILY</p>
+        <p className="text-neutral-600 text-sm mt-2">
           We invest in the lives of others, share each other’s burdens and
           rejoice in each other’s victories considering others more important
           than ourselves.
         </p>
-        <p className="font-semibold text-md text-neutral-700">ORDER</p>
-        <p className="text-neutral-600 text-sm">
+        <p className="font-semibold text-md text-neutral-700 mt-3">ORDER</p>
+        <p className="text-neutral-600 text-sm mt-2">
           All things here MUST be done in orderly manner
         </p>
-        <p className="font-semibold text-md text-neutral-700">
+        <p className="font-semibold text-md text-neutral-700 mt-3">
           SPIRITUAL NOURISHMENT
         </p>
-        <p className="text-neutral-600 text-sm">
+        <p className="text-neutral-600 text-sm mt-2">
           We endeavor to teach, preach and apply biblical truth wholly as
           written.
         </p>
