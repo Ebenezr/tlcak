@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../../assets/logo.png";
 const Hero = () => {
   return (
-    <section className="h-auto pb-10 pt-20  bg-gray-900" id="hero">
+    <section className="h-auto pb-10 pt-20  lg:h-[100vh] bg-gray-900" id="hero">
       <div className="px-8 my-2 mt-10 ">
         <Image
           src={logo}

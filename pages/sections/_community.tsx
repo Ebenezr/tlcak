@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 const Community = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg"
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh]"
       id="community"
     >
       {/* section title */}
@@ -19,6 +19,7 @@ const Community = () => {
         </p>
       </div>
       {/* image wrapper */}
+      {/* ty */}
       {/* cards wrapper */}
       <div className="carousel-wrapper w-full mt-6">
         <Carousel

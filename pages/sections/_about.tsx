@@ -4,7 +4,7 @@ import { ReadMore } from "../../components/Readmore";
 const About = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg"
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh]"
       id="about"
     >
       {/* section title */}
