@@ -6,11 +6,11 @@ export const ReadMore = ({ children }) => {
     setIsReadMore(!isReadMore);
   };
   return (
-    <p className="text-sm">
+    <p className="text-sm text-justify ">
       {isReadMore ? text.slice(0, 220) : text}
       <span
         onClick={toggleReadMore}
-        className="text-neutral-700 cursor-pointer font-bold"
+        className="text-neutral-700 cursor-pointer font-bold "
       >
         {isReadMore ? "  ...read more" : "  show less"}
       </span>

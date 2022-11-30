@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import family from "../../assets/images/family.jpg";
+import mission from "../../assets/images/mission.jpg";
+import vision from "../../assets/images/vision.jpg";
 
 const Mission = () => {
   return (
@@ -20,7 +24,16 @@ const Mission = () => {
       <div className="flex flex-col mt-4">
         <p className="font-semibold tracking-wide text-lg">Vision</p>
         {/* image wrapper */}
-        <div className="bg-neutral-700 w-full h-28 rounded-md mt-3 mb-2"></div>
+        <div className="bg-neutral-700 w-full h-48 rounded-md mt-3 mb-2 overflow-hidden">
+          <Image
+            src={vision}
+            alt="Vision"
+            //width={}
+            //  height={500}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+          />
+        </div>
         {/* context */}
         <p className="text-neutral-600 text-sm">
           To reach out and Inspire Believers, Influence the Community, and
@@ -32,7 +45,16 @@ const Mission = () => {
       <div className="flex flex-col mt-4">
         <p className="font-semibold tracking-wide text-lg">Mission</p>
         {/* image wrapper */}
-        <div className="bg-neutral-700 w-full h-28 rounded-md mt-3 mb-2"></div>
+        <div className="bg-neutral-700 w-full h-48 rounded-md mt-3 mb-2 overflow-hidden">
+          <Image
+            src={mission}
+            alt="Vision"
+            //width={}
+            //  height={500}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+          />
+        </div>
         {/* context */}
         <p className="text-neutral-600 text-sm">
           To Seek, Love and Worship God in the Beauty of His Holiness, Preach
@@ -44,7 +66,16 @@ const Mission = () => {
       <div className="flex flex-col mt-4">
         <p className="font-semibold tracking-wide text-lg">Core Values</p>
         {/* image wrapper */}
-        <div className="bg-neutral-700 w-full h-28 rounded-md mt-3 "></div>
+        <div className="bg-neutral-700 w-full h-48 rounded-md mt-3 overflow-hidden">
+          <Image
+            src={family}
+            alt="Vision"
+            //width={}
+            //  height={500}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+          />
+        </div>
         {/* context */}
         <p className="font-semibold text-md text-neutral-700 mt-3">FAMILY</p>
         <p className="text-neutral-600 text-sm mt-2">

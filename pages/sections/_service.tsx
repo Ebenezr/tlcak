@@ -25,7 +25,7 @@ const Service = () => {
       <div className="carousel-wrapper w-full">
         <Carousel
           autoPlay={true}
-          centerMode={true}
+          centerMode={false}
           emulateTouch={true}
           infiniteLoop={true}
           stopOnHover={true}

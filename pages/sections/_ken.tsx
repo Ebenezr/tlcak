@@ -1,4 +1,6 @@
 import { ReadMore } from "../../components/Readmore";
+import Image from "next/image";
+import ken from "../../assets/images/IMG_8069.jpg";
 const Ken = () => {
   return (
     <section
@@ -17,7 +19,14 @@ const Ken = () => {
       </div>
       {/* image wrapper */}
       <div className="bg-primary mx-auto w-36 h-36 grid place-items-center rounded-full my-4">
-        <div className="bg-white mx-auto w-28 h-28 rounded-full my-4"></div>
+        <div className="bg-white mx-auto w-32 h-32 rounded-full  overflow-hidden">
+          {/* <Image
+            src={ken}
+            alt="school"
+            placeholder="blur"
+            className="object-fill h-full w-auto"
+          /> */}
+        </div>
       </div>
       {/* text content */}
       <ReadMore>{aboutKen}</ReadMore>

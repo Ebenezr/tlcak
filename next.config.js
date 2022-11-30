@@ -8,4 +8,11 @@ module.exports = {
   // ... rest of the configuration.
   output: "standalone",
 };
+const withImages = require("next-images");
+module.exports = withImages({
+  fileExtensions: ["jpg", "jpeg", "png", "gif"],
+  webpack(config, options) {
+    return config;
+  },
+});
 module.exports = nextConfig;

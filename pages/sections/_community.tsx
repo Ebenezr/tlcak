@@ -1,6 +1,12 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import Image from "next/image";
+import youth from "../../assets/images/youth.jpg";
+import men from "../../assets/images/men1.jpg";
+import praise from "../../assets/images/praise.jpg";
+import school from "../../assets/images/school.jpg";
+import women from "../../assets/images/women.jpg";
 
 const Community = () => {
   return (
@@ -39,7 +45,14 @@ const Community = () => {
           {/* card */}
           <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className={imageWrapper}></div>
+            <div className={imageWrapper}>
+              <Image
+                src={school}
+                alt="school"
+                placeholder="blur"
+                className="object-center object-cover"
+              />
+            </div>
             <h2 className={cardTitle}>Children&apos;s Worship</h2>
             <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
@@ -54,7 +67,14 @@ const Community = () => {
           {/* card */}
           <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className={imageWrapper}></div>
+            <div className={imageWrapper}>
+              <Image
+                src={youth}
+                alt="school"
+                placeholder="blur"
+                className="object-center object-cover"
+              />
+            </div>
             <h2 className={cardTitle}>Youth&apos;s Worship</h2>
             <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
@@ -68,7 +88,14 @@ const Community = () => {
           {/* card */}
           <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className={imageWrapper}></div>
+            <div className={imageWrapper}>
+              <Image
+                src={women}
+                alt="school"
+                placeholder="blur"
+                className="object-center object-cover"
+              />
+            </div>
             <h2 className={cardTitle}>Women&apos;s Worship</h2>
             <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
@@ -82,7 +109,14 @@ const Community = () => {
           {/* card */}
           <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className={imageWrapper}></div>
+            <div className={imageWrapper}>
+              <Image
+                src={men}
+                alt="school"
+                placeholder="blur"
+                className="object-center object-cover"
+              />
+            </div>
             <h2 className={cardTitle}>Men&apos;s Worship</h2>
             <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
@@ -96,7 +130,14 @@ const Community = () => {
           {/* card */}
           <div className={cardWrapper}>
             {/* image wrapper */}
-            <div className={imageWrapper}></div>
+            <div className={imageWrapper}>
+              <Image
+                src={praise}
+                alt="school"
+                placeholder="blur"
+                className="object-center object-cover"
+              />
+            </div>
             <h2 className={cardTitle}>Praise and Worship</h2>
             <p className={cardParagraph}>
               Children’s worship, or previously called Sunday school, is a
@@ -117,7 +158,7 @@ export default Community;
 
 // card
 const cardWrapper = "flex flex-col h-5/6 mx-auto py-4 bg-white px-4 rounded-md";
-const imageWrapper = "w-full  h-56 bg-gray-600 rounded-md";
+const imageWrapper = "w-full  h-56 bg-gray-600 rounded-md overflow-hidden";
 const cardTitle = "mt-[32px] text-left text-xl font-bold tracking-wide";
 const cardParagraph = "mt-[12px] text-left";
 const buttonWrapper = "mt-[32px] flex flex-start";

@@ -1,5 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import { ReadMore } from "../../components/Readmore";
+import church from "../../assets/images/church.jpg";
 
 const About = () => {
   return (
@@ -20,7 +22,16 @@ const About = () => {
         <span className="text-center text-neutral-500 text-sm">John 1:9</span>
       </div>
       {/* image wrapper */}
-      <div className="bg-neutral-700 w-full h-28 rounded-md my-4"></div>
+      <div className="bg-neutral-700 w-full h-42 rounded-md my-4 overflow-hidden">
+        <Image
+          src={church}
+          alt="Vision"
+          //width={}
+          //  height={500}
+          // blurDataURL="data:..." automatically provided
+          // placeholder="blur" // Optional blur-up while loading
+        />
+      </div>
       {/* text content */}
       <ReadMore>{aboutChurch}</ReadMore>
     </section>
