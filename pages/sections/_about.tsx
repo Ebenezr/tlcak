@@ -6,7 +6,7 @@ import church from "../../assets/images/church.jpg";
 const About = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh]"
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] mx-auto lg:py-12 lg:max-w-7xl "
       id="about"
     >
       {/* section title */}
@@ -26,10 +26,8 @@ const About = () => {
         <Image
           src={church}
           alt="Vision"
-          //width={}
-          //  height={500}
-          // blurDataURL="data:..." automatically provided
-          // placeholder="blur" // Optional blur-up while loading
+          placeholder="blur"
+          className="object-center object-cover"
         />
       </div>
       {/* text content */}

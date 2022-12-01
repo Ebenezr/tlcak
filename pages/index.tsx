@@ -10,7 +10,7 @@ import Service from "./sections/_service";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-bg">
       <Head>
         <title>TLCAK</title>
       </Head>
@@ -19,17 +19,19 @@ export default function Home() {
         {/* home page */}
         <Hero />
         {/* about church */}
-        <About />
-        {/* mission statement */}
-        <Mission />
-        {/* about ken */}
-        <Ken />
-        {/* service order */}
-        <Service />
-        {/* our community */}
-        <Community />
-        {/* contact info */}
-        <Contact />
+        <div className="lg:max-w-7xl lg:mx-auto">
+          <About />
+          {/* mission statement */}
+          <Mission />
+          {/* about ken */}
+          <Ken />
+          {/* service order */}
+          <Service />
+          {/* our community */}
+          <Community />
+          {/* contact info */}
+          <Contact />
+        </div>
       </main>
     </div>
   );

@@ -17,7 +17,11 @@ const Contact = () => {
         </p>
       </div>
       {/* image wrapper */}
-      <div className="bg-neutral-700 w-full h-56 rounded-md my-4"></div>
+      <div className=" w-full h-56 rounded-md my-4 text-center ">
+        <p>truelightchristianassemblykeny@gmail.com</p>
+        <p>+254 721 205358</p>
+        <p>Office Hours: Monday - Friday 8am - 4pm</p>
+      </div>
     </section>
   );
 };
