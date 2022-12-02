@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "rsuite/dist/rsuite.css";
 
 .carousel .control-dots .dot {
     background-color: blue;

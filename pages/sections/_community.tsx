@@ -40,7 +40,7 @@ const Community = () => {
           showStatus={false}
           showArrows={false}
           useKeyboardArrows={true}
-          className=" flex flex-col w-full mx-auto h-[32rem] "
+          className=" flex flex-col w-full mx-auto h-[32rem] lg:h-[40rem]"
         >
           {/* card */}
           <div className={cardWrapper}>
@@ -157,8 +157,10 @@ const Community = () => {
 export default Community;
 
 // card
-const cardWrapper = "flex flex-col h-5/6 mx-auto py-4 bg-white px-4 rounded-md";
-const imageWrapper = "w-full  h-56 bg-gray-600 rounded-md overflow-hidden";
+const cardWrapper =
+  "flex flex-col lg:w-2/3 h-5/6 mx-auto py-4 bg-white px-4 rounded-md";
+const imageWrapper =
+  "w-full  lg:h-80 h-56 bg-gray-600 rounded-md overflow-hidden";
 const cardTitle = "mt-[32px] text-left text-xl font-bold tracking-wide";
 const cardParagraph = "mt-[12px] text-left";
 const buttonWrapper = "mt-[32px] flex flex-start";

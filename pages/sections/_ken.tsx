@@ -17,19 +17,26 @@ const Ken = () => {
           Rev. Lukiri Kennedy
         </p>
       </div>
-      {/* image wrapper */}
-      <div className="bg-primary mx-auto w-36 h-36 grid place-items-center rounded-full my-4">
-        <div className="bg-white mx-auto w-32 h-32 rounded-full  overflow-hidden">
-          <Image
-            src={ken}
-            alt="Rev"
-            placeholder="blur"
-            className="object-fill h-full w-auto"
-          />
+      {/* content wrapper */}
+      <div className="grid  lg:grid-cols-2 md:grid-cols-2 lg:mt-12 md:mt-10 lg:h-4/5">
+        {/* image wrapper */}
+        <div className="lg:grid lg:place-items-center">
+          <div className="bg-primary mx-auto w-36 lg:w-72 h-36 lg:h-72 grid place-items-center rounded-full my-4">
+            <div className="bg-white mx-auto w-32 h-32 lg:w-64 lg:h-64 rounded-full  overflow-hidden">
+              <Image
+                src={ken}
+                alt="Rev"
+                placeholder="blur"
+                className="object-fill h-full w-auto"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="lg:p-8 md:p-6 lg:my-auto md:my-auto">
+          {/* text content */}
+          <ReadMore>{aboutKen}</ReadMore>
         </div>
       </div>
-      {/* text content */}
-      <ReadMore>{aboutKen}</ReadMore>
     </section>
   );
 };

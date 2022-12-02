@@ -22,7 +22,7 @@ const Service = () => {
         </p>
       </div>
       {/* cards wrapper */}
-      <div className="carousel-wrapper w-full">
+      <div className="carousel-wrapper w-full lg:h-3/4 md:h-3/4">
         <Carousel
           autoPlay={true}
           centerMode={false}
@@ -35,15 +35,17 @@ const Service = () => {
           showStatus={false}
           showArrows={false}
           useKeyboardArrows={true}
-          className=" flex flex-col w-full mx-auto h-[20rem] "
+          className=" flex flex-col w-full mx-auto h-[20rem]"
         >
-          <div className="bg-white w-5/6 h-5/6 mx-auto flex-start rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
+          <div className="bg-white lg:w-2/3 w-5/6 h-5/6 mx-auto flex-start rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
             <FaChurch className="text-4xl text-primary" />
-            <p className="font-bold text-[15px]">MID-WEEK SERVICES</p>
-            <p className="text-[11px] font-base text-neutral-500">
+            <p className="font-bold text-[15px] lg:text-2xl">
+              MID-WEEK SERVICES
+            </p>
+            <p className="text-[11px] font-base lg:text-xl text-neutral-500">
               Wednesday @ 5:30pm to 7:00pm
             </p>
-            <p className="text-[11px] font-base text-neutral-500 flex-1">
+            <p className="text-[11px] lg:text-xl font-base text-neutral-500 flex-1">
               Kesha first Friday of every month
             </p>
             <button className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold">
@@ -51,26 +53,30 @@ const Service = () => {
             </button>
           </div>
 
-          <div className="bg-white w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
+          <div className="bg-white lg:w-2/3 w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
             <SocialIcon network="facebook" bgColor="#680217" />
-            <p className="font-bold text-[15px]">SUNDAY ONLINE SERVICES</p>
-            <p className="text-[11px] font-base text-neutral-500 flex-1">
+            <p className="font-bold text-[15px] lg:text-2xl">
+              SUNDAY ONLINE SERVICES
+            </p>
+            <p className="text-[11px] font-base text-neutral-500 flex-1 lg:text-xl">
               Main Service @ 11:00am to 12:50pm
             </p>
-            <button className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold">
+            <button className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold lg:text-xl">
               FOLLOW US
             </button>
           </div>
-          <div className="bg-white w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
-            <FaChurch className="text-4xl text-primary" />
-            <p className="font-bold text-[15px]">SUNDAY ONLINE SERVICES</p>
-            <p className="text-[11px] font-base text-neutral-500">
+          <div className="bg-white lg:w-2/3 w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
+            <FaChurch className="text-4xl text-primary shrink-0" />
+            <p className="font-bold text-[15px] lg:text-2xl">
+              SUNDAY ONLINE SERVICES
+            </p>
+            <p className="text-[11px] font-base text-neutral-500 lg:text-xl">
               Intercessory Prayer @ 9:00am to 10:00am
             </p>
-            <p className="text-[11px] font-base text-neutral-500">
+            <p className="text-[11px] font-base text-neutral-500 lg:text-xl">
               Bible Study @ 10:00am to 10:55am
             </p>
-            <p className="text-[11px] font-base text-neutral-500 flex-1">
+            <p className="text-[11px] font-base text-neutral-500 flex-1 lg:text-xl">
               Main Service @ 11:00am to 12:50pm
             </p>
             <button className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold">

@@ -6,7 +6,7 @@ import church from "../../assets/images/church.jpg";
 const About = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] mx-auto lg:py-12 lg:max-w-7xl "
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] mx-auto lg:py-12"
       id="about"
     >
       {/* section title */}
@@ -22,7 +22,7 @@ const About = () => {
         <span className="text-center text-neutral-500 text-sm">John 1:9</span>
       </div>
       {/* image wrapper */}
-      <div className="bg-neutral-700 w-full h-42 rounded-md my-4 overflow-hidden">
+      <div className="bg-neutral-700 w-full h-42 lg:h-1/2 rounded-md my-4 overflow-hidden">
         <Image
           src={church}
           alt="Vision"
