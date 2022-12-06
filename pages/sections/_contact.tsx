@@ -8,7 +8,7 @@ const Contact = () => {
     >
       {/* section title */}
       <h3 className="font-regular text-center text-lg text-gray-400">
-        CONTACT INFOMATION
+        CONTACT INFORMATION
       </h3>
       {/* header */}
       <div className="text-center">
