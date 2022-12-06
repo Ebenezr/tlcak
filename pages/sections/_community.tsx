@@ -7,6 +7,7 @@ import men from "../../assets/images/men1.jpg";
 import praise from "../../assets/images/praise.jpg";
 import school from "../../assets/images/school.jpg";
 import women from "../../assets/images/women.jpg";
+import pastoral from "../../assets/images/pastoral.jpg";
 
 const Community = () => {
   return (
@@ -144,6 +145,23 @@ const Community = () => {
               religious education service every sunday for children’s Worship,
               children are implanted with knowledge and strong character{" "}
             </p>
+            <div className={buttonWrapper}>
+              <button className={button}>See More</button>
+            </div>
+          </div>
+          {/* card */}
+          <div className={cardWrapper}>
+            {/* image wrapper */}
+            <div className={imageWrapper}>
+              <Image
+                src={pastoral}
+                alt="school"
+                placeholder="blur"
+                className="object-center object-cover"
+              />
+            </div>
+            <h2 className={cardTitle}>Pastoral</h2>
+            <p className={cardParagraph}>Pastoral Community</p>
             <div className={buttonWrapper}>
               <button className={button}>See More</button>
             </div>

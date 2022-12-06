@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import family from "../../assets/images/family.jpg";
+//import family from "../../assets/images/family.jpg";
 import mission from "../../assets/images/mission.jpg";
 import vision from "../../assets/images/vision.jpg";
+import family from "../../assets/images/pastoral.jpg";
 
 const Mission = () => {
   return (
@@ -62,7 +63,7 @@ const Mission = () => {
               src={mission}
               alt="Vision"
               placeholder="blur"
-              className="object-center object-cover"
+              className="object-center object-cover h-full"
             />
           </div>
           {/* context */}
