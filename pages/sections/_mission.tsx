@@ -8,26 +8,25 @@ import family from "../../assets/images/pastoral.jpg";
 const Mission = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg flex flex-col"
+      className="h-auto py-10  border-1 border-green-200 px-4 bg-white flex  flex-col"
       id="mission"
     >
       {/* vision wrapper */}
-
       {/* section title */}
-      <h3 className="font-regular text-center text-lg text-gray-400">
+      <h3 className="font-sans font-regular tracking-widest text-center text-lg text-neutral-400">
         OUR MISSION
       </h3>
       {/* header */}
       <div className="text-center">
-        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
+        <p className="text-center font-spectral text-xl tracking-wide mt-4 whitespace-pre-line font-medium text-neutral-800">
           Vision and mission about our church
         </p>
       </div>
       {/* wrapper */}
-      <div className="w-full flex flex-col lg:gap-12 md:gap-6 ">
+      <div className="w-full mt-4 flex flex-col lg:gap-12 md:gap-6  ">
         {/* card */}
         <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2  lg:gap-6 lg:w-full ">
-          <p className="font-semibold tracking-wide text-lg lg:hidden">
+          <p className="font-semibold font-sans text-neutral-700 tracking-wide text-lg lg:hidden">
             Vision
           </p>
           {/* image wrapper */}
@@ -36,16 +35,16 @@ const Mission = () => {
               src={vision}
               alt="Vision"
               placeholder="blur"
-              className="object-center object-cover "
+              className="object-center object-cover imgShadow shadow-inner h-full  "
             />
           </div>
           {/* context */}
           <div className="">
-            <p className="font-semibold tracking-wide text-lg lg:text-2xl hidden lg:block">
+            <p className="font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl hidden lg:block">
               Vision
             </p>
 
-            <p className="text-neutral-600 text-sm lg:text-lg">
+            <p className="text-neutral-500 text-sm tracking-wide lg:text-lg font-sans leading-6">
               To reach out and Inspire Believers, Influence the Community, and
               Impact the World with the Word of God by Building Christ-centred,
               Bible-based Believers
@@ -53,8 +52,8 @@ const Mission = () => {
           </div>
         </div>
         {/* card */}
-        <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:gap-6">
-          <p className="font-semibold tracking-wide text-lg lg:hidden">
+        <div className="flex flex-col mt-6 lg:grid lg:grid-cols-2 lg:gap-6">
+          <p className="font-bold text-neutral-700 tracking-wide text-lg font-sans lg:hidden">
             Mission
           </p>
           {/* image wrapper */}
@@ -63,7 +62,7 @@ const Mission = () => {
               src={mission}
               alt="Vision"
               placeholder="blur"
-              className="object-center object-cover h-full"
+              className="object-center object-cover h-full imgShadow shadow-inner"
             />
           </div>
           {/* context */}
@@ -72,7 +71,7 @@ const Mission = () => {
               Mission
             </p>
 
-            <p className="text-neutral-600 text-sm lg:text-lg">
+            <p className="text-neutral-600 tracking-wide font-normal font-sans text-sm lg:text-lg leading-6">
               To Seek, Love and Worship God in the Beauty of His Holiness,
               Preach and Teach the Gospel of Truth making Disciples for Christ
               Jesus, Preparing them for His Kingdom.
@@ -81,7 +80,7 @@ const Mission = () => {
         </div>
         {/* card */}
         <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2 lg:gap-6">
-          <p className="font-semibold tracking-wide text-lg lg:hidden">
+          <p className="font-semibold tracking-wide text-neutral-700 text-lg lg:hidden">
             Core Values
           </p>
           {/* image wrapper */}
@@ -90,32 +89,32 @@ const Mission = () => {
               src={family}
               alt="Vision"
               placeholder="blur"
-              className="object-center object-cover"
+              className="object-center object-cover imgShadow shadow-inner h-full"
             />
           </div>
           {/* context */}
           <div>
-            <p className="font-semibold tracking-wide text-lg lg:text-2xl lg:block hidden">
+            <p className="font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block hidden">
               Core Values
             </p>
-            <p className="font-semibold text-md text-neutral-700 mt-3 lg:mt-1">
+            <p className="font-semibold text-md font-sans tracking-wide text-neutral-600 mt-3 lg:mt-1">
               FAMILY
             </p>
-            <p className="text-neutral-600 text-sm mt-2">
+            <p className="text-neutral-600 font-sans tracking-wide leading-6 text-sm mt-1 leading-6">
               We invest in the lives of others, share each other’s burdens and
               rejoice in each other’s victories considering others more
               important than ourselves.
             </p>
-            <p className="font-semibold text-md text-neutral-700 mt-3 lg:mt-1">
+            <p className="font-semibold text-md font-sans tracking-wide text-neutral-700 mt-3 lg:mt-1">
               ORDER
             </p>
-            <p className="text-neutral-600 text-sm mt-2">
+            <p className="text-neutral-600 font-sans tracking-wide text-sm mt-1 leading-6">
               All things here MUST be done in orderly manner
             </p>
-            <p className="font-semibold text-md text-neutral-700 mt-3 lg:mt-1">
+            <p className="font-semibold font-sans tracking-wide text-md text-neutral-700 mt-3 lg:mt-1">
               SPIRITUAL NOURISHMENT
             </p>
-            <p className="text-neutral-600 text-sm mt-2">
+            <p className="text-neutral-600 font-sans text-sm mt-1 leading-6">
               We endeavor to teach, preach and apply biblical truth wholly as
               written.
             </p>
