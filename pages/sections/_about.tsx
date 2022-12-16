@@ -6,11 +6,11 @@ import church from "../../assets/images/church.jpg";
 const About = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] mx-auto lg:py-12"
+      className="h-auto py-10 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] mx-auto lg:py-12"
       id="about"
     >
       {/* section title */}
-      <h3 className="font-regular text-center text-lg text-gray-400">
+      <h3 className="font-regular font-sans text-center text-lg tracking-widest text-neutral-400">
         ABOUT CHURCH
       </h3>
       {/* header */}
@@ -23,12 +23,12 @@ const About = () => {
       </div>
       {/* image wrapper */}
       <div className="bg-neutral-700 w-full h-42 lg:h-1/2 rounded-md my-4 overflow-hidden">
-        {/* <Image
-          src=""
+        <Image
+          src={church}
           alt="Vision"
           placeholder="blur"
           className="object-center object-cover"
-        /> */}
+        />
       </div>
       {/* text content */}
       <ReadMore>{aboutChurch}</ReadMore>

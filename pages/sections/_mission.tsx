@@ -35,7 +35,7 @@ const Mission = () => {
               src={vision}
               alt="Vision"
               placeholder="blur"
-              className="object-center object-cover imgShadow shadow-inner h-full  "
+              className="object-top object-cover imgShadow shadow-inner h-full  "
             />
           </div>
           {/* context */}
@@ -62,7 +62,7 @@ const Mission = () => {
               src={mission}
               alt="Vision"
               placeholder="blur"
-              className="object-center object-cover h-full imgShadow shadow-inner"
+              className="object-top object-cover h-full imgShadow shadow-inner"
             />
           </div>
           {/* context */}
@@ -89,7 +89,7 @@ const Mission = () => {
               src={family}
               alt="Vision"
               placeholder="blur"
-              className="object-center object-cover imgShadow shadow-inner h-full"
+              className="object-top object-cover imgShadow shadow-inner h-full"
             />
           </div>
           {/* context */}

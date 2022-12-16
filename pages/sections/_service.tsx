@@ -42,7 +42,7 @@ const Service = () => {
             <div className="bg-primary-50 p-3 rounded-full">
               <FaChurch className="text-4xl text-primary-300" />
             </div>
-            <p className="font-bold text-[15px] lg:text-2xl">
+            <p className="font-extrabold text-[15px] lg:text-2xl">
               MID-WEEK SERVICES
             </p>
             <p className="text-[12px] font-semibold text-primary-50 lg:text-xl ">
@@ -57,7 +57,7 @@ const Service = () => {
           </div>
 
           <div className="bg-primary-300 text-white lg:w-2/3 w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
-            <div className="bg-primary-50 p-3 rounded-full">
+            <div className="bg-primary-50 p-1  rounded-full">
               <SocialIcon
                 network="facebook"
                 bgColor="#FFC9D5"

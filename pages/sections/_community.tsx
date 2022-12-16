@@ -12,16 +12,16 @@ import pastoral from "../../assets/images/pastoral.jpg";
 const Community = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh]"
+      className="h-auto py-10  border-1 border-green-200 px-4 bg-bg lg:h-[100vh]"
       id="community"
     >
       {/* section title */}
-      <h3 className="font-regular text-center text-lg text-gray-400">
+      <h3 className="font-regular tracking-widest  text-center text-lg text-neutral-400">
         OUR COMMUNITY
       </h3>
       {/* header */}
       <div className="text-center">
-        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
+        <p className="text-center mt-4 whitespace-pre-line font-spectral text-xl font-semibold text-neutral-700">
           Come join our church family from the old to the young
         </p>
       </div>
@@ -178,9 +178,10 @@ export default Community;
 const cardWrapper =
   "flex flex-col lg:w-2/3 h-5/6 mx-auto py-4 bg-white px-4 rounded-md";
 const imageWrapper =
-  "w-full  lg:h-80 h-56 bg-gray-600 rounded-md overflow-hidden";
+  "w-full  lg:h-80 h-56 bg-neutral-600 rounded-md overflow-hidden";
 const cardTitle = "mt-[32px] text-left text-xl font-bold tracking-wide";
-const cardParagraph = "mt-[12px] text-left";
+const cardParagraph =
+  "mt-[12px] text-left tracking-wide font-sans leading-6 text-neutral-600";
 const buttonWrapper = "mt-[32px] flex flex-start";
 const button =
   "border-2 border-primary px-8 py-[1px] text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary focus:bg-primary focus:text-white hover:text-white";

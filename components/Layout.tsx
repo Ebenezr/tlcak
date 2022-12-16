@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "./Footer";
-import Nav from "./Nav";
+import Navigation from "./Navigation";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 
 interface Layoutprops {
@@ -16,7 +16,7 @@ const Layout: React.FC<Layoutprops> = ({ children }) => {
   };
   return (
     <div className="relative w-screen mx-auto">
-      <Nav />
+      <Navigation />
       <main className="flex flex-col">{children}</main>
       <Footer />
       <button
