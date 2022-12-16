@@ -7,3 +7,40 @@
 .carousel .control-dots .dot {
     background-color: blue;
 }
+
+/* fonts */
+/* spectral */
+@font-face {
+    font-family: Spectral;
+    font-weight: light;
+    font-style: normal;
+    src: url(../assets/Spectral/Spectral-Light.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../assets/Spectral/Spectral-Regular.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    font-weight: medium;
+    font-style: normal;
+    src: url(../assets/Spectral/Spectral-Medium.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    font-weight: bold;
+    font-style: normal;
+    src: url(../assets/Spectral/Spectral-Bold.ttf);
+}
+
+@font-face {
+    font-family: Spectral;
+    font-weight: bolder;
+    font-style: normal;
+    src: url(../assets/Spectral/Spectral-SemiBold.ttf);
+}
