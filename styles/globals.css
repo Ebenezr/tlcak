@@ -44,3 +44,39 @@
     font-style: normal;
     src: url(../assets/Spectral/Spectral-SemiBold.ttf);
 }
+
+/* open sans */
+@font-face {
+    font-family: OpenSans;
+    font-weight: light;
+    font-style: normal;
+    src: url(../assets/OpenSans/OpenSans-Light.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../assets/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: medium;
+    font-style: normal;
+    src: url(../assets/OpenSans/OpenSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: bold;
+    font-style: normal;
+    src: url(../assets/OpenSans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    font-weight: bolder;
+    font-style: normal;
+    src: url(../assets/OpenSans/OpenSans-SemiBold.ttf);
+}
