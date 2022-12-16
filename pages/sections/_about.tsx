@@ -23,12 +23,12 @@ const About = () => {
       </div>
       {/* image wrapper */}
       <div className="bg-neutral-700 w-full h-42 lg:h-1/2 rounded-md my-4 overflow-hidden">
-        <Image
-          src={church}
+        {/* <Image
+          src=""
           alt="Vision"
           placeholder="blur"
           className="object-center object-cover"
-        />
+        /> */}
       </div>
       {/* text content */}
       <ReadMore>{aboutChurch}</ReadMore>

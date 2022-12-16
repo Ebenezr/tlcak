@@ -3,7 +3,7 @@ import React from "react";
 const Contact = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg"
+      className="h-auto py-6 border-1 border-green-200 px-4 bg-white"
       id="contact"
     >
       {/* section title */}
@@ -12,7 +12,7 @@ const Contact = () => {
       </h3>
       {/* header */}
       <div className="text-center">
-        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
+        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700 text-2xl">
           Get in touch with us
         </p>
       </div>

@@ -4,16 +4,16 @@ import ken from "../../assets/images/ken.jpg";
 const Ken = () => {
   return (
     <section
-      className="h-auto py-6 border-1 border-green-200 px-4 bg-bg lg:h-[100vh]"
+      className="h-auto py-10 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] "
       id="ken"
     >
       {/* section title */}
-      <h3 className="font-regular text-center text-lg text-gray-400">
+      <h3 className="font-regular text-center text-lg text-gray-400 font-sans tracking-widest ">
         ABOUT KEN
       </h3>
       {/* header */}
       <div className="text-center">
-        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
+        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-800 font-spectral tracking-wide text-xl">
           Rev. Lukiri Kennedy
         </p>
       </div>
