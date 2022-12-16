@@ -1,3 +1,5 @@
+const { fontFamily } = require("@mui/system");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -16,9 +18,23 @@ module.exports = {
       },
       colors: {
         bg: "#E5EAEB",
-        primary: "#680217",
+        primary: {
+          50: "#FFC9D5",
+          100: "#de879a",
+          200: "#84283c",
+          300: "#680218",
+          400: "#520012",
+          500: "#33000b",
+        },
         primary_var: "#680217",
         accent: "#F6E94F",
+      },
+      fontFamily: {
+        sans: ["var(--font-sans)"],
+        spectral: ["var(--font-spectral)"],
+      },
+      boxShadow: {
+        imgShadow: "inset 0 0 0 1px hsla(0,0%,0%,.1)",
       },
     },
   },
