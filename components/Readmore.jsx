@@ -8,11 +8,11 @@ export const ReadMore = ({ children }) => {
   return (
     <>
       <p className="hidden lg:block text-justify">{text}</p>
-      <p className="text-sm text-justify lg:hidden">
+      <p className="text-sm tracking-wide leading-6 text-justify lg:hidden">
         {isReadMore ? text.slice(0, 220) : text}
         <span
           onClick={toggleReadMore}
-          className="text-neutral-700 cursor-pointer font-bold lg:hidden"
+          className="text-neutral-700 cursor-pointer font-bold tracking-wide lg:hidden"
         >
           {isReadMore ? "  ...read more" : "  show less"}
         </span>
