@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-family: --apple-system, Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 @import "rsuite/dist/rsuite.css";
+
 
 .carousel .control-dots .dot {
     background-color: blue;
@@ -79,4 +87,14 @@
     font-weight: bolder;
     font-style: normal;
     src: url(../assets/OpenSans/OpenSans-SemiBold.ttf);
+}
+
+/* font classes */
+.open-sans {
+    font-family: OpenSans;
+
+}
+
+.spectral {
+    font-family: Spectral;
 }
