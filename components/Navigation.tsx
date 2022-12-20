@@ -8,48 +8,6 @@ import CogIcon from "@rsuite/icons/legacy/Cog";
 const Navigation = () => {
   return (
     <nav className="fixed w-full">
-      <Navbar>
-        <Navbar.Brand>
-          <Link to="hero" spy={true} smooth={true} duration={500}>
-            TLCAK
-          </Link>
-        </Navbar.Brand>
-        <Nav>
-          <Nav.Item icon={<HomeIcon />}>
-            <Link to="hero" spy={true} smooth={true} duration={500}>
-              HOME
-            </Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to="about" spy={true} smooth={true} duration={500}>
-              ABOUT
-            </Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to="mission" spy={true} smooth={true} duration={500}>
-              MISSION
-            </Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to="ken" spy={true} smooth={true} duration={500}>
-              KEN
-            </Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to="service" spy={true} smooth={true} duration={500}>
-              SERVICE
-            </Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Link to="community" spy={true} smooth={true} duration={500}>
-              COMMUNITY
-            </Link>
-          </Nav.Item>
-        </Nav>
-        <Nav pullRight>
-          <Nav.Item>JOIN US</Nav.Item>
-        </Nav>
-      </Navbar>
       {/* mobile nav wrapper */}
       {/* <div className="flex items-center justify-between px-4 w-screen bg-neutral-600/50 hidden ">
         <p className="text-2xl font-bold">TLCAK</p>

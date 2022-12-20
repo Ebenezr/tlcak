@@ -2,12 +2,13 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
-import youth from "../../assets/images/youth.jpg";
+import youth from "../../assets/images/youth.png";
 import men from "../../assets/images/men1.jpg";
 import praise from "../../assets/images/praise.jpg";
-import school from "../../assets/images/school.jpg";
+import school from "../../assets/images/school.png";
 import women from "../../assets/images/women.jpg";
 import pastoral from "../../assets/images/pastoral.jpg";
+import hospitality from "../../assets/images/hospitality.png";
 
 const Community = () => {
   return (
@@ -54,11 +55,7 @@ const Community = () => {
               />
             </div>
             <h2 className={cardTitle}>Children&apos;s Worship</h2>
-            <p className={cardParagraph}>
-              Children’s worship, or previously called Sunday school, is a
-              religious education service every sunday for children’s Worship,
-              children are implanted with knowledge and strong character
-            </p>
+            <p className={cardParagraph}>Children’s worship,</p>
             {/* button wrapper */}
             <div className={buttonWrapper}>
               <button className={button}>See More</button>
@@ -76,11 +73,7 @@ const Community = () => {
               />
             </div>
             <h2 className={cardTitle}>Youth&apos;s Worship</h2>
-            <p className={cardParagraph}>
-              Children’s worship, or previously called Sunday school, is a
-              religious education service every sunday for children’s Worship,
-              children are implanted with knowledge and strong character{" "}
-            </p>
+            <p className={cardParagraph}>Children’s worship,</p>
             <div className={buttonWrapper}>
               <button className={button}>See More</button>
             </div>
@@ -97,11 +90,7 @@ const Community = () => {
               />
             </div>
             <h2 className={cardTitle}>Women&apos;s Worship</h2>
-            <p className={cardParagraph}>
-              Children’s worship, or previously called Sunday school, is a
-              religious education service every sunday for children’s Worship,
-              children are implanted with knowledge and strong character{" "}
-            </p>
+            <p className={cardParagraph}>Children’s worship,</p>
             <div className={buttonWrapper}>
               <button className={button}>See More</button>
             </div>
@@ -118,11 +107,7 @@ const Community = () => {
               />
             </div>
             <h2 className={cardTitle}>Men&apos;s Worship</h2>
-            <p className={cardParagraph}>
-              Children’s worship, or previously called Sunday school, is a
-              religious education service every sunday for children’s Worship,
-              children are implanted with knowledge and strong character{" "}
-            </p>
+            <p className={cardParagraph}>Children’s worship,</p>
             <div className={buttonWrapper}>
               <button className={button}>See More</button>
             </div>
@@ -139,11 +124,7 @@ const Community = () => {
               />
             </div>
             <h2 className={cardTitle}>Praise and Worship</h2>
-            <p className={cardParagraph}>
-              Children’s worship, or previously called Sunday school, is a
-              religious education service every sunday for children’s Worship,
-              children are implanted with knowledge and strong character{" "}
-            </p>
+            <p className={cardParagraph}>Children’s worship,</p>
             <div className={buttonWrapper}>
               <button className={button}>See More</button>
             </div>
@@ -161,6 +142,23 @@ const Community = () => {
             </div>
             <h2 className={cardTitle}>Pastoral</h2>
             <p className={cardParagraph}>Pastoral Community</p>
+            <div className={buttonWrapper}>
+              <button className={button}>See More</button>
+            </div>
+          </div>
+          {/* card */}
+          <div className={cardWrapper}>
+            {/* image wrapper */}
+            <div className={imageWrapper}>
+              <Image
+                src={hospitality}
+                alt="school"
+                placeholder="blur"
+                className="object-center object-cover h-full"
+              />
+            </div>
+            <h2 className={cardTitle}>Hospitality</h2>
+            <p className={cardParagraph}>Hospitality Community</p>
             <div className={buttonWrapper}>
               <button className={button}>See More</button>
             </div>
