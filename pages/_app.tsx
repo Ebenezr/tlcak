@@ -4,11 +4,7 @@ import type { AppProps } from "next/app";
 import spectral from "@next/font/local";
 import open_sans from "@next/font/local";
 
-// const spectral = Inter({
-//   subsets: ["latin"],
-//   variable: "--font-spectral",
-// });
-const Spectral = open_sans({
+const Spectral = spectral({
   src: [
     {
       path: "../assets/Spectral/Spectral-Light.ttf",

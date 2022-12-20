@@ -26,7 +26,6 @@ const Community = () => {
         </p>
       </div>
       {/* image wrapper */}
-      {/* ty */}
       {/* cards wrapper */}
       <div className="carousel-wrapper w-full mt-6">
         <Carousel

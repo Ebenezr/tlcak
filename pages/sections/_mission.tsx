@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-//import family from "../../assets/images/family.jpg";
 import mission from "../../assets/images/mission.jpg";
 import vision from "../../assets/images/vision.jpg";
 import family from "../../assets/images/pastoral.jpg";
