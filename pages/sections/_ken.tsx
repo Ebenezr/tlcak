@@ -3,38 +3,37 @@ import Image from "next/image";
 import ken from "../../assets/images/ken.jpg";
 const Ken = () => {
   return (
-    <section
-      className="h-auto py-10 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] "
-      id="ken"
-    >
-      {/* section title */}
-      <h3 className="font-regular text-center text-lg text-gray-400 font-sans tracking-widest ">
-        ABOUT KEN
-      </h3>
-      {/* header */}
-      <div className="text-center">
-        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-800 font-spectral tracking-wide text-xl">
-          Rev. Lukiri Kennedy
-        </p>
-      </div>
-      {/* content wrapper */}
-      <div className="grid  lg:grid-cols-2 md:grid-cols-2 lg:mt-12 md:mt-10 lg:h-4/5">
-        {/* image wrapper */}
-        <div className="lg:grid lg:place-items-center">
-          <div className="bg-primary mx-auto w-36 lg:w-72 h-36 lg:h-72 grid place-items-center rounded-full my-4">
-            <div className="bg-white mx-auto w-32 h-32 lg:w-64 lg:h-64 rounded-full  overflow-hidden">
-              <Image
-                src={ken}
-                alt="Rev"
-                placeholder="blur"
-                className="object-fill h-full w-auto"
-              />
+    <section className=" bg-bg lg:h-[100vh] " id="ken">
+      <div className="lg:mx-auto lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
+        {/* section title */}
+        <h3 className="font-regular text-center text-lg text-gray-400 font-sans tracking-widest ">
+          ABOUT KEN
+        </h3>
+        {/* header */}
+        <div className="text-center">
+          <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-800 font-spectral tracking-wide text-xl">
+            Rev. Lukiri Kennedy
+          </p>
+        </div>
+        {/* content wrapper */}
+        <div className="grid  lg:grid-cols-2 md:grid-cols-2 lg:mt-12 md:mt-10 lg:h-4/5">
+          {/* image wrapper */}
+          <div className="lg:grid lg:place-items-center">
+            <div className="bg-primary mx-auto w-36 lg:w-72 h-36 lg:h-72 grid place-items-center rounded-full my-4">
+              <div className="bg-white mx-auto w-32 h-32 lg:w-64 lg:h-64 rounded-full  overflow-hidden">
+                <Image
+                  src={ken}
+                  alt="Rev"
+                  placeholder="blur"
+                  className="object-fill h-full w-auto"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="lg:p-8 md:p-6 lg:my-auto md:my-auto">
-          {/* text content */}
-          <ReadMore>{aboutKen}</ReadMore>
+          <div className="lg:p-8 md:p-6 lg:my-auto md:my-auto">
+            {/* text content */}
+            <ReadMore>{aboutKen}</ReadMore>
+          </div>
         </div>
       </div>
     </section>

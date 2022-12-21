@@ -5,33 +5,32 @@ import church from "../../assets/images/church.jpg";
 
 const About = () => {
   return (
-    <section
-      className="h-auto py-10 border-1 border-green-200 px-4 bg-bg lg:h-[100vh] mx-auto lg:py-12"
-      id="about"
-    >
-      {/* section title */}
-      <h3 className="font-regular font-sans text-center text-lg tracking-widest text-neutral-400">
-        ABOUT CHURCH
-      </h3>
-      {/* header */}
-      <div className="text-center">
-        <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
-          “That was the True Light, Which lighteth every man That cometh into
-          the world.”
-        </p>
-        <span className="text-center text-neutral-500 text-sm">John 1:9</span>
+    <section className=" bg-bg " id="about">
+      <div className="lg:mx-auto lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
+        {/* section title */}
+        <h3 className="font-regular font-sans text-center text-lg tracking-widest text-neutral-400">
+          ABOUT CHURCH
+        </h3>
+        {/* header */}
+        <div className="text-center">
+          <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
+            “That was the True Light, Which lighteth every man That cometh into
+            the world.”
+          </p>
+          <span className="text-center text-neutral-500 text-sm">John 1:9</span>
+        </div>
+        {/* image wrapper */}
+        <div className="bg-neutral-700 w-full h-42 lg:h-1/2 rounded-md my-4 overflow-hidden">
+          <Image
+            src={church}
+            alt="Vision"
+            placeholder="blur"
+            className="object-center object-cover"
+          />
+        </div>
+        {/* text content */}
+        <ReadMore>{aboutChurch}</ReadMore>
       </div>
-      {/* image wrapper */}
-      <div className="bg-neutral-700 w-full h-42 lg:h-1/2 rounded-md my-4 overflow-hidden">
-        <Image
-          src={church}
-          alt="Vision"
-          placeholder="blur"
-          className="object-center object-cover"
-        />
-      </div>
-      {/* text content */}
-      <ReadMore>{aboutChurch}</ReadMore>
     </section>
   );
 };

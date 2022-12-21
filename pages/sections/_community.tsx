@@ -12,158 +12,157 @@ import hospitality from "../../assets/images/hospitality.png";
 
 const Community = () => {
   return (
-    <section
-      className="h-auto py-10  border-1 border-green-200 px-4 bg-bg lg:h-[100vh]"
-      id="community"
-    >
-      {/* section title */}
-      <h3 className="font-regular tracking-widest  text-center text-lg text-neutral-400">
-        OUR COMMUNITY
-      </h3>
-      {/* header */}
-      <div className="text-center">
-        <p className="text-center mt-4 whitespace-pre-line font-spectral text-xl font-semibold text-neutral-700">
-          Come join our church family from the old to the young
-        </p>
-      </div>
-      {/* image wrapper */}
-      {/* cards wrapper */}
-      <div className="carousel-wrapper w-full mt-6">
-        <Carousel
-          autoPlay={true}
-          centerMode={true}
-          emulateTouch={true}
-          infiniteLoop={true}
-          stopOnHover={true}
-          centerSlidePercentage={100}
-          interval={5000}
-          transitionTime={1000}
-          showStatus={false}
-          showArrows={false}
-          useKeyboardArrows={true}
-          className=" flex flex-col w-full mx-auto h-[32rem] lg:h-[40rem]"
-        >
-          {/* card */}
-          <div className={cardWrapper}>
-            {/* image wrapper */}
-            <div className={imageWrapper}>
-              <Image
-                src={school}
-                alt="school"
-                placeholder="blur"
-                className="object-center object-cover"
-              />
+    <section className="h-auto py-10 " id="community">
+      <div className="lg:mx-auto lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
+        {/* section title */}
+        <h3 className="font-regular tracking-widest  text-center text-lg text-neutral-400">
+          OUR COMMUNITY
+        </h3>
+        {/* header */}
+        <div className="text-center">
+          <p className="text-center mt-4 whitespace-pre-line font-spectral text-xl font-semibold text-neutral-700">
+            Come join our church family from the old to the young
+          </p>
+        </div>
+        {/* image wrapper */}
+        {/* cards wrapper */}
+        <div className="carousel-wrapper w-full mt-6">
+          <Carousel
+            autoPlay={true}
+            centerMode={true}
+            emulateTouch={true}
+            infiniteLoop={true}
+            stopOnHover={true}
+            centerSlidePercentage={100}
+            interval={5000}
+            transitionTime={1000}
+            showStatus={false}
+            showArrows={false}
+            useKeyboardArrows={true}
+            className=" flex flex-col w-full mx-auto h-[32rem] lg:h-[40rem]"
+          >
+            {/* card */}
+            <div className={cardWrapper}>
+              {/* image wrapper */}
+              <div className={imageWrapper}>
+                <Image
+                  src={school}
+                  alt="school"
+                  placeholder="blur"
+                  className="object-center object-cover"
+                />
+              </div>
+              <h2 className={cardTitle}>Children&apos;s Worship</h2>
+              <p className={cardParagraph}>Children’s worship,</p>
+              {/* button wrapper */}
+              <div className={buttonWrapper}>
+                <button className={button}>See More</button>
+              </div>
             </div>
-            <h2 className={cardTitle}>Children&apos;s Worship</h2>
-            <p className={cardParagraph}>Children’s worship,</p>
-            {/* button wrapper */}
-            <div className={buttonWrapper}>
-              <button className={button}>See More</button>
+            {/* card */}
+            <div className={cardWrapper}>
+              {/* image wrapper */}
+              <div className={imageWrapper}>
+                <Image
+                  src={youth}
+                  alt="school"
+                  placeholder="blur"
+                  className="object-center object-cover"
+                />
+              </div>
+              <h2 className={cardTitle}>Youth&apos;s Worship</h2>
+              <p className={cardParagraph}>Children’s worship,</p>
+              <div className={buttonWrapper}>
+                <button className={button}>See More</button>
+              </div>
             </div>
-          </div>
-          {/* card */}
-          <div className={cardWrapper}>
-            {/* image wrapper */}
-            <div className={imageWrapper}>
-              <Image
-                src={youth}
-                alt="school"
-                placeholder="blur"
-                className="object-center object-cover"
-              />
+            {/* card */}
+            <div className={cardWrapper}>
+              {/* image wrapper */}
+              <div className={imageWrapper}>
+                <Image
+                  src={women}
+                  alt="school"
+                  placeholder="blur"
+                  className="object-center object-cover"
+                />
+              </div>
+              <h2 className={cardTitle}>Women&apos;s Worship</h2>
+              <p className={cardParagraph}>Children’s worship,</p>
+              <div className={buttonWrapper}>
+                <button className={button}>See More</button>
+              </div>
             </div>
-            <h2 className={cardTitle}>Youth&apos;s Worship</h2>
-            <p className={cardParagraph}>Children’s worship,</p>
-            <div className={buttonWrapper}>
-              <button className={button}>See More</button>
+            {/* card */}
+            <div className={cardWrapper}>
+              {/* image wrapper */}
+              <div className={imageWrapper}>
+                <Image
+                  src={men}
+                  alt="school"
+                  placeholder="blur"
+                  className="object-center object-cover"
+                />
+              </div>
+              <h2 className={cardTitle}>Men&apos;s Worship</h2>
+              <p className={cardParagraph}>Children’s worship,</p>
+              <div className={buttonWrapper}>
+                <button className={button}>See More</button>
+              </div>
             </div>
-          </div>
-          {/* card */}
-          <div className={cardWrapper}>
-            {/* image wrapper */}
-            <div className={imageWrapper}>
-              <Image
-                src={women}
-                alt="school"
-                placeholder="blur"
-                className="object-center object-cover"
-              />
+            {/* card */}
+            <div className={cardWrapper}>
+              {/* image wrapper */}
+              <div className={imageWrapper}>
+                <Image
+                  src={praise}
+                  alt="school"
+                  placeholder="blur"
+                  className="object-center object-cover h-full"
+                />
+              </div>
+              <h2 className={cardTitle}>Praise and Worship</h2>
+              <p className={cardParagraph}>Children’s worship,</p>
+              <div className={buttonWrapper}>
+                <button className={button}>See More</button>
+              </div>
             </div>
-            <h2 className={cardTitle}>Women&apos;s Worship</h2>
-            <p className={cardParagraph}>Children’s worship,</p>
-            <div className={buttonWrapper}>
-              <button className={button}>See More</button>
+            {/* card */}
+            <div className={cardWrapper}>
+              {/* image wrapper */}
+              <div className={imageWrapper}>
+                <Image
+                  src={pastoral}
+                  alt="school"
+                  placeholder="blur"
+                  className="object-center object-cover"
+                />
+              </div>
+              <h2 className={cardTitle}>Pastoral</h2>
+              <p className={cardParagraph}>Pastoral Community</p>
+              <div className={buttonWrapper}>
+                <button className={button}>See More</button>
+              </div>
             </div>
-          </div>
-          {/* card */}
-          <div className={cardWrapper}>
-            {/* image wrapper */}
-            <div className={imageWrapper}>
-              <Image
-                src={men}
-                alt="school"
-                placeholder="blur"
-                className="object-center object-cover"
-              />
+            {/* card */}
+            <div className={cardWrapper}>
+              {/* image wrapper */}
+              <div className={imageWrapper}>
+                <Image
+                  src={hospitality}
+                  alt="school"
+                  placeholder="blur"
+                  className="object-center object-cover h-full"
+                />
+              </div>
+              <h2 className={cardTitle}>Hospitality</h2>
+              <p className={cardParagraph}>Hospitality Community</p>
+              <div className={buttonWrapper}>
+                <button className={button}>See More</button>
+              </div>
             </div>
-            <h2 className={cardTitle}>Men&apos;s Worship</h2>
-            <p className={cardParagraph}>Children’s worship,</p>
-            <div className={buttonWrapper}>
-              <button className={button}>See More</button>
-            </div>
-          </div>
-          {/* card */}
-          <div className={cardWrapper}>
-            {/* image wrapper */}
-            <div className={imageWrapper}>
-              <Image
-                src={praise}
-                alt="school"
-                placeholder="blur"
-                className="object-center object-cover h-full"
-              />
-            </div>
-            <h2 className={cardTitle}>Praise and Worship</h2>
-            <p className={cardParagraph}>Children’s worship,</p>
-            <div className={buttonWrapper}>
-              <button className={button}>See More</button>
-            </div>
-          </div>
-          {/* card */}
-          <div className={cardWrapper}>
-            {/* image wrapper */}
-            <div className={imageWrapper}>
-              <Image
-                src={pastoral}
-                alt="school"
-                placeholder="blur"
-                className="object-center object-cover"
-              />
-            </div>
-            <h2 className={cardTitle}>Pastoral</h2>
-            <p className={cardParagraph}>Pastoral Community</p>
-            <div className={buttonWrapper}>
-              <button className={button}>See More</button>
-            </div>
-          </div>
-          {/* card */}
-          <div className={cardWrapper}>
-            {/* image wrapper */}
-            <div className={imageWrapper}>
-              <Image
-                src={hospitality}
-                alt="school"
-                placeholder="blur"
-                className="object-center object-cover h-full"
-              />
-            </div>
-            <h2 className={cardTitle}>Hospitality</h2>
-            <p className={cardParagraph}>Hospitality Community</p>
-            <div className={buttonWrapper}>
-              <button className={button}>See More</button>
-            </div>
-          </div>
-        </Carousel>
+          </Carousel>
+        </div>
       </div>
     </section>
   );

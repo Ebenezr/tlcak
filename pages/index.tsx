@@ -19,7 +19,7 @@ export default function Home() {
         {/* home page */}
         <Hero />
         {/* about church */}
-        <div className="lg:max-w-screen-2xl lg:mx-auto md:max-w-5xl">
+        <div className=" ">
           <About />
           {/* mission statement */}
           <Mission />
