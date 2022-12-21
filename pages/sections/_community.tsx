@@ -120,7 +120,7 @@ const Community = () => {
                 src={praise}
                 alt="school"
                 placeholder="blur"
-                className="object-center object-cover"
+                className="object-center object-cover h-full"
               />
             </div>
             <h2 className={cardTitle}>Praise and Worship</h2>
