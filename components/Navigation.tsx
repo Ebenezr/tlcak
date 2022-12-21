@@ -47,7 +47,7 @@ const Navigation = () => {
             smooth={true}
             duration={500}
             offset={-100}
-            //   onSetActive={''}
+            // onSetActive='ddd'
           >
             Mission
           </Link>
@@ -103,108 +103,10 @@ const Navigation = () => {
       </div>
       {/* join us */}
       <div>
-        <button className="bg-primary-300 px-4 py-[2px] text-white rounded-md font-sans ">
+        <button className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300">
           Join Us
         </button>
       </div>
-
-      {/* mobile nav wrapper */}
-      {/* <div className="flex items-center justify-between px-4 w-screen bg-neutral-600/50 hidden ">
-        <p className="text-2xl font-bold">TLCAK</p>
-        <button>
-          <MdOutlineMenu className="text-3xl" />
-        </button>
-      </div>
-      {/* desktop nav */}
-      {/* <div className="">
-        <button>
-          <Link
-            className="hover:cursor-pointer"
-            to="hero"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            Home
-          </Link>
-        </button>
-
-        <button>
-          <Link
-            className="hover:cursor-pointer"
-            to="about"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}
-          >
-            About
-          </Link>
-        </button>
-        <button>
-          <Link
-            className="hover:cursor-pointer"
-            to="mission"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}
-            //   onSetActive={''}
-          >
-            Mission
-          </Link>
-        </button>
-        <button>
-          <Link
-            className="test6"
-            to="ken"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}
-          >
-            Ken
-          </Link>
-        </button>
-        <button>
-          <Link
-            className="hover:cursor-pointer"
-            to="service"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}
-          >
-            Service
-          </Link>
-        </button>
-        <button>
-          <Link
-            className="hover:cursor-pointer"
-            to="community"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}
-          >
-            Community
-          </Link>
-        </button>
-
-        <button>
-          <Link
-            className="hover:cursor-pointer"
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-100}
-          >
-            Contact
-          </Link>
-        </button>
-      </div>  */}
-      {/* <Link href="#contact">Contact</Link> */}
     </nav>
   );
 };
@@ -212,4 +114,4 @@ const Navigation = () => {
 export default Navigation;
 
 const linkStyle =
-  "hover:cursor-pointer text-neutral-400 hover:text-primary-200 hover:font-black ";
+  "hover:cursor-pointer text-neutral-400 hover:text-primary-200  focus:text-primary-200 ";
