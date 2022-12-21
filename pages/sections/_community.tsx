@@ -88,7 +88,7 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Women&apos;s Worship</h2>
-              <p className={cardParagraph}>Children’s worship,</p>
+              <p className={cardParagraph}>Women’s community,</p>
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -105,7 +105,7 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Men&apos;s Worship</h2>
-              <p className={cardParagraph}>Children’s worship,</p>
+              <p className={cardParagraph}>Men’s community,</p>
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -122,7 +122,7 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Praise and Worship</h2>
-              <p className={cardParagraph}>Children’s worship,</p>
+              <p className={cardParagraph}>Praise and Worship’s worship,</p>
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
