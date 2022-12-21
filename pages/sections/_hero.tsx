@@ -8,7 +8,7 @@ const Hero = () => {
       id="hero"
     >
       <div className="px-8 my-2 mt-10 ">
-        <div className="  lg:w-1/3 mx-auto lg:absolute lg:left-1/2 lg:top-1/3 lg:-translate-x-1/2">
+        <div className="md:w-1/2  lg:w-1/3 mx-auto lg:absolute lg:left-1/2 lg:top-1/3 lg:-translate-x-1/2">
           <Image
             src={logo}
             alt="TLCAK"

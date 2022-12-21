@@ -126,4 +126,4 @@ const Mission = () => {
 export default Mission;
 
 const imageWrapper =
-  "bg-neutral-700 w-full h-48 lg:h-52 rounded-md mt-3 mb-2 lg:mt-0 lg:mb-0 overflow-hidden";
+  "bg-neutral-700 w-full h-48 md:h-60 lg:h-52 rounded-md mt-3 mb-2 lg:mt-0 lg:mb-0 overflow-hidden";
