@@ -12,6 +12,8 @@ export default function Home() {
   return (
     <div className="bg-bg">
       <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>TLCAK</title>
       </Head>
       {/* main container wrapper */}

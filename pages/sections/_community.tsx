@@ -39,7 +39,7 @@ const Community = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full mx-auto h-[32rem] lg:h-[40rem]"
+            className=" flex flex-col w-full mx-auto h-[32rem] lg:h-[40rem] md:h-[30rem]"
           >
             {/* card */}
             <div className={cardWrapper}>
@@ -55,9 +55,9 @@ const Community = () => {
               <h2 className={cardTitle}>Children&apos;s Worship</h2>
               <p className={cardParagraph}>Children’s worship,</p>
               {/* button wrapper */}
-              <div className={buttonWrapper}>
+              {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div>
+              </div> */}
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -72,9 +72,9 @@ const Community = () => {
               </div>
               <h2 className={cardTitle}>Youth&apos;s Worship</h2>
               <p className={cardParagraph}>Children’s worship,</p>
-              <div className={buttonWrapper}>
+              {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div>
+              </div> */}
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -89,9 +89,9 @@ const Community = () => {
               </div>
               <h2 className={cardTitle}>Women&apos;s Worship</h2>
               <p className={cardParagraph}>Children’s worship,</p>
-              <div className={buttonWrapper}>
+              {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div>
+              </div> */}
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -106,9 +106,9 @@ const Community = () => {
               </div>
               <h2 className={cardTitle}>Men&apos;s Worship</h2>
               <p className={cardParagraph}>Children’s worship,</p>
-              <div className={buttonWrapper}>
+              {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div>
+              </div> */}
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -123,9 +123,9 @@ const Community = () => {
               </div>
               <h2 className={cardTitle}>Praise and Worship</h2>
               <p className={cardParagraph}>Children’s worship,</p>
-              <div className={buttonWrapper}>
+              {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div>
+              </div> */}
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -140,9 +140,9 @@ const Community = () => {
               </div>
               <h2 className={cardTitle}>Pastoral</h2>
               <p className={cardParagraph}>Pastoral Community</p>
-              <div className={buttonWrapper}>
+              {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div>
+              </div> */}
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -157,9 +157,9 @@ const Community = () => {
               </div>
               <h2 className={cardTitle}>Hospitality</h2>
               <p className={cardParagraph}>Hospitality Community</p>
-              <div className={buttonWrapper}>
+              {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div>
+              </div> */}
             </div>
           </Carousel>
         </div>
@@ -174,7 +174,7 @@ export default Community;
 const cardWrapper =
   "flex flex-col lg:w-2/3 h-5/6 mx-auto py-4 bg-white px-4 rounded-md";
 const imageWrapper =
-  "w-full  lg:h-80 h-56 bg-neutral-600 rounded-md overflow-hidden";
+  "w-full  lg:h-80 h-56 md:h-[25rem] bg-neutral-600 rounded-md overflow-hidden";
 const cardTitle = "mt-[32px] text-left text-xl font-bold tracking-wide";
 const cardParagraph =
   "mt-[12px] text-left tracking-wide font-sans leading-6 text-neutral-600";
