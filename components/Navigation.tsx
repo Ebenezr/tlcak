@@ -34,7 +34,7 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-50}
           >
             About
           </Link>
@@ -46,7 +46,7 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-50}
             // onSetActive='ddd'
           >
             Mission
@@ -59,7 +59,7 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-50}
           >
             About Ken
           </Link>
@@ -71,7 +71,7 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-50}
           >
             Service
           </Link>
@@ -83,7 +83,7 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-50}
           >
             Community
           </Link>
@@ -95,7 +95,7 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={-10}
           >
             Contact
           </Link>
