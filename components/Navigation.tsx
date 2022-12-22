@@ -11,7 +11,7 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="fixed w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-50">
+    <nav className="fixed w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-50 shadow-md">
       {/* logo */}
       <div>
         <h2 className="font-sans text-primary-300 text-lg font-extrabold tracking-wide ">
@@ -27,6 +27,7 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
+            activeClass={activeLink}
           >
             Home
           </Link>
@@ -38,7 +39,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-50}
+            offset={-45}
+            activeClass={activeLink}
           >
             About
           </Link>
@@ -50,8 +52,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-50}
-            // onSetActive='ddd'
+            offset={-45}
+            activeClass={activeLink}
           >
             Mission
           </Link>
@@ -63,7 +65,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-50}
+            offset={-45}
+            activeClass={activeLink}
           >
             About Ken
           </Link>
@@ -75,7 +78,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-50}
+            offset={-45}
+            activeClass={activeLink}
           >
             Service
           </Link>
@@ -87,7 +91,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-50}
+            offset={-45}
+            activeClass={activeLink}
           >
             Community
           </Link>
@@ -99,7 +104,8 @@ const Navigation = () => {
             spy={true}
             smooth={true}
             duration={500}
-            offset={-10}
+            offset={-45}
+            activeClass={activeLink}
           >
             Contact
           </Link>
@@ -156,4 +162,7 @@ const Navigation = () => {
 export default Navigation;
 
 const linkStyle =
-  "hover:cursor-pointer text-neutral-400 hover:text-primary-200 px-3 focus:text-primary-200 ";
+  "hover:cursor-pointer text-neutral-400 hover:text-primary-200 px-3 focus:text-primary-200 tracking-wide ";
+
+const activeLink =
+  "relative text-primary-200 font-bold after:content=[''] after:absolute after:w-full after:bg-primary-200 after:h-[3px] after:mx-auto after:top-8 after:left-1/2 after:-translate-x-1/2 after:transition after:duration-150 after:ease-in-out";

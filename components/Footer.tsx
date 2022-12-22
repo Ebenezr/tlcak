@@ -19,6 +19,7 @@ const Footer = () => {
       {/* logo */}
       <div className="lg:flex">
         <div className="flex flex-col lg:w-1/3 md:mx-auto">
+          {/* logo */}
           <div className="px-8 my-2">
             <Image
               src={logo}
@@ -30,7 +31,7 @@ const Footer = () => {
             />
           </div>
           {/* icons */}
-          <div className="px-8 flex items-center justify-between gap-2 w-full mb-6">
+          <div className="px-8 flex items-center justify-between gap-2 w-full mb-6 lg:mt-4">
             <SocialIcon network="twitter" bgColor="#fff" />
             <SocialIcon network="youtube" bgColor="#fff" />
             <SocialIcon network="instagram" bgColor="#fff" />
@@ -135,7 +136,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-white text-primary px-6 py-1 rounded-md text-2xl"
+              className="bg-white text-primary-300 px-6 py-1 rounded-md text-2xl"
             >
               Subscribe
             </button>

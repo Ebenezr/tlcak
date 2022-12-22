@@ -20,12 +20,12 @@ const Ken = () => {
           {/* image wrapper */}
           <div className="lg:grid lg:place-items-center">
             <div className="bg-primary mx-auto w-36 lg:w-72 h-36 lg:h-72 grid place-items-center rounded-full my-4">
-              <div className="bg-white mx-auto w-32 h-32 lg:w-64 lg:h-64 rounded-full  overflow-hidden">
+              <div className="bg-white mx-auto w-32 h-32 lg:w-64 lg:h-64 shadow-inner rounded-full  overflow-hidden">
                 <Image
                   src={ken}
                   alt="Rev"
                   placeholder="blur"
-                  className="object-fill h-full w-auto"
+                  className="object-fill h-full shadow-inner shadow-md w-auto"
                 />
               </div>
             </div>
