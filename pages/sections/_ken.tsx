@@ -4,7 +4,7 @@ import ken from "../../assets/images/ken.jpg";
 const Ken = () => {
   return (
     <section className=" bg-bg lg:h-[100vh] " id="ken">
-      <div className="lg:mx-auto lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
+      <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
         {/* section title */}
         <h3 className="font-regular text-center text-lg text-gray-400 font-sans tracking-widest ">
           ABOUT KEN

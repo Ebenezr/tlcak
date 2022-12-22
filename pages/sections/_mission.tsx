@@ -7,7 +7,7 @@ import family from "../../assets/images/pastoral.jpg";
 const Mission = () => {
   return (
     <section className=" bg-white" id="mission">
-      <div className="lg:mx-auto lg:max-w-6xl flex  flex-col  h-auto py-10 px-4">
+      <div className="mx-auto  md:max-w-2xl lg:max-w-6xl flex  flex-col  h-auto py-10 px-4">
         {/* vision wrapper */}
         {/* section title */}
         <h3 className="font-sans font-regular tracking-widest text-center text-lg text-neutral-400">

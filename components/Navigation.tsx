@@ -7,7 +7,7 @@ import CogIcon from "@rsuite/icons/legacy/Cog";
 
 const Navigation = () => {
   return (
-    <nav className="fixed w-full bg-white h-12 flex items-center justify-around z-50">
+    <nav className="fixed w-full bg-white h-12 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-50">
       {/* logo */}
       <div>
         <h2 className="font-sans text-primary-300 text-lg font-extrabold tracking-wide ">
@@ -15,7 +15,7 @@ const Navigation = () => {
         </h2>
       </div>
       {/* link list */}
-      <div className="flex items-center gap-3">
+      <div className="flex items-center lg:gap-4  md:gap-4 hidden md:block lg:block">
         <span>
           <Link
             className={linkStyle}
@@ -102,10 +102,13 @@ const Navigation = () => {
         </span>
       </div>
       {/* join us */}
-      <div>
+      <div className="hidden md:block lg:block">
         <button className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300">
           Join Us
         </button>
+      </div>
+      <div className="md:hidden lg:hidden">
+        <button>menu</button>
       </div>
     </nav>
   );
@@ -114,4 +117,4 @@ const Navigation = () => {
 export default Navigation;
 
 const linkStyle =
-  "hover:cursor-pointer text-neutral-400 hover:text-primary-200  focus:text-primary-200 ";
+  "hover:cursor-pointer text-neutral-400 hover:text-primary-200 px-3 focus:text-primary-200 ";

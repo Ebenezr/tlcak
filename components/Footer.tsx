@@ -18,12 +18,12 @@ const Footer = () => {
     <footer className="bg-primary-300 flex flex-col justify-center items-center text-center text-white px-4 relative py-10 lg:h-1/2 lg:flex-col lg:justify-between lg:px-12">
       {/* logo */}
       <div className="lg:flex">
-        <div className="flex flex-col lg:w-1/3">
+        <div className="flex flex-col lg:w-1/3 md:mx-auto">
           <div className="px-8 my-2">
             <Image
               src={logo}
               alt="TLCAK"
-              className="object-cover"
+              className="object-cover md:w-4/5 md:mx-auto"
               sizes="(max-width: 768px) 80vw,
               (max-width: 1200px) 50vw,
               33vw"
@@ -82,7 +82,7 @@ const Footer = () => {
               duration={500}
               offset={-100}
             >
-              Ken
+              About Ken
             </Link>
 
             <Link
