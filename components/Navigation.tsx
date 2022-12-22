@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import { Link } from "react-scroll";
 import { Navbar, Nav } from "rsuite";
@@ -6,8 +6,12 @@ import HomeIcon from "@rsuite/icons/legacy/Home";
 import CogIcon from "@rsuite/icons/legacy/Cog";
 
 const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(true);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <nav className="fixed w-full bg-white h-12 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-50">
+    <nav className="fixed w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-50">
       {/* logo */}
       <div>
         <h2 className="font-sans text-primary-300 text-lg font-extrabold tracking-wide ">
@@ -108,7 +112,42 @@ const Navigation = () => {
         </button>
       </div>
       <div className="md:hidden lg:hidden">
-        <button>menu</button>
+        <button
+          onClick={toggleMenu}
+          className="transition duration-150 ease-in-out"
+        >
+          {isOpen ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6 transition duration-150 ease-in-out"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6 transition duration-150 ease-in-out"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          )}
+        </button>
       </div>
     </nav>
   );

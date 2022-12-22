@@ -12,7 +12,7 @@ import hospitality from "../../assets/images/hospitality.png";
 
 const Community = () => {
   return (
-    <section className="h-auto py-10 " id="community">
+    <section className="h-auto " id="community">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
         {/* section title */}
         <h3 className="font-regular tracking-widest  text-center text-lg text-neutral-400">
