@@ -19,7 +19,7 @@ const Footer = () => {
       {/* logo */}
       <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-6xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6">
         {/* contact info */}
-        <div className=" lg:w-1/3 md:mx-auto text-left flex flex-col gap-2">
+        <div className=" lg:w-1/3 md:mx-auto text-left flex flex-col gap-2 mt-6">
           <h4 className="text-2xl font-semibold text-primary-50">
             Contact Information
           </h4>
@@ -36,7 +36,7 @@ const Footer = () => {
             Email: truelightchristianassemblykeny@gmail.com
           </p>
         </div>
-        <div className="flex flex-col lg:w-1/3 md:mx-auto order-1 ">
+        <div className="flex flex-col lg:w-1/3 md:mx-auto order-1 mt-6">
           {/* logo */}
           <div className="px-8 my-2">
             <Image
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
         {/* quick links */}
-        <div className="lg:w-1/3 text-left lg:text-center lg:order-1 ">
+        <div className="lg:w-1/3 text-left lg:text-center lg:order-1 mt-6">
           <h4 className="text-2xl font-semibold text-primary-50">
             Quick Links
           </h4>
