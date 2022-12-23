@@ -15,10 +15,28 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-300 flex flex-col justify-center items-center text-center text-white px-4 relative py-10 lg:h-1/2 lg:flex-col lg:justify-between lg:px-12">
+    <footer className="bg-primary-300 flex flex-col gap-2 justify-center items-center text-center text-white px-4 relative py-12 lg:h-1/2 lg:flex-col lg:justify-between lg:px-12">
       {/* logo */}
-      <div className="lg:flex">
-        <div className="flex flex-col lg:w-1/3 md:mx-auto">
+      <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-6xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6">
+        {/* contact info */}
+        <div className=" lg:w-1/3 md:mx-auto text-left flex flex-col gap-2">
+          <h4 className="text-2xl font-semibold text-primary-50">
+            Contact Information
+          </h4>
+          <p className="font-normal tracking-wide text-sm font-sans">
+            Welcome to our church! A place of peace, hope, and joy for all
+            people to grow in their faith and build meaningful relationships. We
+            are glad you have joined us. Please reach out if you have any
+            questions or need support.
+          </p>
+          <p className="font-normal tracking-wide text-sm">
+            Contact: +254 721 205358
+          </p>
+          <p className="font-normal tracking-wide text-sm">
+            Email: truelightchristianassemblykeny@gmail.com
+          </p>
+        </div>
+        <div className="flex flex-col lg:w-1/3 md:mx-auto order-1 ">
           {/* logo */}
           <div className="px-8 my-2">
             <Image
@@ -39,90 +57,164 @@ const Footer = () => {
           </div>
         </div>
         {/* quick links */}
-        <div className="lg:w-1/3">
-          <h4 className="text-2xl font-semibold">Quick Links</h4>
-          <div className="flex flex-col ">
+        <div className="lg:w-1/3 text-left lg:text-center lg:order-1 ">
+          <h4 className="text-2xl font-semibold text-primary-50">
+            Quick Links
+          </h4>
+          <div className="flex flex-col gap-2 py-2 ">
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300"
+              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
               to="hero"
               spy={true}
               smooth={true}
               duration={500}
               offset={-100}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
               Home
             </Link>
 
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300"
+              className="hover:cursor-pointer font-normal hover:underline text-neutral-300 flex"
               to="about"
               spy={true}
               smooth={true}
               duration={500}
               offset={-100}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
               About
             </Link>
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300"
+              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
               to="mission"
               spy={true}
               smooth={true}
               duration={500}
               offset={-100}
-              //   onSetActive={''}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
               Mission
             </Link>
 
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300"
+              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
               to="ken"
               spy={true}
               smooth={true}
               duration={500}
               offset={-100}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
               About Ken
             </Link>
 
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300"
+              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
               to="service"
               spy={true}
               smooth={true}
               duration={500}
               offset={-100}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
               Service
             </Link>
 
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300"
+              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
               to="community"
               spy={true}
               smooth={true}
               duration={500}
               offset={-100}
             >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-5 h-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
               Community
-            </Link>
-
-            <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300"
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-100}
-            >
-              Contact
             </Link>
           </div>
         </div>
 
         {/* news letter */}
-        <div className="mt-3 max-w-lg lg:w-1/3 mx-auto">
+        {/* <div className="mt-3 max-w-lg lg:w-1/3 mx-auto">
           <h4 className="text-2xl font-semibold">Newsletter</h4>
           <p>
             Subscribe to get your weekly word of ecouragement, and word of the
@@ -141,7 +233,7 @@ const Footer = () => {
               Subscribe
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* cp */}
       <div className="mt-6 ">

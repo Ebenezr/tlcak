@@ -97,7 +97,7 @@ const Navigation = () => {
             Community
           </Link>
         </span>
-        <span>
+        {/* <span>
           <Link
             className={linkStyle}
             to="contact"
@@ -109,7 +109,7 @@ const Navigation = () => {
           >
             Contact
           </Link>
-        </span>
+        </span> */}
       </div>
       {/* join us */}
       <div className="hidden md:block lg:block">

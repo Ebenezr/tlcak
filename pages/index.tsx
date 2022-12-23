@@ -31,8 +31,6 @@ export default function Home() {
           <Service />
           {/* our community */}
           <Community />
-          {/* contact info */}
-          <Contact />
         </div>
       </main>
     </div>
