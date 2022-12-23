@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary-300 flex flex-col gap-2 justify-center items-center text-center text-white px-4 relative py-12 lg:h-1/2 lg:flex-col lg:justify-between lg:px-12">
       {/* logo */}
-      <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-6xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6">
+      <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-6xl md:max-w-2xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6">
         {/* contact info */}
         <div className=" lg:w-1/3 md:mx-auto text-left flex flex-col gap-2 mt-6">
           <h4 className="text-2xl font-semibold text-primary-50">
