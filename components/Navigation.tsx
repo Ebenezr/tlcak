@@ -11,7 +11,7 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="fixed w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-50 shadow-md">
+    <nav className="relative fixed w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-50 shadow-md">
       {/* logo */}
       <div>
         <h2 className="font-sans text-primary-300 text-lg font-extrabold tracking-wide ">
@@ -97,19 +97,6 @@ const Navigation = () => {
             Community
           </Link>
         </span>
-        {/* <span>
-          <Link
-            className={linkStyle}
-            to="contact"
-            spy={true}
-            smooth={true}
-            duration={500}
-            offset={-45}
-            activeClass={activeLink}
-          >
-            Contact
-          </Link>
-        </span> */}
       </div>
       {/* join us */}
       <div className="hidden md:block lg:block">
@@ -120,7 +107,7 @@ const Navigation = () => {
       <div className="md:hidden lg:hidden">
         <button
           onClick={toggleMenu}
-          className="transition duration-150 ease-in-out"
+          className="transition duration-150 ease-in-out z-50"
         >
           {isOpen ? (
             <svg
@@ -155,6 +142,8 @@ const Navigation = () => {
           )}
         </button>
       </div>
+      {/* mobile overlay */}
+      <aside className="absolute h-[100vh] w-2/3 bg-primary-100/80 z-30 right-0"></aside>
     </nav>
   );
 };
