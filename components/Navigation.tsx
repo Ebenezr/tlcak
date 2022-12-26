@@ -131,7 +131,7 @@ const Navigation = () => {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-6 h-6 transition duration-150 ease-in-out"
+              className="w-6 h-6 transition duration-150 ease-in-out "
             >
               <path
                 stroke-linecap="round"
@@ -143,7 +143,9 @@ const Navigation = () => {
         </button>
       </div>
       {/* mobile overlay */}
-      <aside className="absolute h-[100vh] w-2/3 bg-primary-100/80 z-30 right-0"></aside>
+      {!isOpen ? (
+        <aside className="absolute h-[100vh] w-2/3 bg-primary-100/80 z-30 right-0"></aside>
+      ) : null}
     </nav>
   );
 };
