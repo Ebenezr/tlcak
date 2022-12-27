@@ -96,3 +96,15 @@ html {
     font-family: OpenSans;
 
 }
+
+/* menu overlay mobile screen */
+.hidden{
+    position:absolute;
+    right:-100%;
+    transition: right 250ms ease-in-out;
+}
+.unhidden{
+    position:relative;
+    right:0;
+    transition: right 250ms ease-in-out;
+}
