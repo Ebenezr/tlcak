@@ -105,12 +105,12 @@ const Navigation = () => {
           </span>
         </div>
         {/* join us */}
-        <div className="hidden md:block lg:block">
+        <div className="hidden lg:block">
           <button className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300">
             Join Us
           </button>
         </div>
-        <div className="md:hidden lg:hidden">
+        <div className="lg:hidden">
           <button
             onClick={toggleMenu}
             className="transition duration-150 ease-in-out z-50"
