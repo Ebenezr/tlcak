@@ -39,7 +39,7 @@ const Community = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full mx-auto h-[32rem] lg:h-[40rem] md:h-[30rem]"
+            className=" flex flex-col w-full gap-3 mx-auto h-[32rem] lg:h-[40rem] md:h-[30rem]"
           >
             {/* card */}
             <div className={cardWrapper}>
@@ -49,11 +49,11 @@ const Community = () => {
                   src={school}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover"
+                  className="object-center object-cover h-full"
                 />
               </div>
               <h2 className={cardTitle}>Children&apos;s Worship</h2>
-              <p className={cardParagraph}>Children’s worship,</p>
+              {/* <p className={cardParagraph}>Children’s worship,</p> */}
               {/* button wrapper */}
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
@@ -67,11 +67,11 @@ const Community = () => {
                   src={youth}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover"
+                  className="object-center object-cover h-full"
                 />
               </div>
               <h2 className={cardTitle}>Youth&apos;s Worship</h2>
-              <p className={cardParagraph}>Children’s worship,</p>
+              {/* <p className={cardParagraph}>Children’s worship,</p> */}
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -84,11 +84,11 @@ const Community = () => {
                   src={women}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover"
+                  className="object-center object-cover h-full"
                 />
               </div>
               <h2 className={cardTitle}>Women&apos;s Worship</h2>
-              <p className={cardParagraph}>Women’s community,</p>
+              {/* <p className={cardParagraph}>Women’s community,</p> */}
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -101,11 +101,11 @@ const Community = () => {
                   src={men}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover"
+                  className="object-center object-cover h-full"
                 />
               </div>
               <h2 className={cardTitle}>Men&apos;s Worship</h2>
-              <p className={cardParagraph}>Men’s community,</p>
+              {/* <p className={cardParagraph}>Men’s community,</p> */}
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -122,7 +122,7 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Praise and Worship</h2>
-              <p className={cardParagraph}>Praise and Worship’s worship,</p>
+              {/* <p className={cardParagraph}>Praise and Worship’s worship,</p> */}
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -135,11 +135,11 @@ const Community = () => {
                   src={pastoral}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover"
+                  className="object-center object-cover h-full"
                 />
               </div>
-              <h2 className={cardTitle}>Pastoral</h2>
-              <p className={cardParagraph}>Pastoral Community</p>
+              <h2 className={cardTitle}>Pastoral Community</h2>
+              {/* <p className={cardParagraph}>Pastoral Community</p> */}
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -155,8 +155,8 @@ const Community = () => {
                   className="object-center object-cover h-full"
                 />
               </div>
-              <h2 className={cardTitle}>Hospitality</h2>
-              <p className={cardParagraph}>Hospitality Community</p>
+              <h2 className={cardTitle}>Hospitality Community</h2>
+              {/* <p className={cardParagraph}>Hospitality Community</p> */}
               {/* <div className={buttonWrapper}>
                 <button className={button}>See More</button>
               </div> */}
@@ -172,10 +172,10 @@ export default Community;
 
 // card
 const cardWrapper =
-  "flex flex-col lg:w-2/3 h-5/6 mx-auto py-4 bg-white px-4 rounded-md";
+  "flex flex-col lg:w-2/3 h-5/6  mx-auto py-4 bg-white px-4 rounded-md";
 const imageWrapper =
   "w-full  lg:h-80 h-56 md:h-[25rem] bg-neutral-600 rounded-md overflow-hidden";
-const cardTitle = "mt-[32px] text-left text-xl font-bold tracking-wide";
+const cardTitle = "mt-[32px] text-left text-lg font-bold tracking-wide";
 const cardParagraph =
   "mt-[12px] text-left tracking-wide font-sans leading-6 text-neutral-600";
 const buttonWrapper = "mt-[32px] flex flex-start";
