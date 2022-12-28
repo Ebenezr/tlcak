@@ -25,7 +25,7 @@ const Navigation = () => {
           </h2>
         </div>
         {/* link list */}
-        <div className="flex items-center lg:gap-4  md:gap-4 hidden md:hidden lg:block">
+        <div className="flex items-center lg:gap-4  md:gap-4 sm:hidden md:hidden lg:block xl:block">
           <span>
             <Link
               className={linkStyle}
@@ -105,7 +105,7 @@ const Navigation = () => {
           </span>
         </div>
         {/* join us */}
-        <div className="hidden lg:block">
+        <div className="sm:hidden md:hidden lg:block">
           <button className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300">
             Join Us
           </button>
