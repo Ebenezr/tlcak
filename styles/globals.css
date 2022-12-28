@@ -101,10 +101,10 @@ html {
 .hidden{
     position:absolute;
     right:-100%;
-    transition: right 250ms ease-in-out;
+    transition: right 750ms ease-in-out;
 }
 .unhidden{
-    position:relative;
+    position:absolute;
     right:0;
-    transition: right 250ms ease-in-out;
+    transition: right 750ms ease-in-out;
 }

@@ -152,8 +152,7 @@ const Navigation = () => {
       {/* mobile overlay */}
       {!isOpen ? (
         <aside
-          className={`${!isOpen} ? 'hidden' : "unhidden"
-            h-[100vh] w-2/3 blur-4 bg-primary-300 transparent-50 z-40  `}
+          className={`unhidden h-[100vh] w-2/3 blur-4 bg-primary-300 transparent-50 z-40  `}
         >
           <div className="flex flex-col  pl-6 py-8 gap-2">
             <span>
@@ -235,6 +234,14 @@ const Navigation = () => {
               >
                 Community
               </Link>
+            </span>
+            <span className="mt-4">
+              <button
+                className="text-accent hover:text-primary-50"
+                onClick={closeMenu}
+              >
+                Close
+              </button>
             </span>
           </div>
         </aside>
