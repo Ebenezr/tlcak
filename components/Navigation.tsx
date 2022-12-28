@@ -17,7 +17,7 @@ const Navigation = () => {
   };
   return (
     <>
-      <nav className="relative fixed top-0 w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-around lg:justify-around  z-30 shadow-md">
+      <nav className="relative fixed top-0 w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-between lg:justify-around  z-30 shadow-md">
         {/* logo */}
         <div>
           <h2 className="font-sans text-primary-300 text-lg font-extrabold tracking-wide ">
@@ -25,7 +25,7 @@ const Navigation = () => {
           </h2>
         </div>
         {/* link list */}
-        <div className="flex items-center lg:gap-4  md:gap-4 hidden lg:block">
+        <div className="flex items-center lg:gap-4  md:gap-4 hidden md:hidden lg:block">
           <span>
             <Link
               className={linkStyle}
