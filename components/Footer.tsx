@@ -49,8 +49,8 @@ const Footer = () => {
             />
           </div>
           {/* icons */}
-          <div className="px-8 flex items-center justify-between gap-2 w-full mb-6 lg:mt-4">
-            <SocialIcon network="twitter" bgColor="#fff" />
+          <div className="px-8 py-3 flex items-center justify-between gap-2 w-full mb-6 lg:mt-4">
+            <SocialIcon network="twitter" bgColor="#fff" className="" />
             <SocialIcon network="youtube" bgColor="#fff" />
             <SocialIcon network="instagram" bgColor="#fff" />
             <SocialIcon network="facebook" bgColor="#fff" />
