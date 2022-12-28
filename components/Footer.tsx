@@ -63,7 +63,7 @@ const Footer = () => {
           </h4>
           <div className="flex flex-col gap-2 py-2 ">
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
               to="hero"
               spy={true}
               smooth={true}
@@ -88,7 +88,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-pointer font-normal hover:underline text-neutral-300 flex"
+              className="hover:cursor-pointer font-normal  text-neutral-300 flex no-underline hover:no-underline hover:text-white"
               to="about"
               spy={true}
               smooth={true}
@@ -112,7 +112,7 @@ const Footer = () => {
               About
             </Link>
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
               to="mission"
               spy={true}
               smooth={true}
@@ -137,7 +137,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
               to="ken"
               spy={true}
               smooth={true}
@@ -162,7 +162,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
               to="service"
               spy={true}
               smooth={true}
@@ -187,7 +187,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-pointer hover:underline text-neutral-300 flex"
+              className="hover:cursor-point text-neutral-300 flex no-underline hover:no-underline hover:text-white"
               to="community"
               spy={true}
               smooth={true}
