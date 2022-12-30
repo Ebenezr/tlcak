@@ -42,18 +42,35 @@ const Footer = () => {
             <Image
               src={logo}
               alt="TLCAK"
-              className="object-cover md:w-4/5 md:mx-auto"
+              className="object-cover md:w-4/5 md:mx-auto lg:w-4/5"
               sizes="(max-width: 768px) 80vw,
               (max-width: 1200px) 50vw,
               33vw"
             />
           </div>
           {/* icons */}
-          <div className="px-8 py-3 flex items-center justify-between gap-2 w-full mb-6 lg:mt-4">
-            <SocialIcon network="twitter" bgColor="#fff" className="" />
-            <SocialIcon network="youtube" bgColor="#fff" />
-            <SocialIcon network="instagram" bgColor="#fff" />
-            <SocialIcon network="facebook" bgColor="#fff" />
+          <div className="px-8 py-3 flex items-center justify-center gap-4 w-full mb-6 lg:mt-4">
+            <SocialIcon
+              network="twitter"
+              bgColor="#fff"
+              style={{ height: 40, width: 40 }}
+            />
+
+            <SocialIcon
+              network="youtube"
+              bgColor="#fff"
+              style={{ height: 40, width: 40 }}
+            />
+            <SocialIcon
+              network="instagram"
+              bgColor="#fff"
+              style={{ height: 40, width: 40 }}
+            />
+            <SocialIcon
+              network="facebook"
+              bgColor="#fff"
+              style={{ height: 40, width: 40 }}
+            />
           </div>
         </div>
         {/* quick links */}
@@ -63,7 +80,7 @@ const Footer = () => {
           </h4>
           <div className="flex flex-col gap-2 py-2 ">
             <Link
-              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="hero"
               spy={true}
               smooth={true}
@@ -76,7 +93,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-5 h-5 duration-150 group-hover:rotate-90"
               >
                 <path
                   stroke-linecap="round"
@@ -88,7 +105,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-pointer font-normal  text-neutral-300 flex no-underline hover:no-underline hover:text-white"
+              className="hover:cursor-pointer font-normal  text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="about"
               spy={true}
               smooth={true}
@@ -101,7 +118,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-5 h-5 duration-150 group-hover:rotate-90"
               >
                 <path
                   stroke-linecap="round"
@@ -112,7 +129,7 @@ const Footer = () => {
               About
             </Link>
             <Link
-              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="mission"
               spy={true}
               smooth={true}
@@ -125,7 +142,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-5 h-5 duration-150 group-hover:rotate-90"
               >
                 <path
                   stroke-linecap="round"
@@ -137,7 +154,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="ken"
               spy={true}
               smooth={true}
@@ -150,7 +167,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-5 h-5 duration-150 group-hover:rotate-90"
               >
                 <path
                   stroke-linecap="round"
@@ -162,7 +179,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white"
+              className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="service"
               spy={true}
               smooth={true}
@@ -175,7 +192,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-5 h-5 duration-150 group-hover:rotate-90"
               >
                 <path
                   stroke-linecap="round"
@@ -187,7 +204,7 @@ const Footer = () => {
             </Link>
 
             <Link
-              className="hover:cursor-point text-neutral-300 flex no-underline hover:no-underline hover:text-white"
+              className="hover:cursor-point text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="community"
               spy={true}
               smooth={true}
@@ -200,7 +217,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5"
+                className="w-5 h-5 duration-150 group-hover:rotate-90"
               >
                 <path
                   stroke-linecap="round"
