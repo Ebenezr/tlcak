@@ -7,7 +7,7 @@ export const ReadMore = ({ children }) => {
   };
   return (
     <>
-      <p className="hidden lg:block text-justify">{text}</p>
+      <p className="sm:hidden md:hidden lg:block leading-6 text-justify">{text}</p>
       <p className="text-sm tracking-wide leading-6 text-justify lg:hidden">
         {isReadMore ? text.slice(0, 220) : text}
         <span
