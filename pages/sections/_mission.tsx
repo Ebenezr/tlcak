@@ -37,7 +37,7 @@ const Mission = () => {
             </div>
             {/* context */}
             <div className="">
-              <p className="font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl hidden lg:block">
+              <p className="font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl sm:hidden lg:block">
                 Vision
               </p>
 
@@ -64,7 +64,7 @@ const Mission = () => {
             </div>
             {/* context */}
             <div className=" ">
-              <p className="font-semibold tracking-wide text-lg lg:text-2xl hidden lg:block">
+              <p className="font-semibold tracking-wide text-lg lg:text-2xl sm:hidden lg:block">
                 Mission
               </p>
 
@@ -91,7 +91,7 @@ const Mission = () => {
             </div>
             {/* context */}
             <div>
-              <p className="font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block hidden">
+              <p className="font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block sm:hidden">
                 Core Values
               </p>
               <p className="font-semibold text-md font-sans tracking-wide text-neutral-600 mt-3 lg:mt-1">

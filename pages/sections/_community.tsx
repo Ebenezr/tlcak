@@ -172,7 +172,7 @@ export default Community;
 
 // card
 const cardWrapper =
-  "flex flex-col lg:w-2/3 h-5/6 w-[97%] mx-auto py-4 bg-white px-4 rounded-md border-t-2 border-primary-300";
+  "flex flex-col lg:w-2/3 h-5/6 w-[97%] mx-auto py-4 bg-white px-4 rounded-md border-t-4 border-primary-300";
 const imageWrapper =
   "w-full  lg:h-[35rem] h-60 md:h-[25rem] bg-neutral-600 rounded-md overflow-hidden";
 const cardTitle = "mt-[32px] text-left text-lg font-bold tracking-wide";

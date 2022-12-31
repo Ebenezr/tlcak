@@ -93,7 +93,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 duration-150 group-hover:rotate-90"
+                className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
                   stroke-linecap="round"
@@ -118,7 +118,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 duration-150 group-hover:rotate-90"
+                className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
                   stroke-linecap="round"
@@ -142,7 +142,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 duration-150 group-hover:rotate-90"
+                className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
                   stroke-linecap="round"
@@ -167,7 +167,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 duration-150 group-hover:rotate-90"
+                className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
                   stroke-linecap="round"
@@ -192,7 +192,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 duration-150 group-hover:rotate-90"
+                className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
                   stroke-linecap="round"
@@ -217,7 +217,7 @@ const Footer = () => {
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                className="w-5 h-5 duration-150 group-hover:rotate-90"
+                className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
                   stroke-linecap="round"

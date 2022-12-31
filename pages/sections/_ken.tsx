@@ -16,10 +16,11 @@ const Ken = () => {
           </p>
         </div>
         {/* content wrapper */}
-        <div className="grid  lg:grid-cols-2 md:grid-cols-2 lg:mt-12 md:mt-10 lg:h-4/5">
+        <div className="grid  lg:grid-cols-2 lg:mt-4  lg:h-4/5">
           {/* image wrapper */}
-          <div className="lg:grid lg:place-items-center">
-            <div className="bg-primary-300 mx-auto w-[8.5rem] lg:w-72 h-[8.5rem] lg:h-72 grid place-items-center rounded-full my-4">
+
+          <div className="grid md:place-items-center lg:place-items-center">
+            <div className="bg-primary-300 mx-auto w-[8.5rem] lg:w-72 h-[8.5rem] lg:h-72 grid place-items-center rounded-full">
               <div className="bg-white mx-auto w-32 h-32 lg:w-64 lg:h-64 shadow-inner rounded-full  overflow-hidden">
                 <Image
                   src={ken}
@@ -30,7 +31,7 @@ const Ken = () => {
               </div>
             </div>
           </div>
-          <div className="lg:p-8 md:p-6 lg:my-auto md:my-auto  h-full ">
+          <div className="lg:grid lg:place-items-center md:my-auto h-full ">
             {/* text content */}
             <ReadMore>{aboutKen}</ReadMore>
           </div>
