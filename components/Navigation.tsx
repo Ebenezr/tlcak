@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { MdOutlineMenu } from "react-icons/md";
 import { Link } from "react-scroll";
-import { Navbar, Nav } from "rsuite";
-import HomeIcon from "@rsuite/icons/legacy/Home";
-import CogIcon from "@rsuite/icons/legacy/Cog";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -24,7 +20,7 @@ const Navigation = () => {
   };
   return (
     <>
-      <nav className="relative fixed top-0 w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-between lg:justify-around  z-30 shadow-md">
+      <nav className="relative sticky top-0 w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-between lg:justify-around  z-30 shadow-md">
         {/* logo */}
         <div>
           <h2 className="font-sans text-primary-300 text-lg font-extrabold tracking-wide ">
