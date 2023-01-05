@@ -2,12 +2,12 @@ import Image from "next/image";
 import React from "react";
 import logo from "../../assets/logo.png";
 import { Link } from "react-scroll";
-
-// Images
-const hallstatt = "https://i.imgur.com/Yszno5e.jpg";
-const hvitserkur = "https://i.imgur.com/ZBzbir7.jpg";
-const jacksonville = "https://i.imgur.com/xpeJkkR.jpg";
-const moraineLake = "https://i.imgur.com/0NAc45h.jpg";
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile,
+} from "react-device-detect";
 
 const Hero = () => {
   return (
@@ -31,7 +31,11 @@ const Hero = () => {
             WATCH MESSAGES
           </button>
         </div>
-        <div className=" absolute left-1/2 -translate-x-1/2 bottom-0 mb-16 non-mobile">
+        <div
+          className={`absolute left-1/2 -translate-x-1/2 bottom-0 mb-16  ${
+            isMobile ? "hidden" : "block"
+          }`}
+        >
           <button className="hover:bg-accent focus:bg-accent bg-white h-12 w-12 grid place-items-center rounded-full">
             <Link
               className=""
