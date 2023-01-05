@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdOutlineMenu } from "react-icons/md";
 import { Link } from "react-scroll";
 import { Navbar, Nav } from "rsuite";
@@ -7,6 +7,13 @@ import CogIcon from "@rsuite/icons/legacy/Cog";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(/iPhone|Android|iPad/i.test(navigator.userAgent));
+    setIsDesktop(/Windows|Mac|Linux/i.test(navigator.userAgent));
+  }, []);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -25,7 +32,11 @@ const Navigation = () => {
           </h2>
         </div>
         {/* link list */}
-        <div className="flex items-center lg:gap-4  md:gap-4  non-mobile">
+        <div
+          className={`flex items-center lg:gap-4  md:gap-4 ${
+            isMobile ? "hidden" : "block"
+          }`}
+        >
           <span>
             <Link
               className={linkStyle}
@@ -105,7 +116,7 @@ const Navigation = () => {
           </span>
         </div>
         {/* join us */}
-        <div className="sm:hidden md:hidden lg:block">
+        <div className={`${isMobile ? "hidden" : "block"}`}>
           <button className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300">
             Join Us
           </button>
