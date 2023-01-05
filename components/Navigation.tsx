@@ -25,7 +25,7 @@ const Navigation = () => {
           </h2>
         </div>
         {/* link list */}
-        <div className="flex items-center lg:gap-4  md:gap-4 sm:hidden md:hidden lg:block xl:block">
+        <div className="flex items-center lg:gap-4  md:gap-4  non-mobile">
           <span>
             <Link
               className={linkStyle}

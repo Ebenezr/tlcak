@@ -108,3 +108,13 @@ html {
     right:0;
     transition: right 750ms ease-in-out;
 }
+
+
+@layer components {
+  .only-mobile {
+    @apply lg:hidden;
+  }
+  .non-mobile {
+    @apply hidden lg:block;
+  }
+}

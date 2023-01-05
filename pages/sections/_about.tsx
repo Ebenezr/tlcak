@@ -29,23 +29,7 @@ const About = () => {
           />
         </div>
         {/* text content */}
-        <ReadMore>
-          {aboutChurch}
-          {/* <span>
-            <span className="font-bold text-lg">
-              True Light Christian Assembly Kenya
-            </span>
-            was founded on January 3rd, 2016. The church started in a two-roomed
-            house which happened to be a residential place of one of the
-            founding members. By March 20th same year the church moved out of
-            the house to a rental classroom where the 1st formal service was
-            conducted. God gave Rev. Lukiri Kennedy the vision of Restoring
-            Lives with the true Word of God, giving hope to many hurting souls
-            who are inwardly dying even though they are in a church group. Along
-            with the assignment to reach out to the uttermost parts of the world
-            with the gospel of truth in missions and church planting.
-          </span> */}
-        </ReadMore>
+        <ReadMore>{aboutChurch}</ReadMore>
       </div>
     </section>
   );
