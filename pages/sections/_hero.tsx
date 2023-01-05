@@ -1,15 +1,16 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import { Link } from "react-scroll";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(/iPhone|Android|iPad/i.test(navigator.userAgent));
+    setIsDesktop(/Windows|Mac|Linux/i.test(navigator.userAgent));
+  }, []);
   return (
     <section
       className=" relative h-auto pb-10 pt-20 relative lg:h-[100vh] bg-gray-900"
@@ -31,37 +32,39 @@ const Hero = () => {
             WATCH MESSAGES
           </button>
         </div>
-        <div
-          className={`absolute left-1/2 -translate-x-1/2 bottom-0 mb-16  ${
-            isMobile ? "hidden" : "block"
-          }`}
-        >
-          <button className="hover:bg-accent focus:bg-accent bg-white h-12 w-12 grid place-items-center rounded-full">
-            <Link
-              className=""
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-45}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                className="w-6 h-6"
+        {!isMobile ? (
+          <div
+            className={`absolute left-1/2 -translate-x-1/2 bottom-0 mb-16 ${
+              isMobile ? "hidden" : "block"
+            }`}
+          >
+            <button className="hover:bg-accent focus:bg-accent bg-white h-12 w-12 grid place-items-center rounded-full">
+              <Link
+                className=""
+                to="about"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-45}
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                />
-              </svg>
-            </Link>
-          </button>
-        </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </Link>
+            </button>
+          </div>
+        ) : null}
       </div>
     </section>
   );
