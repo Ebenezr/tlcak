@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
         {!isMobile ? (
           <div
-            className={`absolute left-1/2 -translate-x-1/2 bottom-0 mb-16 ${
+            className={`absolute animate-bounce left-1/2 -translate-x-1/2 bottom-0 mb-16 ${
               isMobile ? "hidden" : "block"
             }`}
           >

@@ -1,15 +1,7 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import Image from "next/image";
-import {
-  Link,
-  Button,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import logo from "../assets/logo.png";
 
@@ -17,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary-300 flex flex-col gap-2 justify-center items-center text-center text-white px-4 relative py-12 lg:h-1/2 lg:flex-col lg:justify-between lg:px-12">
       {/* logo */}
-      <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-6xl md:max-w-2xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6">
+      <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-7xl md:max-w-2xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6">
         {/* contact info */}
         <div className=" lg:w-1/3 md:mx-auto text-left flex flex-col gap-2 mt-6">
           <h4 className="text-2xl font-semibold text-primary-50">
@@ -36,7 +28,7 @@ const Footer = () => {
             Email: truelightchristianassemblykeny@gmail.com
           </p>
         </div>
-        <div className="flex flex-col lg:w-1/3 md:mx-auto order-1 mt-6">
+        <div className="flex flex-col lg:w-3/5 md:mx-auto order-1 grow-1 mt-6">
           {/* logo */}
           <div className="px-8 my-2">
             <Image
@@ -74,8 +66,8 @@ const Footer = () => {
           </div>
         </div>
         {/* quick links */}
-        <div className="lg:w-1/3 text-left lg:text-center lg:order-1 mt-6">
-          <h4 className="text-2xl font-semibold text-primary-50">
+        <div className="lg:w-1/3 lg:order-1 mt-6">
+          <h4 className="text-2xl lg:text-left font-semibold text-primary-50">
             Quick Links
           </h4>
           <div className="flex flex-col gap-2 py-2 ">

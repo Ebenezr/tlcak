@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -14,13 +15,18 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  };
+
   const closeMenu = () => {
     setIsOpen(true);
     console.log("closed");
   };
   return (
     <>
-      <nav className="relative sticky top-0 w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-between lg:justify-around  z-30 shadow-md">
+      <nav className="relative sticky top-0 w-full bg-white h-12 border-b-[0.5pt] border-primary-200 flex items-center  px-8 justify-between md:justify-between lg:justify-around  z-20 shadow-md">
         {/* logo */}
         <div>
           <h2 className="font-sans text-primary-300 text-lg font-extrabold tracking-wide ">
@@ -118,7 +124,7 @@ const Navigation = () => {
           </button>
         </div>
         {isMobile ? (
-          <div>
+          <div className="z-50">
             <button
               onClick={toggleMenu}
               className="transition duration-150 ease-in-out z-50"
@@ -130,12 +136,12 @@ const Navigation = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6 transition duration-150 ease-in-out"
+                  className="w-6 h-6 fill-primary-50"
                 >
                   <path
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
                   />
                 </svg>
               ) : (
@@ -145,7 +151,7 @@ const Navigation = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6 transition duration-150 ease-in-out "
+                  className="w-6 h-6 transition duration-150 ease-in-out text-primary-50"
                 >
                   <path
                     stroke-linecap="round"
@@ -157,104 +163,110 @@ const Navigation = () => {
             </button>
           </div>
         ) : null}
+        {/* mobile overlay */}
+        {!isOpen ? (
+          <AnimatePresence>
+            <motion.aside
+              key="overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className={`absolute w-full h-[100vh] left-1/2 top-0 -translate-x-1/2 blur-4 bg-primary-300 transparent-50 z-40 transition duration-500 ease-in-out`}
+            >
+              <div className="flex flex-col  pl-6 py-4 gap-2 border-t-[0.5pt] border-primary-50 mt-12">
+                <span onClick={closeMenu}>
+                  <Link
+                    className={linkStyleMobile}
+                    to="hero"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    activeClass={activeLinkMobile}
+                    onSetInactive={closeMenu}
+                  >
+                    Home
+                  </Link>
+                </span>
+                <span onClick={closeMenu}>
+                  <Link
+                    className={linkStyleMobile}
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-45}
+                    activeClass={activeLinkMobile}
+                  >
+                    About
+                  </Link>
+                </span>
+                <span onClick={closeMenu}>
+                  <Link
+                    className={linkStyleMobile}
+                    to="mission"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-45}
+                    activeClass={activeLinkMobile}
+                  >
+                    Mission
+                  </Link>
+                </span>
+                <span onClick={closeMenu}>
+                  <Link
+                    className={linkStyleMobile}
+                    to="ken"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-45}
+                    activeClass={activeLinkMobile}
+                  >
+                    About Ken
+                  </Link>
+                </span>
+                <span onClick={closeMenu}>
+                  <Link
+                    className={linkStyleMobile}
+                    to="service"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-45}
+                    activeClass={activeLinkMobile}
+                  >
+                    Service
+                  </Link>
+                </span>
+                <span onClick={closeMenu}>
+                  <Link
+                    className={linkStyleMobile}
+                    to="community"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-45}
+                    activeClass={activeLinkMobile}
+                    onSetActive={closeMenu}
+                  >
+                    Community
+                  </Link>
+                </span>
+                <span className="mt-4">
+                  <button
+                    className="text-accent hover:text-primary-50"
+                    onClick={closeMenu}
+                  >
+                    Close
+                  </button>
+                </span>
+              </div>
+            </motion.aside>
+          </AnimatePresence>
+        ) : null}
       </nav>
-      {/* mobile overlay */}
-      {!isOpen ? (
-        <aside
-          className={`unhidden h-[100vh] w-2/3 blur-4 bg-primary-300 transparent-50 z-40  `}
-        >
-          <div className="flex flex-col  pl-6 py-8 gap-2">
-            <span>
-              {/* TODO: hide overlay after item selection */}
-              <Link
-                className={linkStyleMobile}
-                to="hero"
-                spy={true}
-                smooth={true}
-                duration={500}
-                activeClass={activeLinkMobile}
-                onSetInactive={closeMenu}
-              >
-                Home
-              </Link>
-            </span>
-            <span>
-              <Link
-                className={linkStyleMobile}
-                to="about"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-45}
-                activeClass={activeLinkMobile}
-              >
-                About
-              </Link>
-            </span>
-            <span>
-              <Link
-                className={linkStyleMobile}
-                to="mission"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-45}
-                activeClass={activeLinkMobile}
-              >
-                Mission
-              </Link>
-            </span>
-            <span>
-              <Link
-                className={linkStyleMobile}
-                to="ken"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-45}
-                activeClass={activeLinkMobile}
-              >
-                About Ken
-              </Link>
-            </span>
-            <span>
-              <Link
-                className={linkStyleMobile}
-                to="service"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-45}
-                activeClass={activeLinkMobile}
-              >
-                Service
-              </Link>
-            </span>
-            <span>
-              <Link
-                className={linkStyleMobile}
-                to="community"
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-45}
-                activeClass={activeLinkMobile}
-                onSetActive={closeMenu}
-              >
-                Community
-              </Link>
-            </span>
-            <span className="mt-4">
-              <button
-                className="text-accent hover:text-primary-50"
-                onClick={closeMenu}
-              >
-                Close
-              </button>
-            </span>
-          </div>
-        </aside>
-      ) : null}
     </>
   );
 };
@@ -265,7 +277,7 @@ const linkStyle =
   "hover:cursor-pointer text-neutral-400 hover:text-primary-200 px-3 focus:text-primary-200 tracking-wide no-underline hover:no-underline hover:text-primary-50";
 
 const linkStyleMobile =
-  "text-white no-underline hover:no-underline hover:text-primary-50";
+  "text-white no-underline hover:no-underline hover:text-primary-50 hover:cursor-pointer";
 
 const activeLink =
   "relative text-primary-200 font-bold after:content=[''] after:absolute after:w-full after:bg-primary-200 after:h-[3px] after:mx-auto after:top-8 after:left-1/2 after:-translate-x-1/2 after:transition after:duration-150 after:ease-in-out";
