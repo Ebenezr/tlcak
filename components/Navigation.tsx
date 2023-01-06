@@ -46,6 +46,7 @@ const Navigation = () => {
               spy={true}
               smooth={true}
               duration={500}
+              isDynamic={true}
               activeClass={activeLink}
             >
               Home
@@ -59,6 +60,7 @@ const Navigation = () => {
               smooth={true}
               duration={500}
               offset={-45}
+              isDynamic={true}
               activeClass={activeLink}
             >
               About
@@ -72,6 +74,7 @@ const Navigation = () => {
               smooth={true}
               duration={500}
               offset={-45}
+              isDynamic={true}
               activeClass={activeLink}
             >
               Mission
@@ -85,6 +88,7 @@ const Navigation = () => {
               smooth={true}
               duration={500}
               offset={-45}
+              isDynamic={true}
               activeClass={activeLink}
             >
               About Ken
@@ -98,6 +102,7 @@ const Navigation = () => {
               smooth={true}
               duration={500}
               offset={-45}
+              isDynamic={true}
               activeClass={activeLink}
             >
               Service
@@ -111,6 +116,7 @@ const Navigation = () => {
               smooth={true}
               duration={500}
               offset={-45}
+              isDynamic={true}
               activeClass={activeLink}
             >
               Community
@@ -178,24 +184,28 @@ const Navigation = () => {
                 <span onClick={closeMenu}>
                   <Link
                     className={linkStyleMobile}
+                    onClick={closeMenu}
                     to="hero"
                     spy={true}
                     smooth={true}
                     duration={500}
+                    isDynamic={true}
                     activeClass={activeLinkMobile}
-                    onSetInactive={closeMenu}
+                    onSetInactive={() => closeMenu}
                   >
                     Home
                   </Link>
                 </span>
                 <span onClick={closeMenu}>
                   <Link
+                    onClick={closeMenu}
                     className={linkStyleMobile}
                     to="about"
                     spy={true}
                     smooth={true}
                     duration={500}
                     offset={-45}
+                    isDynamic={true}
                     activeClass={activeLinkMobile}
                   >
                     About
@@ -204,11 +214,13 @@ const Navigation = () => {
                 <span onClick={closeMenu}>
                   <Link
                     className={linkStyleMobile}
+                    onClick={closeMenu}
                     to="mission"
                     spy={true}
                     smooth={true}
                     duration={500}
                     offset={-45}
+                    isDynamic={true}
                     activeClass={activeLinkMobile}
                   >
                     Mission
@@ -217,11 +229,13 @@ const Navigation = () => {
                 <span onClick={closeMenu}>
                   <Link
                     className={linkStyleMobile}
+                    onClick={closeMenu}
                     to="ken"
                     spy={true}
                     smooth={true}
                     duration={500}
                     offset={-45}
+                    isDynamic={true}
                     activeClass={activeLinkMobile}
                   >
                     About Ken
@@ -230,11 +244,13 @@ const Navigation = () => {
                 <span onClick={closeMenu}>
                   <Link
                     className={linkStyleMobile}
+                    onClick={closeMenu}
                     to="service"
                     spy={true}
                     smooth={true}
                     duration={500}
                     offset={-45}
+                    isDynamic={true}
                     activeClass={activeLinkMobile}
                   >
                     Service
@@ -243,11 +259,13 @@ const Navigation = () => {
                 <span onClick={closeMenu}>
                   <Link
                     className={linkStyleMobile}
+                    onClick={closeMenu}
                     to="community"
                     spy={true}
                     smooth={true}
                     duration={500}
                     offset={-45}
+                    isDynamic={true}
                     activeClass={activeLinkMobile}
                     onSetActive={closeMenu}
                   >
