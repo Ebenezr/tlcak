@@ -14,26 +14,18 @@ export const ReadMore = ({ children }) => {
   };
   return (
     <>
-      <p
-        className={`leading-6 text-justify  ${
-          isMobile ? "invisible" : isDesktop ? "visible" : ""
-        }`}
-      >
-        {text}
-      </p>
-      <p
-        className={`block  text-sm tracking-wide leading-6 text-justify ${
-          isDesktop ? "invisible" : isMobile ? "visible" : ""
-        }`}
-      >
-        {isReadMore ? text.slice(0, 220) : text}
-        <span
-          onClick={toggleReadMore}
-          className="text-neutral-700 cursor-pointer font-bold tracking-wide "
-        >
-          {isReadMore ? "  ...read more" : "  show less"}
-        </span>
-      </p>
+      {!isMobile && <p className={`leading-6 text-justify`}>{text}</p>}
+      {!isDesktop && (
+        <p className={`text-sm tracking-wide leading-6 text-justify`}>
+          {isReadMore ? text.slice(0, 220) : text}
+          <span
+            onClick={toggleReadMore}
+            className="text-neutral-700 cursor-pointer font-bold tracking-wide "
+          >
+            {isReadMore ? "  ...read more" : "  show less"}
+          </span>
+        </p>
+      )}
     </>
   );
 };

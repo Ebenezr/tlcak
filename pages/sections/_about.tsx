@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { ReadMore } from "../../components/Readmore";
+
 import church from "../../assets/images/church.jpg";
 
 const About = () => {
+  const [isReadMore, setIsReadMore] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(/iPhone|Android|iPad/i.test(navigator.userAgent));
+    setIsDesktop(/Windows|Mac|Linux/i.test(navigator.userAgent));
+  }, []);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
   return (
     <section className=" bg-bg " id="about">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
@@ -29,7 +40,27 @@ const About = () => {
           />
         </div>
         {/* text content */}
-        <ReadMore>{aboutChurch}</ReadMore>
+        {/* text content */}
+
+        {!isMobile && (
+          <p
+            className={`leading-6 text-justify lg:block ${
+              isMobile ? "hidden" : "block"
+            }`}
+          >
+            {aboutChurch}
+          </p>
+        )}
+
+        <p className={`text-sm tracking-wide leading-6 text-justify lg:hidden`}>
+          {isReadMore ? aboutChurch.slice(0, 220) : aboutChurch}
+          <span
+            onClick={toggleReadMore}
+            className="text-neutral-700 cursor-pointer font-bold tracking-wide "
+          >
+            {isReadMore ? "  ...read more" : "  show less"}
+          </span>
+        </p>
       </div>
     </section>
   );

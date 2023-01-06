@@ -1,7 +1,18 @@
-import { ReadMore } from "../../components/Readmore";
 import Image from "next/image";
 import ken from "../../assets/images/ken.jpg";
+import { useEffect, useState } from "react";
 const Ken = () => {
+  const [isReadMore, setIsReadMore] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(/iPhone|Android|iPad/i.test(navigator.userAgent));
+    setIsDesktop(/Windows|Mac|Linux/i.test(navigator.userAgent));
+  }, []);
+  const toggleReadMore = () => {
+    setIsReadMore(!isReadMore);
+  };
   return (
     <section className=" bg-bg lg:h-[100vh] " id="ken">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
@@ -33,7 +44,28 @@ const Ken = () => {
           </div>
           <div className="lg:grid lg:place-items-center md:my-auto h-full ">
             {/* text content */}
-            <ReadMore>{aboutKen}</ReadMore>
+
+            {!isMobile && (
+              <p
+                className={`leading-6 text-justify lg:block ${
+                  isMobile ? "hidden" : "block"
+                }`}
+              >
+                {aboutKen}
+              </p>
+            )}
+
+            <p
+              className={`text-sm tracking-wide leading-6 text-justify lg:hidden`}
+            >
+              {isReadMore ? aboutKen.slice(0, 220) : aboutKen}
+              <span
+                onClick={toggleReadMore}
+                className="text-neutral-700 cursor-pointer font-bold tracking-wide "
+              >
+                {isReadMore ? "  ...read more" : "  show less"}
+              </span>
+            </p>
           </div>
         </div>
       </div>
