@@ -131,10 +131,7 @@ const Navigation = () => {
         </div>
         {isMobile ? (
           <div className="z-50">
-            <button
-              onClick={toggleMenu}
-              className="transition duration-150 ease-in-out z-50"
-            >
+            <button onClick={toggleMenu} className="">
               {isOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +139,7 @@ const Navigation = () => {
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  className="w-6 h-6 fill-primary-50"
+                  className="w-6 h-6 text-primary-300"
                 >
                   <path
                     stroke-linecap="round"

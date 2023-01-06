@@ -15,15 +15,15 @@ export const ReadMore = ({ children }) => {
   return (
     <>
       <p
-        className={`leading-6 text-justify ${
-          isMobile ? "hidden" : isDesktop ? "block" : "hidden"
+        className={`leading-6 text-justify  ${
+          isMobile ? "invisible" : isDesktop ? "visible" : ""
         }`}
       >
         {text}
       </p>
       <p
-        className={`text-sm tracking-wide leading-6 text-justify ${
-          isDesktop ? "hidden" : ""
+        className={`block  text-sm tracking-wide leading-6 text-justify ${
+          isDesktop ? "invisible" : isMobile ? "visible" : ""
         }`}
       >
         {isReadMore ? text.slice(0, 220) : text}

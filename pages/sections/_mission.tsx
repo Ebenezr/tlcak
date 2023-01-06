@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import mission from "../../assets/images/mission.jpg";
 import vision from "../../assets/images/vision.jpg";
 import family from "../../assets/images/pastoral.jpg";
 
 const Mission = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(/iPhone|Android|iPad/i.test(navigator.userAgent));
+    setIsDesktop(/Windows|Mac|Linux/i.test(navigator.userAgent));
+  }, []);
   return (
     <section className=" bg-white" id="mission">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl flex  flex-col  h-auto py-10 px-4">
@@ -37,7 +44,11 @@ const Mission = () => {
             </div>
             {/* context */}
             <div className="">
-              <p className="font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl sm:hidden lg:block">
+              <p
+                className={`font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl lg:block ${
+                  isMobile ? "hidden" : isDesktop ? "block" : "hidden"
+                }`}
+              >
                 Vision
               </p>
 
@@ -64,7 +75,11 @@ const Mission = () => {
             </div>
             {/* context */}
             <div className=" ">
-              <p className="font-semibold tracking-wide text-lg lg:text-2xl sm:hidden lg:block">
+              <p
+                className={`font-semibold tracking-wide text-lg lg:text-2xl lg:block ${
+                  isMobile ? "hidden" : isDesktop ? "block" : "hidden"
+                }`}
+              >
                 Mission
               </p>
 
@@ -91,7 +106,11 @@ const Mission = () => {
             </div>
             {/* context */}
             <div>
-              <p className="font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block sm:hidden">
+              <p
+                className={`font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block ${
+                  isMobile ? "hidden" : isDesktop ? "block" : ""
+                }`}
+              >
                 Core Values
               </p>
               <p className="font-semibold text-md font-sans tracking-wide text-neutral-600 mt-3 lg:mt-1">
