@@ -56,7 +56,7 @@ const About = () => {
           {isReadMore ? aboutChurch.slice(0, 220) : aboutChurch}
           <span
             onClick={toggleReadMore}
-            className="text-neutral-700 cursor-pointer font-bold tracking-wide "
+            className="text-neutral-800 cursor-pointer text-[16px] font-bold tracking-wide "
           >
             {isReadMore ? "  ...read more" : "  show less"}
           </span>
