@@ -33,7 +33,7 @@ const Navigation = () => {
             TLCAK
           </h2>
         </div>
-        {/* link list */}
+        {/* nav items */}
         <div
           className={`flex items-center lg:gap-4  md:gap-4 ${
             isMobile ? "hidden" : "block"
