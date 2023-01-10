@@ -28,7 +28,12 @@ const Hero = () => {
           />
         </div>
         <div className="flex gap-3 justify-center lg:absolute lg:-mt-6 lg:left-1/2 lg:top-2/3 lg:-translate-x-1/3 mt-6">
-          <button className="bg-accent px-6 rounded-sm py-2 sans font-semibold hover:bg-white focus:bg-white">
+          <button
+            className="bg-accent px-6 rounded-sm py-2 sans font-semibold hover:bg-white focus:bg-white"
+            onClick={() => {
+              location.href = "https://www.youtube.com/@TrueLighterskenya";
+            }}
+          >
             WATCH MESSAGES
           </button>
         </div>
