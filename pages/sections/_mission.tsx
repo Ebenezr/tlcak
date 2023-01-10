@@ -44,13 +44,15 @@ const Mission = () => {
             </div>
             {/* context */}
             <div className="">
-              <p
-                className={`font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl lg:block ${
-                  isMobile ? "hidden" : isDesktop ? "block" : "hidden"
-                }`}
-              >
-                Vision
-              </p>
+              {isMobile ? null : (
+                <p
+                  className={`font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl lg:block ${
+                    isMobile ? "hidden" : isDesktop ? "block" : "hidden"
+                  }`}
+                >
+                  Vision
+                </p>
+              )}
 
               <p className="text-neutral-500 text-sm tracking-wide lg:text-lg font-sans leading-6">
                 To reach out and Inspire Believers, Influence the Community, and
@@ -75,13 +77,15 @@ const Mission = () => {
             </div>
             {/* context */}
             <div className=" ">
-              <p
-                className={`font-semibold tracking-wide text-lg lg:text-2xl lg:block ${
-                  isMobile ? "hidden" : isDesktop ? "block" : "hidden"
-                }`}
-              >
-                Mission
-              </p>
+              {isMobile ? null : (
+                <p
+                  className={`font-semibold tracking-wide text-lg lg:text-2xl lg:block ${
+                    isMobile ? "hidden" : isDesktop ? "block" : "hidden"
+                  }`}
+                >
+                  Mission
+                </p>
+              )}
 
               <p className="text-neutral-600 tracking-wide font-normal font-sans text-sm lg:text-lg leading-6">
                 To Seek, Love and Worship God in the Beauty of His Holiness,
@@ -106,13 +110,15 @@ const Mission = () => {
             </div>
             {/* context */}
             <div>
-              <p
-                className={`font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block ${
-                  isMobile ? "hidden" : isDesktop ? "block" : ""
-                }`}
-              >
-                Core Values
-              </p>
+              {isMobile ? null : (
+                <p
+                  className={`font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block ${
+                    isMobile ? "hidden" : isDesktop ? "block" : ""
+                  }`}
+                >
+                  Core Values
+                </p>
+              )}
               <p className="font-semibold text-md font-sans tracking-wide text-neutral-600 mt-3 lg:mt-1">
                 FAMILY
               </p>
