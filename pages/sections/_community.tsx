@@ -39,7 +39,7 @@ const Community = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full gap-3 mx-auto  h-[32rem] lg:h-[62rem] md:h-[30rem]"
+            className=" flex flex-col w-full gap-3 mx-auto  h-[32rem] lg:h-[62rem] md:h-[38rem]"
           >
             {/* card */}
             <div className={cardWrapper}>
