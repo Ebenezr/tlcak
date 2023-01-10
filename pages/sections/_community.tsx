@@ -28,7 +28,7 @@ const Community = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full mt-6">
           <Carousel
-            // autoPlay={true}
+            autoPlay={true}
             centerMode={true}
             emulateTouch={true}
             infiniteLoop={true}
@@ -39,7 +39,7 @@ const Community = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full gap-3 mx-auto  h-[24rem] lg:h-[62rem] md:h-[30rem]"
+            className=" flex flex-col w-full gap-3 mx-auto  h-[32rem] lg:h-[62rem] md:h-[30rem]"
           >
             {/* card */}
             <div className={cardWrapper}>
@@ -52,12 +52,14 @@ const Community = () => {
                   className="object-center object-cover h-full"
                 />
               </div>
-              <h2 className={cardTitle}>Children&apos;s Worship</h2>
-              {/* <p className={cardParagraph}>Children’s worship,</p> */}
-              {/* button wrapper */}
-              {/* <div className={buttonWrapper}>
-                <button className={button}>See More</button>
-              </div> */}
+              <h2 className={cardTitle}>Cornerstone Kids</h2>
+              <p className={cardParagraph}>
+                A fun and safe first step for kids to grow in their faith.
+              </p>
+              {/*  button wrapper */}
+              <div className={buttonWrapper}>
+                <button className={button}>Learn More</button>
+              </div>
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -71,10 +73,12 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Youth&apos;s Worship</h2>
-              {/* <p className={cardParagraph}>Children’s worship,</p> */}
-              {/* <div className={buttonWrapper}>
-                <button className={button}>See More</button>
-              </div> */}
+              <p className={cardParagraph}>
+                Impacting students in their relationship with Jesus.
+              </p>
+              <div className={buttonWrapper}>
+                <button className={button}>Learn More</button>
+              </div>
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -88,10 +92,13 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Women&apos;s Worship</h2>
-              {/* <p className={cardParagraph}>Women’s community,</p> */}
-              {/* <div className={buttonWrapper}>
-                <button className={button}>See More</button>
-              </div> */}
+              <p className={cardParagraph}>
+                A nurturing and uplifting environment for women to deepen their
+                faith and connect with other believers
+              </p>
+              <div className={buttonWrapper}>
+                <button className={button}>Learn More</button>
+              </div>
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -105,10 +112,12 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Men&apos;s Worship</h2>
-              {/* <p className={cardParagraph}>Men’s community,</p> */}
-              {/* <div className={buttonWrapper}>
-                <button className={button}>See More</button>
-              </div> */}
+              <p className={cardParagraph}>
+                Men connecting and growing together.
+              </p>
+              <div className={buttonWrapper}>
+                <button className={button}>Learn More</button>
+              </div>
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -122,10 +131,14 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Praise and Worship</h2>
-              {/* <p className={cardParagraph}>Praise and Worship’s worship,</p> */}
-              {/* <div className={buttonWrapper}>
-                <button className={button}>See More</button>
-              </div> */}
+              <p className={cardParagraph}>
+                A dynamic and gifted group of individuals who use their talents
+                to lead congregants in powerful and uplifting worship
+                experiences.
+              </p>
+              <div className={buttonWrapper}>
+                <button className={button}>Learn More</button>
+              </div>
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -139,10 +152,14 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Pastoral Community</h2>
-              {/* <p className={cardParagraph}>Pastoral Community</p> */}
-              {/* <div className={buttonWrapper}>
-                <button className={button}>See More</button>
-              </div> */}
+              <p className={cardParagraph}>
+                A dedicated and compassionate team of spiritual leaders who
+                guide, support, and encourage the congregation on their faith
+                journey.
+              </p>
+              <div className={buttonWrapper}>
+                <button className={button}>Learn More</button>
+              </div>
             </div>
             {/* card */}
             <div className={cardWrapper}>
@@ -156,10 +173,14 @@ const Community = () => {
                 />
               </div>
               <h2 className={cardTitle}>Hospitality Community</h2>
-              {/* <p className={cardParagraph}>Hospitality Community</p> */}
-              {/* <div className={buttonWrapper}>
+              <p className={cardParagraph}>
+                A friendly and welcoming community of individuals who create a
+                warm and hospitable atmosphere for all members and guests of the
+                church.
+              </p>
+              <div className={buttonWrapper}>
                 <button className={button}>See More</button>
-              </div> */}
+              </div>
             </div>
           </Carousel>
         </div>
@@ -172,7 +193,7 @@ export default Community;
 
 // card
 const cardWrapper =
-  "flex flex-col lg:w-2/3 h-5/6 w-[97%] mx-auto py-4 bg-white px-4 rounded-md border-t-8 border-primary-50";
+  "flex flex-col lg:w-2/3 h-5/6 w-[97%] mx-auto py-4 bg-white px-4 rounded-md ";
 const imageWrapper =
   "w-full  lg:h-[35rem] h-60 md:h-[25rem] bg-neutral-600 rounded-md overflow-hidden";
 const cardTitle = "mt-[32px] text-left text-lg font-bold tracking-wide";
@@ -180,4 +201,4 @@ const cardParagraph =
   "mt-[12px] text-left tracking-wide font-sans leading-6 text-neutral-600";
 const buttonWrapper = "mt-[32px] flex flex-start";
 const button =
-  "border-2 border-primary px-8 py-[1px] text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary focus:bg-primary focus:text-white hover:text-white";
+  "border-[1px] border-primary-50 px-8 py-2 text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary-50 focus:bg-primary-50 focus:text-primary-300 hover:text-primary-300";
