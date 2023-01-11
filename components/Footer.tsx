@@ -258,28 +258,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-
-        {/* news letter */}
-        {/* <div className="mt-3 max-w-lg lg:w-1/3 mx-auto">
-          <h4 className="text-2xl font-semibold">Newsletter</h4>
-          <p>
-            Subscribe to get your weekly word of ecouragement, and word of the
-            day
-          </p>
-          <div className="flex flex-col gap-2 items-center lg:items-start ">
-            <input
-              type="email"
-              placeholder="email"
-              className="mt-3 px-3 py-1 rounded-md w-full"
-            />
-            <button
-              type="submit"
-              className="bg-white text-primary-300 px-6 py-1 rounded-md text-2xl"
-            >
-              Subscribe
-            </button>
-          </div>
-        </div> */}
       </div>
       {/* cp */}
       <div className="mt-6 ">
