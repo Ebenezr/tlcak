@@ -7,37 +7,11 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: system-ui, -apple-system, sans-serif; */
 }
-
-
-
 
 .carousel .control-dots .dot {
     background-color: blue;
 }
-
-/* fonts */
-/* spectral
-@font-face {
-    font-family: Spectral;
-    font-weight: light;
-    font-style: normal;
-    src: url(../assets/Spectral/Spectral-Light.ttf) format('tff');
-}
-
-
-
-
-
-
-
-@font-face {
-    font-family: Spectral;
-    font-weight: bolder;
-    font-style: normal;
-    src: url(../assets/Spectral/Spectral-SemiBold.ttf) format('tff');
-} */
 
 /* open sans */
 @font-face {
