@@ -3,11 +3,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import youth from "../../assets/images/youth.png";
-import men from "../../assets/images/men1.jpg";
-import praise from "../../assets/images/praise.jpg";
+import men from "../../assets/images/men.png";
+import praise from "../../assets/images/praise.png";
 import school from "../../assets/images/school.png";
-import women from "../../assets/images/women.jpg";
-import pastoral from "../../assets/images/pastoral.jpg";
+import women from "../../assets/images/women.png";
+import pastoral from "../../assets/images/pastorial.png";
 import hospitality from "../../assets/images/hospitality.png";
 
 const Community = () => {
@@ -39,7 +39,7 @@ const Community = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full gap-3 mx-auto  h-[32rem] lg:h-[62rem] md:h-[38rem]"
+            className=" flex flex-col w-full gap-3 mx-auto  h-[35rem] lg:h-[62rem] md:h-[38rem]"
           >
             {/* card */}
             <div className={cardWrapper}>
@@ -49,7 +49,7 @@ const Community = () => {
                   src={school}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover h-full"
+                  className={image}
                 />
               </div>
               <h2 className={cardTitle}>Cornerstone Kids</h2>
@@ -69,7 +69,7 @@ const Community = () => {
                   src={youth}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover h-full"
+                  className={image}
                 />
               </div>
               <h2 className={cardTitle}>Youth&apos;s Worship</h2>
@@ -88,7 +88,7 @@ const Community = () => {
                   src={women}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover h-full"
+                  className={image}
                 />
               </div>
               <h2 className={cardTitle}>Women&apos;s Worship</h2>
@@ -108,7 +108,7 @@ const Community = () => {
                   src={men}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover h-full"
+                  className={image}
                 />
               </div>
               <h2 className={cardTitle}>Men&apos;s Worship</h2>
@@ -127,7 +127,7 @@ const Community = () => {
                   src={praise}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover h-full"
+                  className={image}
                 />
               </div>
               <h2 className={cardTitle}>Praise and Worship</h2>
@@ -148,7 +148,7 @@ const Community = () => {
                   src={pastoral}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover h-full"
+                  className={image}
                 />
               </div>
               <h2 className={cardTitle}>Pastoral Community</h2>
@@ -169,7 +169,7 @@ const Community = () => {
                   src={hospitality}
                   alt="school"
                   placeholder="blur"
-                  className="object-center object-cover h-full"
+                  className={image}
                 />
               </div>
               <h2 className={cardTitle}>Hospitality Community</h2>
@@ -193,12 +193,13 @@ export default Community;
 
 // card
 const cardWrapper =
-  "flex flex-col lg:w-2/3 h-5/6 w-[97%] mx-auto py-4 bg-white px-4 rounded-md ";
+  "flex flex-col lg:w-2/3 h-full w-[97%] mx-auto py-4 bg-white px-4 rounded-md ";
 const imageWrapper =
-  "w-full  lg:h-[35rem] h-60 md:h-[25rem] bg-neutral-600 rounded-md overflow-hidden";
-const cardTitle = "mt-[32px] text-left text-lg font-bold tracking-wide";
+  "w-full  lg:h-[35rem] h-[12rem] md:h-[25rem] bg-neutral-600 rounded-md overflow-hidden shrink-0";
+const cardTitle = "mt-[10px] text-left text-lg font-bold tracking-wide";
 const cardParagraph =
-  "mt-[12px] text-left tracking-wide font-sans leading-6 text-neutral-600";
+  "mt-[12px] text-left tracking-wide font-sans leading-6 text-neutral-600 flex-1";
 const buttonWrapper = "mt-[32px] flex flex-start";
 const button =
   "border-[1px] border-primary-50 px-8 py-2 text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary-50 focus:bg-primary-50 focus:text-primary-300 hover:text-primary-300";
+const image = "object-center object-cover h-full";
