@@ -7,7 +7,7 @@ import men from "../../assets/images/men.png";
 import praise from "../../assets/images/praise.png";
 import school from "../../assets/images/school.png";
 import women from "../../assets/images/women.png";
-import pastoral from "../../assets/images/pastorial.png";
+import pastoral from "../../assets/images/pastoral.png";
 import hospitality from "../../assets/images/hospitality.png";
 
 const Community = () => {
