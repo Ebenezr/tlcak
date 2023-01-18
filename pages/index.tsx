@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import About from "./sections/_about";
 import Community from "./sections/_community";
-import Contact from "./sections/_contact";
 import Hero from "./sections/_hero";
 import Ken from "./sections/_ken";
 import Mission from "./sections/_mission";
