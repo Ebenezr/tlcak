@@ -6,6 +6,7 @@ import Hero from "./sections/_hero";
 import Ken from "./sections/_ken";
 import Mission from "./sections/_mission";
 import Service from "./sections/_service";
+import Slider from "./sections/_slider";
 
 export default function Home() {
   return (
@@ -30,6 +31,8 @@ export default function Home() {
           <Service />
           {/* our community */}
           <Community />
+          {/* slider */}
+          <Slider />
         </div>
       </main>
     </div>
