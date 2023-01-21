@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { CSSProperties, useState } from "react";
 
 interface ImageSliderProps {
   slides: { url: string }[];
 }
 
-const slideStyles = {
+const slideStyles: CSSProperties = {
   width: "100%",
   height: "100%",
   borderRadius: "10px",
@@ -12,7 +12,7 @@ const slideStyles = {
   backgroundPosition: "center",
 };
 
-const rightArrowStyles = {
+const rightArrowStyles: CSSProperties = {
   position: "absolute",
   top: "50%",
   transform: "translate(0, -50%)",
@@ -23,7 +23,7 @@ const rightArrowStyles = {
   cursor: "pointer",
 };
 
-const leftArrowStyles = {
+const leftArrowStyles: CSSProperties = {
   position: "absolute",
   top: "50%",
   transform: "translate(0, -50%)",
@@ -34,17 +34,17 @@ const leftArrowStyles = {
   cursor: "pointer",
 };
 
-const sliderStyles = {
+const sliderStyles: CSSProperties = {
   position: "relative",
   height: "100%",
 };
 
-const dotsContainerStyles = {
+const dotsContainerStyles: CSSProperties = {
   display: "flex",
   justifyContent: "center",
 };
 
-const dotStyle = {
+const dotStyle: CSSProperties = {
   margin: "0 3px",
   cursor: "pointer",
   fontSize: "20px",
