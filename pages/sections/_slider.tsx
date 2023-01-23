@@ -11,9 +11,16 @@ const Slider = () => {
     { url: "http://localhost:3000/pastoral.png", title: "church" },
   ];
   return (
-    <div className="mx-auto w-full lg:h-[45rem] h-auto py-10 px-4  md:max-w-2xl lg:max-w-6xl ">
-      <ImageSlider slides={slides} />
-    </div>
+    <section className=" bg-bg" id="gallery">
+      <div className="mx-auto w-full lg:h-[45rem] h-72  px-4  md:max-w-2xl lg:max-w-6xl ">
+        <h3 className="font-sans font-regular tracking-widest text-center text-lg text-neutral-400 mb-4">
+          CHURCH GALLERY
+        </h3>
+        <div className="h-44 lg:h-[30rem] w-full">
+          <ImageSlider slides={slides} />
+        </div>
+      </div>
+    </section>
   );
 };
 

@@ -75,20 +75,32 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
   return (
     <div style={sliderStyles}>
       <div>
-        <div onClick={goToPrevious} style={leftArrowStyles}>
+        <div
+          onClick={goToPrevious}
+          style={leftArrowStyles}
+          className="text-primary-50"
+        >
           ❰
         </div>
-        <div onClick={goToNext} style={rightArrowStyles}>
+        <div
+          onClick={goToNext}
+          style={rightArrowStyles}
+          className="text-primary-50"
+        >
           ❱
         </div>
       </div>
-      <div style={slideStylesWidthBackground}></div>
+      <div
+        style={slideStylesWidthBackground}
+        className="bg-neutral-400 object-top object-cover"
+      ></div>
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div
             style={dotStyle}
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
+            className="text-primary-300"
           >
             ●
           </div>
