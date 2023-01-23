@@ -142,8 +142,8 @@ const Navigation = () => {
                   className="w-6 h-6 text-primary-300"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25"
                   />
                 </svg>
@@ -157,8 +157,8 @@ const Navigation = () => {
                   className="w-6 h-6 transition duration-150 ease-in-out text-primary-50"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     d="M6 18L18 6M6 6l12 12"
                   />
                 </svg>

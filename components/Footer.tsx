@@ -88,8 +88,8 @@ const Footer = () => {
                 className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
@@ -113,8 +113,8 @@ const Footer = () => {
                 className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
@@ -137,8 +137,8 @@ const Footer = () => {
                 className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
@@ -162,8 +162,8 @@ const Footer = () => {
                 className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
@@ -187,8 +187,8 @@ const Footer = () => {
                 className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>
@@ -212,8 +212,8 @@ const Footer = () => {
                 className="w-5 h-5 duration-150 group-hover:rotate-90 group-hover:mr-2"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M8.25 4.5l7.5 7.5-7.5 7.5"
                 />
               </svg>

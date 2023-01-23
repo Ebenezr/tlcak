@@ -3,22 +3,22 @@ import ImageSlider from "../../components/ImageSlider";
 
 const Slider = () => {
   const slides = [
-    { url: "../../assets/images/church.jpg", title: "church" },
-    { url: "../../public/hospitality.png", title: "hospitality" },
-    { url: "../../public/men.png", title: "church" },
-    { url: "../../public/praise.png", title: "church" },
-    { url: "../../public/school.png", title: "church" },
-    { url: "../../public/pastoral.png", title: "church" },
-    { url: "../../public/1.png", title: "church" },
-    { url: "../../public/2.png", title: "church" },
-    { url: "../../public/3.png", title: "church" },
-    { url: "../../public/4.png", title: "church" },
-    { url: "../../public/5.png", title: "church" },
-    { url: "../../public/6.png", title: "church" },
-    { url: "../../public/7.png", title: "church" },
-    { url: "../../public/8.png", title: "church" },
-    { url: "../../public/9.png", title: "church" },
-    { url: "../../public/10.png", title: "church" },
+    { url: "/church.jpg", title: "church" },
+    { url: "/hospitality.png", title: "hospitality" },
+    { url: "/men.png", title: "church" },
+    { url: "/praise.png", title: "church" },
+    { url: "/school.png", title: "church" },
+    { url: "/pastoral.png", title: "church" },
+    { url: "/1.png", title: "church" },
+    { url: "/2.png", title: "church" },
+    { url: "/3.png", title: "church" },
+    { url: "/4.png", title: "church" },
+    { url: "/5.png", title: "church" },
+    { url: "/6.png", title: "church" },
+    { url: "/7.png", title: "church" },
+    { url: "/8.png", title: "church" },
+    { url: "/9.png", title: "church" },
+    { url: "/10.png", title: "church" },
   ];
   return (
     <section className=" bg-bg" id="gallery">
