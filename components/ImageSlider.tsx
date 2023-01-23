@@ -1,5 +1,5 @@
 import React, { CSSProperties, useState } from "react";
-
+import Image from "next/image";
 interface ImageSliderProps {
   slides: { url: string }[];
 }
@@ -91,9 +91,18 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
         </div>
       </div>
       <div
-        style={slideStylesWidthBackground}
-        className="bg-neutral-400 object-top object-cover"
-      ></div>
+        // style={slideStylesWidthBackground}
+        className="bg-neutral-400 rounded-md overflow-hidden"
+      >
+        <Image
+          src={slides[currentIndex].url}
+          alt="Vision"
+          // placeholder="blur"
+          className="object-top object-cover imgShadow shadow-inner h-full  w-full h-full "
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div
