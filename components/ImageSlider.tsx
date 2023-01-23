@@ -93,6 +93,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
       <div
         // style={slideStylesWidthBackground}
         className="bg-neutral-400 rounded-md overflow-hidden"
+        onTouchStart={goToNext}
       >
         <Image
           src={slides[currentIndex].url}
