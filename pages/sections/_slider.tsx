@@ -3,12 +3,22 @@ import ImageSlider from "../../components/ImageSlider";
 
 const Slider = () => {
   const slides = [
-    { url: "http://localhost:3000/church.jpg", title: "church" },
-    { url: "http://localhost:3000/hospitality.png", title: "hospitality" },
-    { url: "http://localhost:3000/men.png", title: "church" },
-    { url: "http://localhost:3000/praise.png", title: "church" },
-    { url: "http://localhost:3000/school.png", title: "church" },
-    { url: "http://localhost:3000/pastoral.png", title: "church" },
+    { url: "../../assets/images/church.jpg", title: "church" },
+    { url: "../../public/hospitality.png", title: "hospitality" },
+    { url: "../../public/men.png", title: "church" },
+    { url: "../../public/praise.png", title: "church" },
+    { url: "../../public/school.png", title: "church" },
+    { url: "../../public/pastoral.png", title: "church" },
+    { url: "../../public/1.png", title: "church" },
+    { url: "../../public/2.png", title: "church" },
+    { url: "../../public/3.png", title: "church" },
+    { url: "../../public/4.png", title: "church" },
+    { url: "../../public/5.png", title: "church" },
+    { url: "../../public/6.png", title: "church" },
+    { url: "../../public/7.png", title: "church" },
+    { url: "../../public/8.png", title: "church" },
+    { url: "../../public/9.png", title: "church" },
+    { url: "../../public/10.png", title: "church" },
   ];
   return (
     <section className=" bg-bg" id="gallery">
