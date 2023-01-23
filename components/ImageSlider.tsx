@@ -96,9 +96,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
       >
         <Image
           src={slides[currentIndex].url}
-          alt="Vision"
+          alt="Gallery"
           // placeholder="blur"
-          className="object-top object-cover imgShadow shadow-inner h-full  w-full h-full "
+          className="object-center object-cover imgShadow shadow-inner h-full  w-full h-full "
           layout="fill"
           objectFit="cover"
         />
