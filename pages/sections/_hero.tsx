@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
+import backdrop from "../../assets/images/backdrop.png";
 import { Link } from "react-scroll";
+import styles from "../../styles/Home.module.css";
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -13,10 +15,19 @@ const Hero = () => {
   }, []);
   return (
     <section
-      className=" relative h-auto pb-10 pt-20 relative lg:h-[100vh] bg-gray-900"
+      className={`${styles.hero} relative h-auto z-0 relative lg:h-[100vh] bg-gray-900 overflow-hidden `}
       id="hero"
     >
-      <div className="px-8 my-2 mt-10 ">
+      {/* backdrop */}
+      <div className="absolute w-full h-full z-20 bg-gray-900/50 "></div>
+
+      <Image
+        src={backdrop}
+        alt="TLCAK"
+        className="object-cover w-full h-full z-10"
+      />
+
+      <div className="px-8 my-2 mt-10 z-30">
         <div className="md:w-1/2  lg:w-1/3 mx-auto lg:absolute lg:left-1/2 lg:top-1/3 lg:-translate-x-1/2">
           <Image
             src={logo}

@@ -1,0 +1,9 @@
+.hero{
+    display:grid;
+    grid-template-areas: 'stack';
+    place-items: center;
+
+}
+.hero > *{
+    grid-area: stack;
+}
