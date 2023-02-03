@@ -22,11 +22,11 @@ const Slider = () => {
   ];
   return (
     <section className=" bg-bg" id="gallery">
-      <div className="mx-auto w-full lg:h-[45rem] h-72  px-4  md:max-w-2xl lg:max-w-6xl mb-6">
+      <div className="mx-auto w-full lg:h-[45rem] h-[22rem]  px-4  md:max-w-2xl lg:max-w-6xl mb-6">
         <h3 className="font-sans font-regular tracking-widest text-center text-lg text-neutral-400 mb-4">
           CHURCH GALLERY
         </h3>
-        <div className="h-60 lg:h-[30rem] w-full rounded-md overflow-hidden ">
+        <div className="h-[15rem] lg:h-[30rem] w-full rounded-md overflow-hidden ">
           <ImageSlider slides={slides} />
         </div>
       </div>

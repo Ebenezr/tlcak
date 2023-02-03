@@ -20,7 +20,7 @@ const Community = () => {
         </h3>
         {/* header */}
         <div className="text-center">
-          <p className="text-center mt-4 whitespace-pre-line font-spectral text-xl font-semibold text-neutral-700">
+          <p className="text-center mt-4 spectral whitespace-pre-line font-spectral text-xl font-semibold text-neutral-700">
             Come join our church family from the old to the young
           </p>
         </div>
@@ -28,7 +28,7 @@ const Community = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full mt-6">
           <Carousel
-            // autoPlay={true}
+            autoPlay={true}
             centerMode={true}
             emulateTouch={true}
             infiniteLoop={true}
@@ -193,13 +193,13 @@ export default Community;
 
 // card
 const cardWrapper =
-  "flex flex-col lg:w-2/3 h-full w-[97%] mx-auto py-4 bg-white px-4 rounded-md shadow-lg";
+  "flex flex-col lg:w-2/3 h-full w-[97%] mx-auto overflow-hidden bg-white  rounded-lg shadow-lg";
 const imageWrapper =
-  "w-full  lg:h-[25rem] h-[15rem] md:h-[25rem] bg-neutral-600 rounded-md overflow-hidden shrink-0";
-const cardTitle = "mt-[10px] text-left text-lg font-bold tracking-wide";
+  "w-full  lg:h-[25rem] h-[15rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ";
+const cardTitle = "mt-[10px] px-4 text-left text-lg font-bold tracking-wide";
 const cardParagraph =
-  "mt-[12px]  text-left tracking-wide font-sans leading-6 lg:mt-[7px] text-neutral-600 flex-1 ";
-const buttonWrapper = "mt-[32px] flex flex-start";
+  "mt-[12px] px-4 text-left tracking-wide font-sans leading-6 lg:mt-[7px] text-neutral-600 flex-1 ";
+const buttonWrapper = "mt-[32px] px-4 py-4 flex flex-start";
 const button =
-  "border-[1px] border-primary-50 px-8 py-2 text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary-50 focus:bg-primary-50 focus:text-primary-300 hover:text-primary-300";
+  "border-[1px]  border-primary-50 px-8 py-2 text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary-50 focus:bg-primary-50 focus:text-primary-300 hover:text-primary-300";
 const image = "object-center object-cover h-full lg:object-top";

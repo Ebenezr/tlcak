@@ -10,6 +10,7 @@ const slideStyles: CSSProperties = {
   borderRadius: "10px",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  position: "relative",
 };
 
 const rightArrowStyles: CSSProperties = {
@@ -45,7 +46,8 @@ const dotsContainerStyles: CSSProperties = {
 };
 
 const dotStyle: CSSProperties = {
-  margin: "0 3px",
+  margin: "15px 3px",
+
   cursor: "pointer",
   fontSize: "20px",
 };
@@ -104,13 +106,16 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ slides }) => {
           objectFit="cover"
         />
       </div>
-      <div style={dotsContainerStyles}>
+      <div
+        style={dotsContainerStyles}
+        className="absolute -bottom-4 z-40 left-1/2 -translate-x-1/2"
+      >
         {slides.map((slide, slideIndex) => (
           <div
             style={dotStyle}
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className="text-primary-300"
+            className={` text-white z-50  `}
           >
             ●
           </div>
