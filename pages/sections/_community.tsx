@@ -193,13 +193,13 @@ export default Community;
 
 // card
 const cardWrapper =
-  "flex flex-col lg:w-4/5 lg:h-[38rem] h-full w-[97%] mx-auto overflow-hidden bg-white  rounded-lg shadow-lg";
+  "flex flex-col lg:w-4/5 lg:h-[38rem] h-full w-[90%] mx-auto overflow-hidden bg-white  rounded-lg shadow-lg";
 const imageWrapper =
-  "w-full  lg:h-[25rem] h-[15rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ";
+  "w-full  lg:h-[25rem] h-[12rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ";
 const cardTitle = "mt-[10px] px-4 text-left text-lg font-bold tracking-wide";
 const cardParagraph =
   "mt-[12px] px-4 text-left tracking-wide font-sans leading-6 lg:mt-[7px] text-neutral-600 flex-1 ";
 const buttonWrapper = "mt-[32px] px-4 py-4 flex flex-start";
 const button =
   "border-[1px]  bg-primary-50 border-primary-300 px-6 py-[2px] text-base rounded-full text-primary-300 flex items-center ";
-const image = "object-center object-fill h-full lg:object-top w-full";
+const image = "object-center object-cover h-full lg:object-top w-full";

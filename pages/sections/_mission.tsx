@@ -29,7 +29,7 @@ const Mission = () => {
         {/* wrapper */}
         <div className="w-full  flex flex-col lg:gap-12 md:gap-6  ">
           {/* card */}
-          <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2  lg:gap-6 lg:w-full ">
+          <div className="flex flex-col lg:grid lg:grid-cols-2  lg:gap-6 lg:w-full ">
             <p className="font-semibold font-sans text-neutral-700 tracking-wide text-lg lg:hidden">
               Vision
             </p>
