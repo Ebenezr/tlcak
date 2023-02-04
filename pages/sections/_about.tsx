@@ -23,7 +23,7 @@ const About = () => {
           ABOUT CHURCH
         </h3>
         {/* header */}
-        <div className="text-center">
+        <div className="text-center mb-12">
           <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700">
             “That was the True Light, Which lighteth every man That cometh into
             the world.”
@@ -31,7 +31,7 @@ const About = () => {
           <span className="text-center text-neutral-500 text-sm">John 1:9</span>
         </div>
         {/* image wrapper */}
-        <div className="bg-neutral-700 w-full h-42 lg:h-1/2 rounded-md my-4 overflow-hidden">
+        <div className="bg-neutral-700 w-full h-42 mb-4 lg:h-1/2 rounded-md  overflow-hidden">
           <Image
             src={church}
             alt="Vision"
@@ -44,7 +44,7 @@ const About = () => {
 
         {!isMobile && (
           <p
-            className={`leading-6 text-justify lg:block ${
+            className={`text-neutral-600  leading-6 text-justify lg:block ${
               isMobile ? "hidden" : "block"
             }`}
           >

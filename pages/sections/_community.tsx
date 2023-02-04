@@ -19,7 +19,7 @@ const Community = () => {
           OUR COMMUNITY
         </h3>
         {/* header */}
-        <div className="text-center">
+        <div className="text-center mb-12">
           <p className="text-center mt-4 spectral whitespace-pre-line font-spectral text-xl font-semibold text-neutral-700">
             Come join our church family from the old to the young
           </p>
@@ -28,7 +28,7 @@ const Community = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full mt-6">
           <Carousel
-            autoPlay={true}
+            // autoPlay={true}
             centerMode={true}
             emulateTouch={true}
             infiniteLoop={true}
@@ -39,7 +39,7 @@ const Community = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full gap-3 mx-auto  h-[35rem] lg:h-[42rem] md:h-[38rem]"
+            className=" flex flex-col w-full gap-3 mx-auto  h-[35rem] lg:h-[48rem] md:h-[38rem]"
           >
             {/* card */}
             <div className={cardWrapper}>
@@ -58,7 +58,7 @@ const Community = () => {
               </p>
               {/*  button wrapper */}
               <div className={buttonWrapper}>
-                <button className={button}>Learn More</button>
+                <span className={button}>Learn & Grow</span>
               </div>
             </div>
             {/* card */}
@@ -77,7 +77,7 @@ const Community = () => {
                 Impacting students in their relationship with Jesus.
               </p>
               <div className={buttonWrapper}>
-                <button className={button}>Learn More</button>
+                <span className={button}>Rise Up</span>
               </div>
             </div>
             {/* card */}
@@ -97,7 +97,7 @@ const Community = () => {
                 faith and connect with other believers
               </p>
               <div className={buttonWrapper}>
-                <button className={button}>Learn More</button>
+                <span className={button}>Empower Her</span>
               </div>
             </div>
             {/* card */}
@@ -116,7 +116,7 @@ const Community = () => {
                 Men connecting and growing together.
               </p>
               <div className={buttonWrapper}>
-                <button className={button}>Learn More</button>
+                <span className={button}>Be Strong</span>
               </div>
             </div>
             {/* card */}
@@ -137,7 +137,7 @@ const Community = () => {
                 experiences.
               </p>
               <div className={buttonWrapper}>
-                <button className={button}>Learn More</button>
+                <span className={button}>Sing Hallelujah</span>
               </div>
             </div>
             {/* card */}
@@ -158,7 +158,7 @@ const Community = () => {
                 journey.
               </p>
               <div className={buttonWrapper}>
-                <button className={button}>Learn More</button>
+                <span className={button}>Serve Joyfully</span>
               </div>
             </div>
             {/* card */}
@@ -179,7 +179,7 @@ const Community = () => {
                 church.
               </p>
               <div className={buttonWrapper}>
-                <button className={button}>See More</button>
+                <span className={button}>Welcome All</span>
               </div>
             </div>
           </Carousel>
@@ -193,7 +193,7 @@ export default Community;
 
 // card
 const cardWrapper =
-  "flex flex-col lg:w-2/3 h-full w-[97%] mx-auto overflow-hidden bg-white  rounded-lg shadow-lg";
+  "flex flex-col lg:w-4/5 lg:h-[38rem] h-full w-[97%] mx-auto overflow-hidden bg-white  rounded-lg shadow-lg";
 const imageWrapper =
   "w-full  lg:h-[25rem] h-[15rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ";
 const cardTitle = "mt-[10px] px-4 text-left text-lg font-bold tracking-wide";
@@ -201,5 +201,5 @@ const cardParagraph =
   "mt-[12px] px-4 text-left tracking-wide font-sans leading-6 lg:mt-[7px] text-neutral-600 flex-1 ";
 const buttonWrapper = "mt-[32px] px-4 py-4 flex flex-start";
 const button =
-  "border-[1px]  border-primary-50 px-8 py-2 text-base font-semibold rounded-md text-primary flex items-center hover:bg-primary-50 focus:bg-primary-50 focus:text-primary-300 hover:text-primary-300";
+  "border-[1px]  bg-primary-50 border-primary-300 px-6 py-[2px] text-base rounded-full text-primary-300 flex items-center ";
 const image = "object-center object-cover h-full lg:object-top";

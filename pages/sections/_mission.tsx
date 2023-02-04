@@ -13,21 +13,21 @@ const Mission = () => {
     setIsDesktop(/Windows|Mac|Linux/i.test(navigator.userAgent));
   }, []);
   return (
-    <section className=" bg-white" id="mission">
-      <div className="mx-auto  md:max-w-2xl lg:max-w-6xl flex  flex-col  h-auto py-10 px-4">
+    <section className="pb-12 bg-white" id="mission">
+      <div className="mx-auto  md:max-w-2xl lg:max-w-6xl flex  flex-col  h-auto py-10  px-4">
         {/* vision wrapper */}
         {/* section title */}
         <h3 className="font-sans font-regular tracking-widest text-center text-lg text-neutral-400">
           OUR MISSION
         </h3>
         {/* header */}
-        <div className="text-center">
+        <div className="text-center mb-12">
           <p className="text-center font-spectral text-xl tracking-wide mt-4 whitespace-pre-line font-medium text-neutral-800">
             Vision and mission about our church
           </p>
         </div>
         {/* wrapper */}
-        <div className="w-full mt-4 flex flex-col lg:gap-12 md:gap-6  ">
+        <div className="w-full  flex flex-col lg:gap-12 md:gap-6  ">
           {/* card */}
           <div className="flex flex-col mt-4 lg:grid lg:grid-cols-2  lg:gap-6 lg:w-full ">
             <p className="font-semibold font-sans text-neutral-700 tracking-wide text-lg lg:hidden">

@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { FaChurch } from "react-icons/fa";
-import Image from "next/image";
+import Link from "next/link";
 
 const Service = () => {
   const transitionTimingFunction = "ease-in-out";
@@ -15,13 +15,13 @@ const Service = () => {
           ORDER OF SERVICE
         </h3>
         {/* header */}
-        <div className="text-center">
+        <div className="text-center mb-12">
           <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-800 font-spectral text-xl">
             Join and worship with us.
           </p>
         </div>
         {/* cards wrapper */}
-        <div className="carousel-wrapper w-full lg:h-3/4 md:h-3/4">
+        <div className="carousel-wrapper w-full lg:h-4/5 md:h-3/4 ">
           <Carousel
             // autoPlay={true}
             centerMode={false}
@@ -34,9 +34,9 @@ const Service = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full mx-auto h-[24rem]"
+            className=" flex flex-col w-full mx-auto h-[24rem] lg:h-[35rem] "
           >
-            <div className="bg-primary-300 lg:w-2/3 w-5/6 h-5/6 mx-auto flex-start rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg text-white">
+            <div className="bg-primary-300 lg:w-2/3 w-5/6 lg:h-[23rem] h-5/6 mx-auto flex-start rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg text-white">
               <div className="bg-primary-50 p-3 rounded-full">
                 <FaChurch className="text-4xl text-primary-300" />
               </div>
@@ -49,12 +49,15 @@ const Service = () => {
               <p className="text-[12px] lg:text-xl font-semibold text-primary-50 flex-1">
                 Kesha first Friday of every month
               </p>
-              <button className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-sans font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300">
+              <Link
+                href="#footer"
+                className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-sans font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
+              >
                 VIEW LOCATION
-              </button>
+              </Link>
             </div>
 
-            <div className="bg-primary-300 text-white lg:w-2/3 w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
+            <div className="bg-primary-300 text-white lg:h-[25rem] lg:w-2/3 w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-4 shadow-lg">
               <div className="bg-primary-50 p-1  rounded-full">
                 <SocialIcon
                   network="facebook"
@@ -72,7 +75,7 @@ const Service = () => {
                 FOLLOW US
               </button>
             </div>
-            <div className="bg-primary-300 lg:w-2/3 w-5/6 h-5/6 mx-auto rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-6 shadow-lg text-white">
+            <div className="bg-primary-300 lg:w-2/3 w-5/6 h-5/6 mx-auto lg:h-[25rem] rounded-md my-4 flex flex-col justify-center items-center gap-3 px-3 py-6 shadow-lg text-white">
               <div className="bg-primary-50 p-3 rounded-full">
                 <FaChurch className="text-4xl text-primary-300   shrink-0" />
               </div>
@@ -88,9 +91,12 @@ const Service = () => {
               <p className="text-[12px] font-bold flex-1 lg:text-xl tracking-wide font-sans text-primary-50">
                 Main Service @ 11:00am to 12:50pm
               </p>
-              <button className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300">
+              <Link
+                href="#footer"
+                className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
+              >
                 VIEW LOCATION
-              </button>
+              </Link>
             </div>
           </Carousel>
         </div>
