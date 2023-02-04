@@ -52,7 +52,9 @@ const About = () => {
           </p>
         )}
 
-        <p className={`text-sm tracking-wide leading-6 text-justify lg:hidden`}>
+        <p
+          className={`text-neutral-600 text-sm tracking-wide leading-6 text-justify lg:hidden`}
+        >
           {isReadMore ? aboutChurch.slice(0, 220) : aboutChurch}
           <span
             onClick={toggleReadMore}

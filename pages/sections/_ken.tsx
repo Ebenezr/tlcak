@@ -42,12 +42,12 @@ const Ken = () => {
               </div>
             </div>
           </div>
-          <div className="lg:grid lg:place-items-center md:my-auto h-full ">
+          <div className="lg:grid lg:place-items-center  md:my-auto h-full ">
             {/* text content */}
 
             {!isMobile && (
               <p
-                className={`leading-6 text-justify lg:block ${
+                className={` text-neutral-600 leading-6 text-justify lg:block ${
                   isMobile ? "hidden" : "block"
                 }`}
               >
@@ -56,7 +56,7 @@ const Ken = () => {
             )}
 
             <p
-              className={`text-sm tracking-wide leading-6 text-justify lg:hidden`}
+              className={` text-neutral-600 text-sm tracking-wide leading-6 text-justify lg:hidden`}
             >
               {isReadMore ? aboutKen.slice(0, 220) : aboutKen}
               <span
