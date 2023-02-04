@@ -28,7 +28,7 @@ const Community = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full mt-6">
           <Carousel
-            // autoPlay={true}
+            autoPlay={true}
             centerMode={true}
             emulateTouch={true}
             infiniteLoop={true}

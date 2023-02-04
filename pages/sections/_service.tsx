@@ -23,7 +23,7 @@ const Service = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full lg:h-4/5 md:h-3/4 ">
           <Carousel
-            // autoPlay={true}
+            autoPlay={true}
             centerMode={false}
             emulateTouch={true}
             infiniteLoop={true}
@@ -71,7 +71,15 @@ const Service = () => {
               <p className="text-[12px] font-semibold text-primary-50 flex-1 lg:text-xl">
                 Main Service @ 11:00am to 12:50pm
               </p>
-              <button className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold lg:text-xl hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300">
+              <button
+                className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-semibold lg:text-xl hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
+                onClick={() =>
+                  window.open(
+                    `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
+                    "_blank"
+                  )
+                }
+              >
                 FOLLOW US
               </button>
             </div>
