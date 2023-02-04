@@ -28,7 +28,7 @@ const Community = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full mt-6">
           <Carousel
-            autoPlay={true}
+            // autoPlay={true}
             centerMode={true}
             emulateTouch={true}
             infiniteLoop={true}
@@ -202,4 +202,4 @@ const cardParagraph =
 const buttonWrapper = "mt-[32px] px-4 py-4 flex flex-start";
 const button =
   "border-[1px]  bg-primary-50 border-primary-300 px-6 py-[2px] text-base rounded-full text-primary-300 flex items-center ";
-const image = "object-center object-cover h-full lg:object-top";
+const image = "object-center object-fill h-full lg:object-top w-full";
