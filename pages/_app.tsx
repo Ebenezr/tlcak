@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import spectral from "@next/font/local";
 import open_sans from "@next/font/local";
+import Head from "next/head";
 
 const Spectral = spectral({
   src: [
@@ -74,9 +75,15 @@ const OpenSans = open_sans({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main
-      className={`${OpenSans.variable} 
+      className={`${OpenSans.variable}
     ${Spectral.variable} font-sans`}
     >
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>TLCAK</title>
+      </Head>
       <Layout>
         <Component {...pageProps} />
       </Layout>

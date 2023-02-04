@@ -1,5 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
 import About from "./sections/_about";
 import Community from "./sections/_community";
 import Hero from "./sections/_hero";
@@ -11,11 +9,6 @@ import Slider from "./sections/_slider";
 export default function Home() {
   return (
     <div className="bg-bg">
-      <Head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>TLCAK</title>
-      </Head>
       {/* main container wrapper */}
       <main className="flex flex-col ">
         {/* home page */}
