@@ -59,22 +59,46 @@ const Footer = () => {
               network="twitter"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
+              onClick={() =>
+                window.open(
+                  `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
+                  "_blank"
+                )
+              }
             />
 
             <SocialIcon
               network="youtube"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
+              onClick={() =>
+                window.open(
+                  `https://www.youtube.com/@TrueLighterskenya`,
+                  "_blank"
+                )
+              }
             />
             <SocialIcon
               network="instagram"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
+              onClick={() =>
+                window.open(
+                  `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
+                  "_blank"
+                )
+              }
             />
             <SocialIcon
               network="facebook"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
+              onClick={() =>
+                window.open(
+                  `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
+                  "_blank"
+                )
+              }
             />
           </div>
         </div>
