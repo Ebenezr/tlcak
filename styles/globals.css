@@ -26,26 +26,11 @@ html {
     src: url(../assets/Spectral/Spectral-Light.ttf) format('tff');
 }
 
-@font-face {
-    font-family: Spectral;
-    font-weight: normal;
-    font-style: normal;
-    src: url(../assets/Spectral/Spectral-Regular.ttf) format('tff');
-}
 
-@font-face {
-    font-family: Spectral;
-    font-weight: medium;
-    font-style: normal;
-    src: url(../assets/Spectral/Spectral-Medium.ttf) format('tff');
-}
 
-@font-face {
-    font-family: Spectral;
-    font-weight: bold;
-    font-style: normal;
-    src: url(../assets/Spectral/Spectral-Bold.ttf) format('tff');
-}
+
+
+
 
 @font-face {
     font-family: Spectral;
