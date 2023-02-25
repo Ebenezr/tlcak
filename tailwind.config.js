@@ -1,5 +1,3 @@
-const { fontFamily } = require("@mui/system");
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [

@@ -4,6 +4,7 @@ import type { AppProps } from "next/app";
 import spectral from "@next/font/local";
 import open_sans from "@next/font/local";
 import Head from "next/head";
+import { NextSeo } from "next-seo";
 
 const Spectral = spectral({
   src: [
@@ -78,6 +79,23 @@ export default function App({ Component, pageProps }: AppProps) {
       className={`${OpenSans.variable}
     ${Spectral.variable} font-sans`}
     >
+      <NextSeo
+        title="True Light Christian assembly Kenya"
+        description="True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting."
+        openGraph={{
+          title: "True Light Christian assembly Kenya",
+          description:
+            "True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting.",
+          images: [
+            {
+              url: "/2.png",
+              width: 800,
+              height: 600,
+              alt: "Rev.Lukiri Kennedy ",
+            },
+          ],
+        }}
+      />
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
