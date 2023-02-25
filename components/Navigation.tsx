@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from "next/router";
 
 const Navigation = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
@@ -125,8 +127,11 @@ const Navigation = () => {
         </div>
         {/* join us */}
         <div className={`${isMobile ? "hidden" : "block"}`}>
-          <button className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300">
-            Join Us
+          <button
+            onClick={() => router.push("#footer")}
+            className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300"
+          >
+            Contact Us
           </button>
         </div>
         {isMobile ? (
