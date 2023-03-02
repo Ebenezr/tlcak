@@ -88,7 +88,7 @@ export default function App({ Component, pageProps }: AppProps) {
             "True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting.",
           images: [
             {
-              url: "/2.png",
+              url: "../public/2.png",
               width: 800,
               height: 600,
               alt: "Rev.Lukiri Kennedy ",
@@ -100,7 +100,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>TLCAK</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content={"../public/2.png"} />
+        <title>True Light Christian assembly Kenya</title>
       </Head>
       <Layout>
         <Component {...pageProps} />
