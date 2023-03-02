@@ -84,17 +84,29 @@ export default function App({ Component, pageProps }: AppProps) {
         title="True Light Christian assembly Kenya"
         description="True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting."
         openGraph={{
+          type: "website",
+          siteName: "True Light Christian assembly Kenya",
+          url: "www.truelightchristianassemblykenya.co.ke",
           title: "True Light Christian assembly Kenya",
           description:
             "True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting.",
           images: [
             {
-              url: "../assets/images/preview.png",
-              width: 800,
-              height: 600,
+              url: "/prev.png",
+              width: 850,
+              height: 650,
               alt: "TLCAK",
             },
           ],
+        }}
+        robotsProps={{
+          nosnippet: true,
+          notranslate: true,
+          noimageindex: true,
+          noarchive: true,
+          maxSnippet: -1,
+          maxImagePreview: "none",
+          maxVideoPreview: -1,
         }}
       />
       <Head>
@@ -102,7 +114,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={"../assets/images/preview.png"} />
+        <meta property="og:image" content={"../assets/images/prev.png"} />
         <title>True Light Christian assembly Kenya</title>
       </Head>
       <Layout>
