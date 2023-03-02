@@ -93,7 +93,7 @@ export default function App({ Component, pageProps }: AppProps) {
           images: [
             {
               url: "/prev.png",
-              width: 850,
+              width: 1200,
               height: 650,
               alt: "TLCAK",
             },
