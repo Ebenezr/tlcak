@@ -117,6 +117,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:image" content="/prev.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="TLCAK" />
 
         <title>True Light Christian assembly Kenya</title>
       </Head>
