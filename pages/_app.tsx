@@ -92,7 +92,7 @@ export default function App({ Component, pageProps }: AppProps) {
               url: "../assets/images/preview.png",
               width: 800,
               height: 600,
-              alt: "Rev.Lukiri Kennedy ",
+              alt: "TLCAK",
             },
           ],
         }}
