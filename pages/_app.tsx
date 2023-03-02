@@ -5,6 +5,7 @@ import spectral from "@next/font/local";
 import open_sans from "@next/font/local";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
+import preview from "../assets/images/men.png";
 
 const Spectral = spectral({
   src: [
@@ -88,7 +89,7 @@ export default function App({ Component, pageProps }: AppProps) {
             "True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting.",
           images: [
             {
-              url: "../public/2.png",
+              url: "../assets/images/preview.png",
               width: 800,
               height: 600,
               alt: "Rev.Lukiri Kennedy ",
@@ -101,7 +102,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={"../public/2.png"} />
+        <meta property="og:image" content={"../assets/images/preview.png"} />
         <title>True Light Christian assembly Kenya</title>
       </Head>
       <Layout>
