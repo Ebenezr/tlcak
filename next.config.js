@@ -7,6 +7,7 @@ const nextConfig = {
 module.exports = {
   // ... rest of the configuration.
   output: "standalone",
+  distDir: "build",
 };
 const withImages = require("next-images");
 module.exports = withImages({
