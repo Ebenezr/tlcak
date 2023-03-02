@@ -114,7 +114,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={"../assets/images/prev.png"} />
+        <meta property="og:image" content="/prev.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+
         <title>True Light Christian assembly Kenya</title>
       </Head>
       <Layout>
