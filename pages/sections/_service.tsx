@@ -51,7 +51,7 @@ const Service = () => {
               </p>
               <Link
                 href="#footer"
-                className="border-[1px] rounded-md border-accent   text-primary-300 bg-primary-50 py-1 px-5 font-sans font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
+                className="border-[1px] rounded border-none  text-primary-300 bg-white py-1 px-5 font-sans font-semibold hover:bg-primary-50 hover:text-primary-300 focus:bg-primary-50 focus:text-primary-300"
               >
                 VIEW LOCATION
               </Link>
@@ -72,7 +72,7 @@ const Service = () => {
                 Main Service @ 11:00am to 12:50pm
               </p>
               <button
-                className="border-[1px] rounded-md border-accent  text-primary-300 bg-primary-50 py-1 px-5 font-semibold lg:text-xl hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
+                className="border-[1px] rounded border-none   text-primary-300 bg-white py-1 px-5 font-sans font-semibold hover:bg-primary-50 hover:text-primary-300 focus:bg-primary-50 focus:text-primary-300"
                 onClick={() =>
                   window.open(
                     `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
@@ -101,7 +101,7 @@ const Service = () => {
               </p>
               <Link
                 href="#footer"
-                className="border-[1px] rounded-md border-accent  text-primary-300 bg-primary-50 py-1 px-5 font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
+                className="border-[1px] rounded border-none   text-primary-300 bg-white py-1 px-5 font-sans font-semibold hover:bg-primary-50 hover:text-primary-300 focus:bg-primary-50 focus:text-primary-300"
               >
                 VIEW LOCATION
               </Link>
