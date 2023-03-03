@@ -27,7 +27,7 @@ export default function Home() {
           <Community />
           {/* slider */}
           <Slider />
-          <LightBox />
+          {/* <LightBox /> */}
         </div>
       </main>
     </div>

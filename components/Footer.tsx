@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="relative bg-primary-300 flex flex-col gap-2 justify-center items-center text-center text-white px-4 relative py-12 lg:h-1/2 lg:flex-col lg:justify-between lg:px-12"
+      className="relative bg-primary-300 flex flex-col gap-2 justify-center items-center text-center text-white px-4 relative py-12 lg:h-1/2 lg:flex-col lg:justify-between lg:px-6"
     >
       {/* logo */}
       <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-7xl md:max-w-2xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6">
@@ -24,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
         {/* contact info */}
-        <div className=" lg:w-1/4 md:mx-auto text-left flex flex-col gap-2 mt-6">
+        <div className=" lg:w-2/5 md:mx-auto text-left flex flex-col gap-2 mt-6">
           <h4 className="text-2xl font-semibold text-primary-50">
             Contact Information
           </h4>
@@ -34,12 +34,84 @@ const Footer = () => {
             are glad you have joined us. Please reach out if you have any
             questions or need support.
           </p>
-          <p className="font-normal tracking-wide text-sm">
-            Contact: +254 721 205358
-          </p>
-          <p className="font-normal tracking-wide text-sm">
-            Email: truelightchristianassemblykeny@gmail.com
-          </p>
+          {/*  */}
+          <div className="flex gap-3 w-full mt-4 ">
+            <span className=" h-12 w-12 bg-primary-50 rounded-full grid place-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 text-primary-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                />
+              </svg>
+            </span>
+            <div className="flex flex-col ">
+              <p className="font-semibold tracking-wide text-sm">Location:</p>
+              <p className="font-normal tracking-wider text-sm">
+                +254 721 205358
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3 items-center w-full mt-2 ">
+            <span className=" col-span-1 h-12 w-12 bg-primary-50 rounded-full grid place-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 text-primary-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                />
+              </svg>
+            </span>
+            <div className="flex flex-col ">
+              <p className="font-semibold tracking-wide text-sm"> Email:</p>
+              <p className="tracking-wider text-sm">
+                truelightchristianassemblykeny@gmail.com
+              </p>
+            </div>
+          </div>
+          <div className="flex gap-3 w-full mt-2">
+            <span className=" h-12 w-12 bg-primary-50 rounded-full grid place-items-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                className="w-6 h-6 text-primary-300"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3"
+                />
+              </svg>
+            </span>
+            <div className="flex flex-col">
+              <p className="font-semibold tracking-wide text-sm">Call:</p>
+              <p className="font-normal tracking-wider text-sm">
+                +254 721 205358
+              </p>
+            </div>
+          </div>
         </div>
         <div className="flex flex-col lg:w-1/4 md:mx-auto order-1 grow-1 mt-6">
           {/* logo */}

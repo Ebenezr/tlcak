@@ -27,7 +27,7 @@ const LightBox = (): JSX.Element => {
   ];
   return (
     <section className=" bg-bg" id="gallery">
-      <SlideshowLightbox
+      {/* <SlideshowLightbox
         lightboxIdentifier="lightbox1"
         framework="next"
         images={images.map((image) => ({
@@ -38,16 +38,16 @@ const LightBox = (): JSX.Element => {
         {images.map((image: ImageObject) => (
           <Image
             key={image.src}
-            //   {...(image as ImageProps)}
+            {...(image as ImageProps)}
             height={500}
             width={500}
             data-lightboxjs="lightbox1"
             quality={80}
-            alt={image.alt}
-            src={image.src}
+            alt={image?.alt}
+            src={image?.src}
           />
         ))}
-      </SlideshowLightbox>
+      </SlideshowLightbox> */}
     </section>
   );
 };

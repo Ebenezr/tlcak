@@ -51,7 +51,7 @@ const Service = () => {
               </p>
               <Link
                 href="#footer"
-                className="border-[2px] rounded-md border-primary text-primary py-1 px-5 font-sans font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
+                className="border-[1px] rounded-md border-primary text-primary py-1 px-5 font-sans font-semibold hover:bg-white hover:text-primary-300 focus:bg-white focus:text-primary-300"
               >
                 VIEW LOCATION
               </Link>
