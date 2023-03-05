@@ -7,3 +7,9 @@
 .hero > *{
     grid-area: stack;
 }
+
+.swiper{
+--swiper-navigation-color: "#fff",
+--swiper-pagination-color: "#fff"
+}
+
