@@ -3,10 +3,8 @@ import About from "./sections/_about";
 import Community from "./sections/_community";
 import Hero from "./sections/_hero";
 import Ken from "./sections/_ken";
-import LightBox from "./sections/_lightbox";
 import Mission from "./sections/_mission";
 import Service from "./sections/_service";
-import Slider from "./sections/_slider";
 
 export default function Home() {
   return (
@@ -28,7 +26,6 @@ export default function Home() {
           <Community />
           {/* slider */}
           <Swipper />
-          {/* <LightBox /> */}
         </div>
       </main>
     </div>

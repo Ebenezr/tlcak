@@ -5,7 +5,7 @@ import spectral from "@next/font/local";
 import open_sans from "@next/font/local";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
-import preview from "../assets/images/men.png";
+
 
 const Spectral = spectral({
   src: [
