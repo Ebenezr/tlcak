@@ -1,3 +1,4 @@
+import Swipper from "../components/Swipper";
 import About from "./sections/_about";
 import Community from "./sections/_community";
 import Hero from "./sections/_hero";
@@ -26,7 +27,7 @@ export default function Home() {
           {/* our community */}
           <Community />
           {/* slider */}
-          <Slider />
+          <Swipper />
           {/* <LightBox /> */}
         </div>
       </main>

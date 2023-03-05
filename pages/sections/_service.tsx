@@ -23,6 +23,8 @@ const Service = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full lg:h-4/5 md:h-3/4 ">
           <Carousel
+            swipeScrollTolerance={50}
+            preventMovementUntilSwipeScrollTolerance={true}
             autoPlay={true}
             centerMode={false}
             emulateTouch={true}

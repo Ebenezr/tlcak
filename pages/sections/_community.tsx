@@ -28,6 +28,8 @@ const Community = () => {
         {/* cards wrapper */}
         <div className="carousel-wrapper w-full mt-6">
           <Carousel
+            swipeScrollTolerance={50}
+            preventMovementUntilSwipeScrollTolerance={true}
             autoPlay={true}
             centerMode={true}
             emulateTouch={true}
