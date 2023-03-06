@@ -124,6 +124,20 @@ const Navigation = () => {
               Community
             </Link>
           </span>
+          <span>
+            <Link
+              className={linkStyle}
+              to="gallery"
+              spy={true}
+              smooth={true}
+              duration={500}
+              offset={-45}
+              isDynamic={true}
+              activeClass={activeLink}
+            >
+              Gallery
+            </Link>
+          </span>
         </div>
         {/* join us */}
         <div className={`${isMobile ? "hidden" : "block"}`}>
@@ -272,6 +286,22 @@ const Navigation = () => {
                     onSetActive={closeMenu}
                   >
                     Community
+                  </Link>
+                </span>
+                <span onClick={closeMenu}>
+                  <Link
+                    className={linkStyleMobile}
+                    onClick={closeMenu}
+                    to="gallery"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    offset={-45}
+                    isDynamic={true}
+                    activeClass={activeLinkMobile}
+                    onSetActive={closeMenu}
+                  >
+                    Gallery
                   </Link>
                 </span>
                 <span className="mt-4">

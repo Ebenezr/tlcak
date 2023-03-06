@@ -1,6 +1,15 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay, Thumbs, FreeMode } from "swiper";
+import {
+  Pagination,
+  Navigation,
+  Autoplay,
+  Thumbs,
+  FreeMode,
+  Keyboard,
+  EffectCreative,
+  Zoom,
+} from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -8,6 +17,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/free-mode";
+import "swiper/css/effect-cube";
+import "swiper/css/effect-creative";
+import "swiper/css/zoom";
 
 import Image from "next/image";
 
@@ -17,8 +29,8 @@ interface ImageObject {
   src: string;
   alt: string;
 }
-interface SwiperProps {}
-const Swipper = () => {
+
+const Gallery = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
   const images: ImageObject[] = [
     { src: "/church.jpg", alt: "church" },
@@ -40,25 +52,6 @@ const Swipper = () => {
     { src: "/19.jpg", alt: "church19" },
   ];
 
-  const convertImage = (w: number, h: number) => `
-  <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-      <linearGradient id="g">
-        <stop stop-color="#333" offset="20%" />
-        <stop stop-color="#222" offset="50%" />
-        <stop stop-color="#333" offset="70%" />
-      </linearGradient>
-    </defs>
-    <rect width="${w}" height="${h}" fill="#333" />
-    <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
-    <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-  </svg>`;
-
-  const toBase64 = (str: any) =>
-    typeof window === "undefined"
-      ? Buffer.from(str).toString("base64")
-      : window.btoa(str);
-
   return (
     <section className=" bg-white" id="gallery">
       <div className="mx-auto w-full lg:h-[100vh]  md:h-auto h-[28rem] md:mb-12 px-4  md:max-w-2xl lg:max-w-6xl mb-6 py-10">
@@ -66,6 +59,20 @@ const Swipper = () => {
           CHURCH GALLERY
         </h3>
         <Swiper
+          grabCursor={true}
+          effect={"creative"}
+          keyboard={{
+            enabled: true,
+          }}
+          creativeEffect={{
+            prev: {
+              shadow: true,
+              translate: [0, 0, -400],
+            },
+            next: {
+              translate: ["100%", 0, 0],
+            },
+          }}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -73,6 +80,7 @@ const Swipper = () => {
           slidesPerView={1}
           spaceBetween={30}
           loop={true}
+          zoom={true}
           pagination={{
             clickable: true,
           }}
@@ -81,7 +89,15 @@ const Swipper = () => {
             swiper:
               thumbsSwiper && !thumbsSwiper?.destroyed ? thumbsSwiper : null,
           }}
-          modules={[Pagination, Navigation, Autoplay, Thumbs]}
+          modules={[
+            Pagination,
+            Navigation,
+            Autoplay,
+            Thumbs,
+            EffectCreative,
+            Keyboard,
+            Zoom,
+          ]}
           className={`mySwiper2 ${styles.swiper}`}
         >
           {images.length > 0
@@ -108,11 +124,14 @@ const Swipper = () => {
 
         <Swiper
           onSwiper={setThumbsSwiper}
+          keyboard={{
+            enabled: true,
+          }}
           spaceBetween={10}
           slidesPerView={8}
           freeMode={true}
           watchSlidesProgress={true}
-          modules={[FreeMode, Navigation, Thumbs]}
+          modules={[FreeMode, Navigation, Keyboard, Thumbs]}
           className="mySwiper mt-3"
         >
           {images.length > 0
@@ -137,6 +156,6 @@ const Swipper = () => {
     </section>
   );
 };
-export default Swipper;
+export default Gallery;
 
 const cardStyle = "h-56 lg:h-[35rem] md:h-[20rem] w-full  bg-white";
