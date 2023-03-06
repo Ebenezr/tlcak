@@ -11,12 +11,12 @@ const Service = () => {
     <section className="bg-white" id="service">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
         {/* section title */}
-        <h3 className="font-regular font-sans text-center text-lg tracking-widest text-gray-400">
+        <h3 className="font-regular font-sans text-center text-lg tracking-widest text-neutral-500">
           ORDER OF SERVICE
         </h3>
         {/* header */}
         <div className="text-center mb-12">
-          <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-800 font-spectral text-xl">
+          <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700 font-spectral text-xl">
             Join and worship with us.
           </p>
         </div>

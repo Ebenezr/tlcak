@@ -15,7 +15,7 @@ module.exports = {
         xl: "1440px",
       },
       colors: {
-        bg: "#E5EAEB",
+        bg: "#FFFAFB",
         primary: {
           50: "#FFC9D5",
           100: "#de879a",

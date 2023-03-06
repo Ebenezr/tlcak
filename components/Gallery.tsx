@@ -55,7 +55,7 @@ const Gallery = () => {
   return (
     <section className=" bg-white" id="gallery">
       <div className="mx-auto w-full lg:h-[100vh]  md:h-auto h-[28rem] md:mb-12 px-4  md:max-w-2xl lg:max-w-6xl mb-6 py-10">
-        <h3 className="font-sans font-regular tracking-widest text-center text-lg text-neutral-400 mb-12">
+        <h3 className="font-sans font-regular tracking-widest text-center text-lg text-neutral-500 mb-12">
           CHURCH GALLERY
         </h3>
         <Swiper

@@ -54,7 +54,10 @@ const Hero = () => {
               isMobile ? "hidden" : "block"
             }`}
           >
-            <button className="hover:bg-accent focus:bg-accent bg-white h-12 w-12 grid place-items-center rounded-full">
+            <button
+              aria-label="Scroll down"
+              className="hover:bg-accent focus:bg-accent bg-white h-12 w-12 grid place-items-center rounded-full"
+            >
               <Link
                 className=""
                 to="about"

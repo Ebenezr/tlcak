@@ -19,10 +19,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <main className="flex flex-col">{children}</main>
       <Footer />
       <button
+        aria-label="Back to top"
         onClick={scrollToTop}
         className="fixed bg-transparent bottom-3 right-2"
       >
-        <FaArrowAltCircleUp className="text-4xl text-neutral-400 mr-2" />
+        <FaArrowAltCircleUp className="text-4xl text-neutral-500 mr-2" />
       </button>
     </div>
   );

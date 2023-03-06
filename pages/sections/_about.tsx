@@ -19,7 +19,7 @@ const About = () => {
     <section className=" bg-bg " id="about">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
         {/* section title */}
-        <h3 className="font-regular font-sans text-center text-lg tracking-widest text-neutral-400">
+        <h3 className="font-regular font-sans text-center text-lg tracking-widest text-neutral-500">
           ABOUT CHURCH
         </h3>
         {/* header */}

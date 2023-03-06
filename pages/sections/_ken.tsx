@@ -17,12 +17,12 @@ const Ken = () => {
     <section className=" bg-bg lg:h-[100vh] " id="ken">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
         {/* section title */}
-        <h3 className="font-regular text-center text-lg text-gray-400 font-sans tracking-widest ">
+        <h3 className="font-regular text-center text-lg text-neutral-500 font-sans tracking-widest ">
           ABOUT KEN
         </h3>
         {/* header */}
         <div className="text-center">
-          <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-800 font-spectral tracking-wide text-xl">
+          <p className="text-center mt-4 whitespace-pre-line font-semibold text-neutral-700 font-spectral tracking-wide text-xl">
             Rev. Lukiri Kennedy
           </p>
         </div>

@@ -44,7 +44,8 @@ const Navigation = () => {
           <span>
             <Link
               className={linkStyle}
-              to="hero"
+              to="home"
+              href="#home"
               spy={true}
               smooth={true}
               duration={500}
@@ -58,6 +59,7 @@ const Navigation = () => {
             <Link
               className={linkStyle}
               to="about"
+              href="#about"
               spy={true}
               smooth={true}
               duration={500}
@@ -72,6 +74,7 @@ const Navigation = () => {
             <Link
               className={linkStyle}
               to="mission"
+              href="#mission"
               spy={true}
               smooth={true}
               duration={500}
@@ -86,6 +89,7 @@ const Navigation = () => {
             <Link
               className={linkStyle}
               to="ken"
+              href="#ken"
               spy={true}
               smooth={true}
               duration={500}
@@ -100,6 +104,7 @@ const Navigation = () => {
             <Link
               className={linkStyle}
               to="service"
+              href="#service"
               spy={true}
               smooth={true}
               duration={500}
@@ -114,6 +119,7 @@ const Navigation = () => {
             <Link
               className={linkStyle}
               to="community"
+              href="#community"
               spy={true}
               smooth={true}
               duration={500}
@@ -128,6 +134,7 @@ const Navigation = () => {
             <Link
               className={linkStyle}
               to="gallery"
+              href="#gallery"
               spy={true}
               smooth={true}
               duration={500}
@@ -201,7 +208,8 @@ const Navigation = () => {
                   <Link
                     className={linkStyleMobile}
                     onClick={closeMenu}
-                    to="hero"
+                    to="home"
+                    href="#home"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -217,6 +225,7 @@ const Navigation = () => {
                     onClick={closeMenu}
                     className={linkStyleMobile}
                     to="about"
+                    href="#about"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -232,6 +241,7 @@ const Navigation = () => {
                     className={linkStyleMobile}
                     onClick={closeMenu}
                     to="mission"
+                    href="#mission"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -246,6 +256,7 @@ const Navigation = () => {
                   <Link
                     className={linkStyleMobile}
                     onClick={closeMenu}
+                    href="#ken"
                     to="ken"
                     spy={true}
                     smooth={true}
@@ -262,6 +273,7 @@ const Navigation = () => {
                     className={linkStyleMobile}
                     onClick={closeMenu}
                     to="service"
+                    href="#service"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -277,6 +289,7 @@ const Navigation = () => {
                     className={linkStyleMobile}
                     onClick={closeMenu}
                     to="community"
+                    href="#community"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -293,6 +306,7 @@ const Navigation = () => {
                     className={linkStyleMobile}
                     onClick={closeMenu}
                     to="gallery"
+                    href="#gallery"
                     spy={true}
                     smooth={true}
                     duration={500}
@@ -324,7 +338,7 @@ const Navigation = () => {
 export default Navigation;
 
 const linkStyle =
-  "hover:cursor-pointer text-neutral-400 hover:text-primary-200 px-3 focus:text-primary-200 tracking-wide no-underline hover:no-underline hover:text-primary-50";
+  "hover:cursor-pointer text-neutral-600 hover:text-primary-200 px-3 focus:text-primary-200 tracking-wide no-underline hover:no-underline hover:text-primary-50";
 
 const linkStyleMobile =
   "text-white no-underline hover:no-underline hover:text-primary-50 hover:cursor-pointer";
