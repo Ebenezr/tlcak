@@ -40,6 +40,10 @@ const Mission = () => {
                 alt="Vision"
                 placeholder="blur"
                 className="object-top object-cover imgShadow shadow-inner h-full  "
+                sizes="(min-width: 60em) 24vw,
+                    (min-width: 28em) 45vw,
+                    100vw"
+                loading="lazy"
               />
             </div>
             {/* context */}
@@ -73,6 +77,10 @@ const Mission = () => {
                 alt="Vision"
                 placeholder="blur"
                 className="object-top object-cover h-full imgShadow shadow-inner"
+                sizes="(min-width: 60em) 24vw,
+                    (min-width: 28em) 45vw,
+                    100vw"
+                loading="lazy"
               />
             </div>
             {/* context */}
@@ -106,6 +114,10 @@ const Mission = () => {
                 alt="Vision"
                 placeholder="blur"
                 className="object-top object-cover imgShadow shadow-inner h-full"
+                sizes="(min-width: 60em) 24vw,
+                    (min-width: 28em) 45vw,
+                    100vw"
+                loading="lazy"
               />
             </div>
             {/* context */}
