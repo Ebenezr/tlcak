@@ -19,7 +19,7 @@ interface ImageObject {
 }
 interface SwiperProps {}
 const Swipper = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<any | null>(null);
   const images: ImageObject[] = [
     { src: "/church.jpg", alt: "church" },
     { src: "/hospitality.png", alt: "hospitality" },
