@@ -129,6 +129,7 @@ const Footer = () => {
           <div className="px-8 py-3 flex items-center justify-center gap-4 w-full mb-6 lg:mt-4">
             <SocialIcon
               network="twitter"
+              aria-roledescription="twitter page"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
               onClick={() =>
@@ -141,6 +142,7 @@ const Footer = () => {
 
             <SocialIcon
               network="youtube"
+              aria-roledescription="youtube chanel"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
               onClick={() =>
@@ -151,6 +153,7 @@ const Footer = () => {
               }
             />
             <SocialIcon
+              aria-roledescription="instagram page"
               network="instagram"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
@@ -162,6 +165,7 @@ const Footer = () => {
               }
             />
             <SocialIcon
+              aria-roledescription="facebook page"
               network="facebook"
               bgColor="#fff"
               style={{ height: 40, width: 40 }}
@@ -182,7 +186,8 @@ const Footer = () => {
           <div className="flex flex-col gap-2 py-2 ">
             <Link
               className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
-              to="hero"
+              to="home"
+              href="#home"
               spy={true}
               smooth={true}
               duration={500}
@@ -208,6 +213,7 @@ const Footer = () => {
             <Link
               className="hover:cursor-pointer font-normal  text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="about"
+              href="#about"
               spy={true}
               smooth={true}
               duration={500}
@@ -232,6 +238,7 @@ const Footer = () => {
             <Link
               className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="mission"
+              href="#mission"
               spy={true}
               smooth={true}
               duration={500}
@@ -257,6 +264,7 @@ const Footer = () => {
             <Link
               className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="ken"
+              href="#ken"
               spy={true}
               smooth={true}
               duration={500}
@@ -282,6 +290,7 @@ const Footer = () => {
             <Link
               className="hover:cursor-pointer text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="service"
+              href="#service"
               spy={true}
               smooth={true}
               duration={500}
@@ -307,6 +316,7 @@ const Footer = () => {
             <Link
               className="hover:cursor-point text-neutral-300 flex no-underline hover:no-underline hover:text-white group"
               to="community"
+              href="#community"
               spy={true}
               smooth={true}
               duration={500}

@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       className={`${styles.hero} relative h-auto z-0 relative lg:h-[100vh] bg-gray-900 overflow-hidden `}
-      id="hero"
+      id="home"
     >
       {/* backdrop */}
       <div className="absolute w-full h-full z-20 bg-gray-900/50 "></div>

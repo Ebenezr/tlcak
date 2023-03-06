@@ -157,7 +157,7 @@ const Navigation = () => {
         </div>
         {isMobile ? (
           <div className="z-50">
-            <button onClick={toggleMenu} className="">
+            <button onClick={toggleMenu} className="" aria-label="menu">
               {isOpen ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
