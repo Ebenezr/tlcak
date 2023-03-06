@@ -208,7 +208,7 @@ export default Community;
 const cardContainer =
   " h-8/12 inline-block mb-8 align-baseline mx-auto   lg:w-4/5  shrink-0 w-[90%] rounded-lg shadow-lg overflow-hidden";
 const cardWrapper =
-  "flex flex-col h-[25rem] lg:h-[38rem] overflow-hidden bg-white  ";
+  "flex flex-col h-[25rem] lg:h-[38rem] md:h-[37rem]  overflow-hidden bg-white  ";
 const imageWrapper =
   "w-full  lg:h-[25rem] h-[12rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ";
 const cardTitle = "mt-[10px] px-4 text-left text-lg font-bold tracking-wide";
