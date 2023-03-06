@@ -37,6 +37,10 @@ const About = () => {
             alt="Vision"
             placeholder="blur"
             className="object-center object-cover"
+            sizes="(min-width: 60em) 24vw,
+                    (min-width: 28em) 45vw,
+                    100vw"
+            loading="lazy"
           />
         </div>
         {/* text content */}
