@@ -41,147 +41,158 @@ const Community = () => {
             showStatus={false}
             showArrows={false}
             useKeyboardArrows={true}
-            className=" flex flex-col w-full gap-3 mx-auto  h-[33rem] lg:h-[48rem] md:h-[42rem]"
+            className=" flex flex-col w-full gap-3 mx-auto place-items-stretch  h-[33rem] lg:h-[48rem] md:h-[42rem]"
           >
             {/* card */}
-            <div className={cardWrapper}>
-              {/* image wrapper */}
-              <div className={imageWrapper}>
-                <Image
-                  src={school}
-                  alt="school"
-                  placeholder="blur"
-                  className={image}
-                />
-              </div>
-              <h2 className={cardTitle}>Cornerstone Kids</h2>
-              <p className={cardParagraph}>
-                A fun and safe first step for kids to grow in their faith.
-              </p>
-              {/*  button wrapper */}
-              <div className={buttonWrapper}>
-                <span className={button}>Learn & Grow</span>
-              </div>
-            </div>
-            {/* card */}
-            <div className={cardWrapper}>
-              {/* image wrapper */}
-              <div className={imageWrapper}>
-                <Image
-                  src={youth}
-                  alt="school"
-                  placeholder="blur"
-                  className={image}
-                />
-              </div>
-              <h2 className={cardTitle}>Youth&apos;s Worship</h2>
-              <p className={cardParagraph}>
-                Impacting students in their relationship with Jesus.
-              </p>
-              <div className={buttonWrapper}>
-                <span className={button}>Rise Up</span>
+            <div className={cardContainer}>
+              <div className={cardWrapper}>
+                {/* image wrapper */}
+                <div className={imageWrapper}>
+                  <Image
+                    src={school}
+                    alt="school"
+                    placeholder="blur"
+                    className={image}
+                  />
+                </div>
+                <h2 className={cardTitle}>Cornerstone Kids</h2>
+                <p className={cardParagraph}>
+                  A fun and safe first step for kids to grow in their faith.
+                </p>
+                {/*  button wrapper */}
+                <div className={buttonWrapper}>
+                  <span className={button}>Learn & Grow</span>
+                </div>
               </div>
             </div>
             {/* card */}
-            <div className={cardWrapper}>
-              {/* image wrapper */}
-              <div className={imageWrapper}>
-                <Image
-                  src={women}
-                  alt="school"
-                  placeholder="blur"
-                  className={image}
-                />
-              </div>
-              <h2 className={cardTitle}>Women&apos;s Worship</h2>
-              <p className={cardParagraph}>
-                A nurturing and uplifting environment for women to deepen their
-                faith and connect with other believers
-              </p>
-              <div className={buttonWrapper}>
-                <span className={button}>Empower Her</span>
-              </div>
-            </div>
-            {/* card */}
-            <div className={cardWrapper}>
-              {/* image wrapper */}
-              <div className={imageWrapper}>
-                <Image
-                  src={men}
-                  alt="school"
-                  placeholder="blur"
-                  className={image}
-                />
-              </div>
-              <h2 className={cardTitle}>Men&apos;s Worship</h2>
-              <p className={cardParagraph}>
-                Men connecting and growing together.
-              </p>
-              <div className={buttonWrapper}>
-                <span className={button}>Be Strong</span>
+            <div className={cardContainer}>
+              <div className={cardWrapper}>
+                {/* image wrapper */}
+                <div className={imageWrapper}>
+                  <Image
+                    src={youth}
+                    alt="school"
+                    placeholder="blur"
+                    className={image}
+                  />
+                </div>
+                <h2 className={cardTitle}>Youth&apos;s Worship</h2>
+                <p className={cardParagraph}>
+                  Impacting students in their relationship with Jesus.
+                </p>
+                <div className={buttonWrapper}>
+                  <span className={button}>Rise Up</span>
+                </div>
               </div>
             </div>
             {/* card */}
-            <div className={cardWrapper}>
-              {/* image wrapper */}
-              <div className={imageWrapper}>
-                <Image
-                  src={praise}
-                  alt="school"
-                  placeholder="blur"
-                  className={image}
-                />
-              </div>
-              <h2 className={cardTitle}>Praise and Worship</h2>
-              <p className={cardParagraph}>
-                A dynamic and gifted group of individuals who use their talents
-                to lead congregants in powerful and uplifting worship
-                experiences.
-              </p>
-              <div className={buttonWrapper}>
-                <span className={button}>Sing Hallelujah</span>
-              </div>
-            </div>
-            {/* card */}
-            <div className={cardWrapper}>
-              {/* image wrapper */}
-              <div className={imageWrapper}>
-                <Image
-                  src={pastoral}
-                  alt="school"
-                  placeholder="blur"
-                  className={image}
-                />
-              </div>
-              <h2 className={cardTitle}>Pastoral Community</h2>
-              <p className={cardParagraph}>
-                A dedicated and compassionate team of spiritual leaders who
-                guide, support, and encourage the congregation on their faith
-                journey.
-              </p>
-              <div className={buttonWrapper}>
-                <span className={button}>Serve Joyfully</span>
+            <div className={cardContainer}>
+              <div className={cardWrapper}>
+                {/* image wrapper */}
+                <div className={imageWrapper}>
+                  <Image
+                    src={women}
+                    alt="school"
+                    placeholder="blur"
+                    className={image}
+                  />
+                </div>
+                <h2 className={cardTitle}>Women&apos;s Worship</h2>
+                <p className={cardParagraph}>
+                  Empowering space for women to strengthen faith and bond with
+                  fellow believers.
+                </p>
+                <div className={buttonWrapper}>
+                  <span className={button}>Empower Her</span>
+                </div>
               </div>
             </div>
             {/* card */}
-            <div className={cardWrapper}>
-              {/* image wrapper */}
-              <div className={imageWrapper}>
-                <Image
-                  src={hospitality}
-                  alt="school"
-                  placeholder="blur"
-                  className={image}
-                />
+            <div className={cardContainer}>
+              <div className={cardWrapper}>
+                {/* image wrapper */}
+                <div className={imageWrapper}>
+                  <Image
+                    src={men}
+                    alt="school"
+                    placeholder="blur"
+                    className={image}
+                  />
+                </div>
+                <h2 className={cardTitle}>Men&apos;s Worship</h2>
+                <p className={cardParagraph}>
+                  Building bonds and personal growth through male connection.
+                </p>
+                <div className={buttonWrapper}>
+                  <span className={button}>Be Strong</span>
+                </div>
               </div>
-              <h2 className={cardTitle}>Hospitality Community</h2>
-              <p className={cardParagraph}>
-                A friendly and welcoming community of individuals who create a
-                warm and hospitable atmosphere for all members and guests of the
-                church.
-              </p>
-              <div className={buttonWrapper}>
-                <span className={button}>Welcome All</span>
+            </div>
+            {/* card */}
+            <div className={cardContainer}>
+              <div className={cardWrapper}>
+                {/* image wrapper */}
+                <div className={imageWrapper}>
+                  <Image
+                    src={praise}
+                    alt="school"
+                    placeholder="blur"
+                    className={image}
+                  />
+                </div>
+                <h2 className={cardTitle}>Praise and Worship</h2>
+                <p className={cardParagraph}>
+                  A talented team leading powerful worship experiences,
+                  uplifting and inspiring congregants.
+                </p>
+                <div className={buttonWrapper}>
+                  <span className={button}>Sing Hallelujah</span>
+                </div>
+              </div>
+            </div>
+            {/* card */}
+            <div className={cardContainer}>
+              <div className={cardWrapper}>
+                {/* image wrapper */}
+                <div className={imageWrapper}>
+                  <Image
+                    src={pastoral}
+                    alt="school"
+                    placeholder="blur"
+                    className={image}
+                  />
+                </div>
+                <h2 className={cardTitle}>Pastoral Community</h2>
+                <p className={cardParagraph}>
+                  A caring spiritual team guiding and inspiring congregants on
+                  their faith path.
+                </p>
+                <div className={buttonWrapper}>
+                  <span className={button}>Serve Joyfully</span>
+                </div>
+              </div>
+            </div>
+            {/* card */}
+            <div className={cardContainer}>
+              <div className={cardWrapper}>
+                {/* image wrapper */}
+                <div className={imageWrapper}>
+                  <Image
+                    src={hospitality}
+                    alt="school"
+                    placeholder="blur"
+                    className={image}
+                  />
+                </div>
+                <h2 className={cardTitle}>Hospitality Community</h2>
+                <p className={cardParagraph}>
+                  A welcoming and hospitable community creating a warm
+                  atmosphere for members and guests.
+                </p>
+                <div className={buttonWrapper}>
+                  <span className={button}>Welcome All</span>
+                </div>
               </div>
             </div>
           </Carousel>
@@ -194,8 +205,10 @@ const Community = () => {
 export default Community;
 
 // card
+const cardContainer =
+  " h-8/12 inline-block mb-8 align-baseline mx-auto   lg:w-4/5  shrink-0 w-[90%] rounded-lg shadow-lg overflow-hidden";
 const cardWrapper =
-  "flex flex-col lg:w-4/5 lg:h-[38rem] h-full w-[90%] mx-auto overflow-hidden bg-white  rounded-lg shadow-lg";
+  "flex flex-col h-[25rem] lg:h-[38rem] overflow-hidden bg-white  ";
 const imageWrapper =
   "w-full  lg:h-[25rem] h-[12rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ";
 const cardTitle = "mt-[10px] px-4 text-left text-lg font-bold tracking-wide";
