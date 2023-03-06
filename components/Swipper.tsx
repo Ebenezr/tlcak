@@ -40,6 +40,25 @@ const Swipper = () => {
     { src: "/19.jpg", alt: "church19" },
   ];
 
+  const convertImage = (w: number, h: number) => `
+  <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <linearGradient id="g">
+        <stop stop-color="#333" offset="20%" />
+        <stop stop-color="#222" offset="50%" />
+        <stop stop-color="#333" offset="70%" />
+      </linearGradient>
+    </defs>
+    <rect width="${w}" height="${h}" fill="#333" />
+    <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
+    <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
+  </svg>`;
+
+  const toBase64 = (str: any) =>
+    typeof window === "undefined"
+      ? Buffer.from(str).toString("base64")
+      : window.btoa(str);
+
   return (
     <section className=" bg-white" id="gallery">
       <div className="mx-auto w-full lg:h-[100vh]  md:h-auto h-[28rem] md:mb-12 px-4  md:max-w-2xl lg:max-w-6xl mb-6 py-10">
@@ -75,10 +94,11 @@ const Swipper = () => {
                     <Image
                       src={slide.src}
                       alt={slide.alt}
-                      // placeholder="blur"
+                      placeholder="blur"
                       className="object-center object-cover imgShadow shadow-inner h-full  w-full h-full "
                       layout="fill"
                       objectFit="cover"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFRUXGBcYFxcYFxgXFRcXFxUYFxgXFxYYHSggGBolGxcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy8rKy8rKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUBAgj/xABIEAACAQMCAwUFBwIFBQEAAAABAhEDEiExBEFRBRMiYXGBkRRCobHBIzNCUrHR4fAkM1JygpLTF2NzsvEWJCUmNFNU/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO7/AO7/AO7/AO7/AO7/AO7/AO7/AO7/AO7/AP//Z"
                     />
                   </div>
                 </SwiperSlide>
@@ -102,10 +122,11 @@ const Swipper = () => {
                     <Image
                       src={slide.src}
                       alt={slide.alt}
-                      // placeholder="blur"
+                      placeholder="blur"
                       className="object-top object-contain imgShadow shadow-inner h-full  w-full h-full "
                       layout="fill"
                       objectFit="cover"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMVFRUXGBcYFxcYFxgXFRcXFxUYFxgXFxYYHSggGBolGxcXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tKy8rKy8rKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcDBAUBAgj/xABIEAACAQMCAwUFBwIFBQEAAAABAhEDEiExBEFRBRMiYXGBkRRCobHBIzNCUrHR4fAkM1JygpLTF2NzsvEWJCUmNFNU/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AO7/AO7/AO7/AO7/AO7/AO7/AO7/AO7/AO7/AP//Z"
                     />
                   </div>
                 </SwiperSlide>
