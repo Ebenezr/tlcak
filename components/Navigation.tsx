@@ -24,7 +24,6 @@ const Navigation = () => {
 
   const closeMenu = () => {
     setIsOpen(true);
-    console.log("closed");
   };
   return (
     <>

@@ -134,7 +134,7 @@ const Footer = () => {
               style={{ height: 40, width: 40 }}
               onClick={() =>
                 window.open(
-                  `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
+                  `https://twitter.com/TlcaKenya?t=VGM1BEoFJJ5AWdPLsVMGuA&s=09`,
                   "_blank"
                 )
               }
@@ -159,7 +159,7 @@ const Footer = () => {
               style={{ height: 40, width: 40 }}
               onClick={() =>
                 window.open(
-                  `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
+                  `https://www.instagram.com/invites/contact/?i=sueqlp81tep1&utm_content=g6dt8ah`,
                   "_blank"
                 )
               }

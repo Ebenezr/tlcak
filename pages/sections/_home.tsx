@@ -42,7 +42,10 @@ const Hero = () => {
           <button
             className="bg-accent px-6 rounded-sm py-2 sans font-semibold hover:bg-white focus:bg-white"
             onClick={() => {
-              location.href = "https://www.youtube.com/@TrueLighterskenya";
+              window.open(
+                `https://www.youtube.com/@TrueLighterskenya`,
+                "_blank"
+              );
             }}
           >
             WATCH MESSAGES

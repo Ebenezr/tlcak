@@ -6,7 +6,6 @@ import open_sans from "@next/font/local";
 import Head from "next/head";
 import { NextSeo } from "next-seo";
 
-
 const Spectral = spectral({
   src: [
     {
@@ -118,6 +117,36 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="TLCAK" />
+
+        {/* <!-- Open Graph / Facebook --> */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://tlcak.vercel.app/" />
+        <meta
+          property="og:title"
+          content="True Light Christian assembly Kenya"
+        />
+        <meta
+          property="og:description"
+          content="True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting."
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image" content="/prev.png"></meta>
+
+        {/* <!-- Twitter --> */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://tlcak.vercel.app/" />
+        <meta
+          property="twitter:title"
+          content="True Light Christian assembly Kenya"
+        />
+        <meta
+          property="twitter:description"
+          content="True Light Christian Assembly Kenya, founded in 2016, aims to restore lives with God's Word and reach the world through missions and church planting."
+        />
+        <meta property="twitter:image:width" content="1200" />
+        <meta property="twitter:image:height" content="630" />
+        <meta property="twitter:image" content="/prev.png" />
 
         <title>True Light Christian assembly Kenya</title>
       </Head>
