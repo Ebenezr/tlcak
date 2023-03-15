@@ -50,6 +50,15 @@ const Gallery = () => {
     { src: "/9.png", alt: "church9" },
     { src: "/10.png", alt: "church0" },
     { src: "/19.jpg", alt: "church19" },
+    { src: "/21.JPG", alt: "ken/church21" },
+    { src: "/22.JPG", alt: "CHURCH22" },
+    { src: "/23.JPG", alt: "church23" },
+    { src: "/24.JPG", alt: "church24" },
+    { src: "/25.JPG", alt: "church25" },
+    { src: "/26.JPG", alt: "church26" },
+    { src: "/27.JPG", alt: "church27" },
+    { src: "/28.JPG", alt: "church28" },
+
   ];
 
   return (
