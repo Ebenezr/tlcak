@@ -1,16 +1,16 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-import Image from "next/image";
-import { Link, animateScroll as scroll } from "react-scroll";
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
+import Image from 'next/image';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
-import logo from "../assets/logo.png";
-import Map from "./Map";
+import logo from '../assets/logo.png';
+import Map from './Map';
 
 const Footer = () => {
   return (
     <footer
       id="footer"
-      className=" bg-primary-300 flex flex-col gap-2 justify-center items-center text-center text-white relative py-12 lg:h-1/2 lg:flex-col lg:justify-between lg:px-6 px-6"
+      className=" bg-primary-300 flex flex-col gap-2 justify-center items-center text-center text-white relative py-10 lg:h-1/2 lg:flex-col lg:justify-between lg:px-6 px-4 mx-auto  lg:py-12"
     >
       {/* logo */}
       <div className="lg:flex-row flex-col lg:mx-auto lg:max-w-7xl md:max-w-2xl flex gap-3 lg:gap-4 lg:justify-between border-b-[0.5px] border-primary-50/50 py-6 px-4">
@@ -135,7 +135,7 @@ const Footer = () => {
               onClick={() =>
                 window.open(
                   `https://twitter.com/TlcaKenya?t=VGM1BEoFJJ5AWdPLsVMGuA&s=09`,
-                  "_blank"
+                  '_blank'
                 )
               }
             />
@@ -148,7 +148,7 @@ const Footer = () => {
               onClick={() =>
                 window.open(
                   `https://www.youtube.com/@TrueLighterskenya`,
-                  "_blank"
+                  '_blank'
                 )
               }
             />
@@ -160,7 +160,7 @@ const Footer = () => {
               onClick={() =>
                 window.open(
                   `https://www.instagram.com/invites/contact/?i=sueqlp81tep1&utm_content=g6dt8ah`,
-                  "_blank"
+                  '_blank'
                 )
               }
             />
@@ -172,7 +172,7 @@ const Footer = () => {
               onClick={() =>
                 window.open(
                   `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
-                  "_blank"
+                  '_blank'
                 )
               }
             />
