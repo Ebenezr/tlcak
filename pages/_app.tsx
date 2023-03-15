@@ -113,7 +113,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/prev.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/dbkeoqmg5/image/upload/v1678872868/backdrop_hohfmq.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="TLCAK" />
@@ -131,7 +131,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image" content="/prev.png"></meta>
+        <meta property="og:image" content="https://res.cloudinary.com/dbkeoqmg5/image/upload/v1678872868/backdrop_hohfmq.png"></meta>
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -146,7 +146,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta property="twitter:image:width" content="1200" />
         <meta property="twitter:image:height" content="630" />
-        <meta property="twitter:image" content="/prev.png" />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dbkeoqmg5/image/upload/v1678872868/backdrop_hohfmq.png" />
 
         <title>True Light Christian assembly Kenya</title>
       </Head>
@@ -156,3 +156,4 @@ export default function App({ Component, pageProps }: AppProps) {
     </main>
   );
 }
+
