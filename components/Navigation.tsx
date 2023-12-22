@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
-import { AnimatePresence, motion } from "framer-motion";
-import { useRouter } from "next/router";
+'use client';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/navigation';
 
 const Navigation = () => {
   const router = useRouter();
@@ -19,7 +20,7 @@ const Navigation = () => {
 
   const variants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: "-100%" },
+    closed: { opacity: 0, x: '-100%' },
   };
 
   const closeMenu = () => {
@@ -37,7 +38,7 @@ const Navigation = () => {
         {/* nav items */}
         <div
           className={`flex items-center lg:gap-4  md:gap-4 ${
-            isMobile ? "hidden" : "block"
+            isMobile ? 'hidden' : 'block'
           }`}
         >
           <span>
@@ -146,9 +147,9 @@ const Navigation = () => {
           </span>
         </div>
         {/* join us */}
-        <div className={`${isMobile ? "hidden" : "block"}`}>
+        <div className={`${isMobile ? 'hidden' : 'block'}`}>
           <button
-            onClick={() => router.push("#footer")}
+            onClick={() => router.push('#footer')}
             className="  bg-white text-primary-300 border-2 border-primary-300  px-4 py-[2px]  rounded-md font-sans hover:text-white hover:bg-primary-300 focus:bg-primary-300 focus:text-white hover:shadow-md hover:shadow-neutral-300"
           >
             Contact Us
@@ -337,13 +338,13 @@ const Navigation = () => {
 export default Navigation;
 
 const linkStyle =
-  "hover:cursor-pointer text-neutral-600 hover:text-primary-200 px-3 focus:text-primary-200 tracking-wide no-underline hover:no-underline hover:text-primary-50";
+  'hover:cursor-pointer text-neutral-600 hover:text-primary-200 px-3 focus:text-primary-200 tracking-wide no-underline hover:no-underline hover:text-primary-50';
 
 const linkStyleMobile =
-  "text-white no-underline hover:no-underline hover:text-primary-50 hover:cursor-pointer";
+  'text-white no-underline hover:no-underline hover:text-primary-50 hover:cursor-pointer';
 
 const activeLink =
   "relative text-primary-200 font-bold after:content=[''] after:absolute after:w-full after:bg-primary-200 after:h-[3px] after:mx-auto after:top-8 after:left-1/2 after:-translate-x-1/2 after:transition after:duration-150 after:ease-in-out";
 
 const activeLinkMobile =
-  "no-underline hover:no-underline hover:text-primary-300";
+  'no-underline hover:no-underline hover:text-primary-300';

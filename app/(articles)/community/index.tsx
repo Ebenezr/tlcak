@@ -1,14 +1,15 @@
-import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import Image from "next/image";
-import youth from "../../assets/images/youth.png";
-import men from "../../assets/images/men.png";
-import praise from "../../assets/images/praise.png";
-import school from "../../assets/images/school.png";
-import women from "../../assets/images/women.png";
-import pastoral from "../../assets/images/pastoral.png";
-import hospitality from "../../assets/images/hospitality.png";
+'use client';
+import React from 'react';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import Image from 'next/image';
+import youth from '../../../assets/images/youth.png';
+import men from '../../../assets/images/men.png';
+import praise from '../../../assets/images/praise.png';
+import school from '../../../assets/images/school.png';
+import women from '../../../assets/images/women.png';
+import pastoral from '../../../assets/images/pastoral.png';
+import hospitality from '../../../assets/images/hospitality.png';
 
 const Community = () => {
   return (
@@ -42,6 +43,7 @@ const Community = () => {
             showArrows={false}
             useKeyboardArrows={true}
             className=" flex flex-col w-full gap-3 mx-auto place-items-stretch  h-[33rem] lg:h-[48rem] md:h-[42rem]"
+            showThumbs={false}
           >
             {/* card */}
             <div className={cardContainer}>
@@ -206,15 +208,15 @@ export default Community;
 
 // card
 const cardContainer =
-  " h-8/12 inline-block mb-8 align-baseline mx-auto   lg:w-4/5  shrink-0 w-[90%] rounded-lg shadow-lg overflow-hidden";
+  ' h-8/12 inline-block mb-8 align-baseline mx-auto   lg:w-4/5  shrink-0 w-[90%] rounded-lg shadow-lg overflow-hidden';
 const cardWrapper =
-  "flex flex-col h-[25rem] lg:h-[38rem] md:h-[37rem]  overflow-hidden bg-white  ";
+  'flex flex-col h-[25rem] lg:h-[38rem] md:h-[37rem]  overflow-hidden bg-white  ';
 const imageWrapper =
-  "w-full  lg:h-[25rem] h-[12rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ";
-const cardTitle = "mt-[10px] px-4 text-left text-lg font-bold tracking-wide";
+  'w-full  lg:h-[25rem] h-[12rem] md:h-[25rem]  bg-neutral-600 overflow-hidden shrink-0 ';
+const cardTitle = 'mt-[10px] px-4 text-left text-lg font-bold tracking-wide';
 const cardParagraph =
-  "mt-[12px] px-4 text-left tracking-wide font-sans leading-6 lg:mt-[7px] text-neutral-600 flex-1 ";
-const buttonWrapper = "mt-[32px] px-4 py-4 flex flex-start";
+  'mt-[12px] px-4 text-left tracking-wide font-sans leading-6 lg:mt-[7px] text-neutral-600 flex-1 ';
+const buttonWrapper = 'mt-[32px] px-4 py-4 flex flex-start';
 const button =
-  "border-[1px]  bg-primary-50 border-primary-300 px-6 py-[2px] text-base rounded-full text-primary-300 flex items-center ";
-const image = "object-center object-cover h-full lg:object-top w-full";
+  'border-[1px]  bg-primary-50 border-primary-300 px-6 py-[2px] text-base rounded-full text-primary-300 flex items-center ';
+const image = 'object-center object-cover h-full lg:object-top w-full';

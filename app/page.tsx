@@ -1,10 +1,11 @@
-import Gallery from "../components/Gallery";
-import About from "./sections/_about";
-import Community from "./sections/_community";
-import Hero from "./sections/_home";
-import Ken from "./sections/_ken";
-import Mission from "./sections/_mission";
-import Service from "./sections/_service";
+'use client';
+import Gallery from '../components/Gallery';
+import About from './(articles)/about';
+import Community from './(articles)/community';
+import Hero from './(articles)/home';
+import Ken from './(articles)/ken';
+import Mission from './(articles)/mission';
+import Service from './(articles)/service';
 
 export default function Home() {
   return (

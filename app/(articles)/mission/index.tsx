@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import mission from "../../assets/images/mission.jpg";
-import vision from "../../assets/images/vision.jpg";
-import family from "../../assets/images/pastoral.png";
+'use client';
+
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import mission from '../../../assets/images/mission.jpg';
+import vision from '../../../assets/images/vision.jpg';
+import family from '../../../assets/images/pastoral.png';
 
 const Mission = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -51,7 +53,7 @@ const Mission = () => {
               {isMobile ? null : (
                 <p
                   className={`font-sans font-bold text-neutral-700 tracking-wide text-lg lg:text-2xl lg:block ${
-                    isMobile ? "hidden" : isDesktop ? "block" : "hidden"
+                    isMobile ? 'hidden' : isDesktop ? 'block' : 'hidden'
                   }`}
                 >
                   Vision
@@ -88,7 +90,7 @@ const Mission = () => {
               {isMobile ? null : (
                 <p
                   className={`font-semibold tracking-wide text-lg lg:text-2xl lg:block ${
-                    isMobile ? "hidden" : isDesktop ? "block" : "hidden"
+                    isMobile ? 'hidden' : isDesktop ? 'block' : 'hidden'
                   }`}
                 >
                   Mission
@@ -125,7 +127,7 @@ const Mission = () => {
               {isMobile ? null : (
                 <p
                   className={`font-semibold tracking-wide font-sans text-lg lg:text-2xl lg:block ${
-                    isMobile ? "hidden" : isDesktop ? "block" : ""
+                    isMobile ? 'hidden' : isDesktop ? 'block' : ''
                   }`}
                 >
                   Core Values
@@ -163,4 +165,4 @@ const Mission = () => {
 export default Mission;
 
 const imageWrapper =
-  "bg-neutral-700 w-full h-48 md:h-60 lg:h-52 rounded-md mt-3 mb-2 lg:mt-0 lg:mb-0 overflow-hidden";
+  'bg-neutral-700 w-full h-48 md:h-60 lg:h-52 rounded-md mt-3 mb-2 lg:mt-0 lg:mb-0 overflow-hidden';

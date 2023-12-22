@@ -1,9 +1,10 @@
-import Image from "next/image";
-import React, { useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
-import backdrop from "../../assets/images/backdrop.png";
-import { Link } from "react-scroll";
-import styles from "../../styles/Home.module.css";
+'use client';
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
+import logo from '../../../assets/logo.png';
+import backdrop from '../../../assets/images/backdrop.png';
+import { Link } from 'react-scroll';
+import styles from '../../../styles/Home.module.css';
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -44,7 +45,7 @@ const Hero = () => {
             onClick={() => {
               window.open(
                 `https://www.youtube.com/@TrueLighterskenya`,
-                "_blank"
+                '_blank'
               );
             }}
           >
@@ -54,7 +55,7 @@ const Hero = () => {
         {!isMobile ? (
           <div
             className={`absolute animate-bounce left-1/2 -translate-x-1/2 bottom-0 mb-16 ${
-              isMobile ? "hidden" : "block"
+              isMobile ? 'hidden' : 'block'
             }`}
           >
             <button
