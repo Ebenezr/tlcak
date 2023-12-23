@@ -1,12 +1,13 @@
-import React from "react";
-import { SocialIcon } from "react-social-icons";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import { FaChurch } from "react-icons/fa";
-import Link from "next/link";
+'use client';
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import { FaChurch } from 'react-icons/fa';
+import Link from 'next/link';
 
 const Service = () => {
-  const transitionTimingFunction = "ease-in-out";
+  const transitionTimingFunction = 'ease-in-out';
   return (
     <section className="bg-white" id="service">
       <div className="mx-auto  md:max-w-2xl lg:max-w-6xl h-auto py-10 border-1 px-4 mx-auto lg:py-12 lg:h-[100vh]">
@@ -80,7 +81,7 @@ const Service = () => {
                   onClick={() =>
                     window.open(
                       `https://web.facebook.com/truelightchristianassemblykenya?_rdc=1&_rdr`,
-                      "_blank"
+                      '_blank'
                     )
                   }
                 >
@@ -123,6 +124,6 @@ const Service = () => {
 export default Service;
 
 const cardContainer =
-  "h-10/12  inline-block mb-8 align-baseline mx-auto shadow-lg overflow-hidden lg:w-2/3 w-5/6  rounded-md";
+  'h-10/12  inline-block mb-8 align-baseline mx-auto shadow-lg overflow-hidden lg:w-2/3 w-5/6  rounded-md';
 const cardWrapper =
-  "bg-primary-300 mx-auto h-[17rem] lg:h-[27rem]  flex flex-col justify-center items-center gap-3 px-3 py-6  text-white";
+  'bg-primary-300 mx-auto h-[17rem] lg:h-[27rem]  flex flex-col justify-center items-center gap-3 px-3 py-6  text-white';

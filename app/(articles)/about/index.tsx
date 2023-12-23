@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
+'use client';
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
-import church from "../../assets/images/church.jpg";
+import church from '../../../assets/images/church.jpg';
 
 const About = () => {
   const [isReadMore, setIsReadMore] = useState(true);
@@ -49,7 +50,7 @@ const About = () => {
         {!isMobile && (
           <p
             className={`text-neutral-600  leading-6 text-justify lg:block ${
-              isMobile ? "hidden" : "block"
+              isMobile ? 'hidden' : 'block'
             }`}
           >
             {aboutChurch}
@@ -64,7 +65,7 @@ const About = () => {
             onClick={toggleReadMore}
             className="text-neutral-800 cursor-pointer text-[16px] font-bold tracking-wide "
           >
-            {isReadMore ? "  ...read more" : "  show less"}
+            {isReadMore ? '  ...read more' : '  show less'}
           </span>
         </p>
       </div>

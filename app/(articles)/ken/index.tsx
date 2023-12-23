@@ -1,6 +1,8 @@
-import Image from "next/image";
-import ken from "../../assets/images/ken.jpg";
-import { useEffect, useState } from "react";
+'use client';
+
+import Image from 'next/image';
+import ken from '../../../assets/images/ken.jpg';
+import { useEffect, useState } from 'react';
 const Ken = () => {
   const [isReadMore, setIsReadMore] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
@@ -48,7 +50,7 @@ const Ken = () => {
             {!isMobile && (
               <p
                 className={` text-neutral-600 leading-6 text-justify lg:block ${
-                  isMobile ? "hidden" : "block"
+                  isMobile ? 'hidden' : 'block'
                 }`}
               >
                 {aboutKen}
@@ -63,7 +65,7 @@ const Ken = () => {
                 onClick={toggleReadMore}
                 className="text-neutral-800 cursor-pointer  text-[16px] font-bold tracking-wide "
               >
-                {isReadMore ? "  ...read more" : "  show less"}
+                {isReadMore ? '  ...read more' : '  show less'}
               </span>
             </p>
           </div>
@@ -75,4 +77,4 @@ const Ken = () => {
 
 export default Ken;
 const aboutKen =
-  "Amid youthful age, a young man called to serve God and His people found himself on a crusade ground ready to play football unknown to him, it was the day the lord had made for him to give his life to Jesus Christ in 1992. On January 3rd, 2016, he founded True Light Christian Assembly Kenya. The church started in one of the houses of the then-member. By March 20th same year they moved out of the house to a rental classroom where the 1st legal service was conducted. God gave Rev. Lukiri Kennedy the vision of Restoring Lives through the Word of God along with the assignment to reach out to the uttermost parts of the world through missions and church planting. Rev Lukiri Kennedy is very didactic with a unique anointing to simplify the principles of the Word of God. His incisive command of the scripture allows him to interpret the Word of   God within its context and bring it to life so that it applies to everyday living and is relevant to his audience. Rev Lukiri is supported in ministry by his wife, Melab Lukiri, and their three daughters, Eden, Karlyn, and Favour.";
+  'Amid youthful age, a young man called to serve God and His people found himself on a crusade ground ready to play football unknown to him, it was the day the lord had made for him to give his life to Jesus Christ in 1992. On January 3rd, 2016, he founded True Light Christian Assembly Kenya. The church started in one of the houses of the then-member. By March 20th same year they moved out of the house to a rental classroom where the 1st legal service was conducted. God gave Rev. Lukiri Kennedy the vision of Restoring Lives through the Word of God along with the assignment to reach out to the uttermost parts of the world through missions and church planting. Rev Lukiri Kennedy is very didactic with a unique anointing to simplify the principles of the Word of God. His incisive command of the scripture allows him to interpret the Word of   God within its context and bring it to life so that it applies to everyday living and is relevant to his audience. Rev Lukiri is supported in ministry by his wife, Melab Lukiri, and their three daughters, Eden, Karlyn, and Favour.';

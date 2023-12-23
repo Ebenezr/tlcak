@@ -1,16 +1,17 @@
-import React from "react";
-import Footer from "./Footer";
-import Navigation from "./Navigation";
-import { FaArrowAltCircleUp } from "react-icons/fa";
+'use client';
+import React from 'react';
+import Footer from './Footer';
+import Navigation from './Navigation';
+import { FaArrowAltCircleUp } from 'react-icons/fa';
 
 interface LayoutProps {
-  children?: React.ReactElement;
+  children: React.ReactNode;
 }
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
   return (
