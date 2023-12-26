@@ -9,26 +9,28 @@ import Service from './(articles)/service';
 
 export default function Home() {
   return (
-    <div className="bg-bg">
-      {/* main container wrapper */}
-      <main className="flex flex-col ">
-        {/* home page */}
-        <Hero />
-        {/* about church */}
-        <div className=" ">
-          <About />
-          {/* mission statement */}
-          <Mission />
-          {/* about ken */}
-          <Ken />
-          {/* service order */}
-          <Service />
-          {/* our community */}
-          <Community />
-          {/* slider */}
-          <Gallery />
-        </div>
-      </main>
-    </div>
+    <>
+      <div className="bg-bg">
+        {/* main container wrapper */}
+        <main className="flex flex-col ">
+          {/* home page */}
+          <Hero />
+          {/* about church */}
+          <div className=" ">
+            <About />
+            {/* mission statement */}
+            <Mission />
+            {/* about ken */}
+            <Ken />
+            {/* service order */}
+            <Service />
+            {/* our community */}
+            <Community />
+            {/* carausel slider */}
+            <Gallery />
+          </div>
+        </main>
+      </div>
+    </>
   );
 }
