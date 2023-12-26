@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import type { Metadata } from 'next';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
